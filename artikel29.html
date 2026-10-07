@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimpi Syaikh Abdul Qadir Al-Jilani tentang Setan Berpengaruh - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .mimpi-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .mimpi-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .mimpi-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .mimpi-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .mimpi-arabic { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Mimpi tentang Setan Berpengaruh
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Mimpi Syaikh Abdul Qadir Al-Jilani tentang Setan Berpengaruh</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 20:55 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw"></a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitab-kitabnya menceritakan sebuah mimpi yang sangat menakjubkan tentang setan yang berpengaruh. Mimpi ini memberikan pelajaran berharga tentang bagaimana setan berusaha menyesatkan manusia dan bagaimana cara melindungi diri dari godaan mereka.
+            </p>
+
+            <h2>Hakikat Mimpi dalam Islam</h2>
+
+            <p>
+                Dalam Islam, mimpi (الرُّؤْيَا - ar-ru'ya) memiliki kedudukan yang penting. Mimpi bisa berasal dari Allah SWT sebagai petunjuk, dari setan sebagai godaan, atau dari pikiran dan pengalaman sehari-hari. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa mimpi yang benar (ru'ya shadiqah) adalah salah satu dari empat puluh enam bagian kenabian.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG MIMPI — HR. BUKHARI</div>
+                <div class="arabic-text">
+                    الرُّؤْيَا الصَّالِحَةُ جُزْءٌ مِنْ سِتَّةٍ وَأَرْبَعِينَ جُزْءًا مِنَ النُّبُوَّةِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Mimpi yang baik (shadiqah) adalah salah satu dari empat puluh enam bagian kenabian."
+                    <br>— HR. Bukhari
+                </div>
+            </div>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani sering mendapat mimpi-mimpi yang mengandung petunjuk dan peringatan dari Allah SWT. Salah satu mimpi yang paling terkenal adalah mimpi beliau tentang setan yang berpengaruh.
+            </p>
+
+            <h2>Kisah Mimpi Syaikh Abdul Qadir Al-Jilani tentang Setan Berpengaruh</h2>
+
+            <p>
+                Dalam sebuah riwayat yang diceritakan oleh para muridnya, Syaikh Abdul Qadir Al-Jilani menceritakan sebuah mimpi yang sangat menakjubkan. Dalam mimpi tersebut, beliau melihat setan yang sangat besar dan berpengaruh, yang berusaha menyesatkan manusia.
+            </p>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">1</span>
+                <span class="mimpi-title">Mimpi Melihat Setan yang Berpengaruh</span>
+                <div class="mimpi-arabic">رَأَيْتُ فِي الْمَنَامِ شَيْطَانًا عَظِيمًا لَهُ سُلْطَانٌ كَبِيرٌ</div>
+                <p>
+                    Syaikh Abdul Qadir Al-Jilani bermimpi melihat setan yang sangat besar dengan pengaruh yang luas. Setan ini memiliki kekuasaan yang besar dalam menyesatkan manusia. Beliau melihat bagaimana setan ini bekerja dengan sangat sistematis dan terorganisir dalam menyesatkan hamba-hamba Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG SETAN — QS. AL-HIJR: 39-40</div>
+                <div class="arabic-text">
+                    قَالَ رَبِّ بِمَا أَغْوَيْتَنِي لَأُزَيِّنَنَّ لَهُمْ فِي الْأَرْضِ وَلَأُغْوِيَنَّهُمْ أَجْمَعِينَ ۝ إِلَّا عِبَادَكَ مِنْهُمُ الْمُخْلَصِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Iblis berkata: 'Ya Tuhanku, oleh sebab Engkau telah memutuskan bahwa aku sesat, pasti aku akan menjadikan mereka memandang baik (perbuatan maksiat) di muka bumi, dan pasti aku akan menyesatkan mereka semuanya, kecuali hamba-hamba Engkau yang mukhlis di antara mereka.'"
+                    <br>— QS. Al-Hijr: 39-40
+                </div>
+            </div>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">2</span>
+                <span class="mimpi-title">Setan yang Bekerja dengan Sistematis</span>
+                <div class="mimpi-arabic">رَأَيْتُ الشَّيْطَانَ يَعْمَلُ بِخُطَّةٍ مُحْكَمَةٍ لِإِضْلَالِ النَّاسِ</div>
+                <p>
+                    Dalam mimpi tersebut, Syaikh Abdul Qadir Al-Jilani melihat bahwa setan tidak bekerja secara acak, melainkan dengan strategi yang sangat terencana. Setan memiliki pasukan dan pembantu yang bekerja siang dan malam untuk menyesatkan manusia. Mereka menggunakan berbagai cara dan metode untuk menjauhkan manusia dari jalan Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG PASUKAN SETAN — QS. AL-KAHFI: 50</div>
+                <div class="arabic-text">
+                    أَفَتَتَّخِذُونَهُ وَذُرِّيَّتَهُ أَوْلِيَاءَ مِنْ دُونِي وَهُمْ لَكُمْ عَدُوٌّ ۚ بِئْسَ لِلظَّالِمِينَ بَدَلًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Maka apakah kamu akan mengambilnya dan keturunannya sebagai pemimpin selain Aku, sedang mereka adalah musuhmu? Amat buruklah iblis itu sebagai pengganti (Allah) bagi orang-orang yang zalim."
+                    <br>— QS. Al-Kahfi: 50
+                </div>
+            </div>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">3</span>
+                <span class="mimpi-title">Setan yang Memanfaatkan Kelemahan Manusia</span>
+                <div class="mimpi-arabic">الشَّيْطَانُ يَسْتَغِلُّ ضُعْفَ الْإِنْسَانِ</div>
+                <p>
+                    Syaikh Abdul Qadir Al-Jilani melihat dalam mimpinya bahwa setan sangat pandai memanfaatkan kelemahan manusia. Mereka menunggu saat-saat ketika manusia lalai, marah, sedih, atau dalam keadaan lemah iman. Pada saat-saat seperti itulah setan mudah memasukkan bisikan-bisikan jahat ke dalam hati manusia.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG BISEKAN SETAN — QS. AL-A'RAF: 20</div>
+                <div class="arabic-text">
+                    فَوَسْوَسَ لَهُمَا الشَّيْطَانُ لِيُبْدِيَ لَهُمَا مَا وُورِيَ عَنْهُمَا مِنْ سَوْآتِهِمَا وَقَالَ مَا نَهَاكُمَا رَبُّكُمَا عَنْ هَٰذِهِ الشَّجَرَةِ إِلَّا أَنْ تَكُونَا مَلَكَيْنِ أَوْ تَكُونَا مِنَ الْخَالِدِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Maka setan membisikkan pikiran jahat kepada keduanya untuk menampakkan kepada keduanya apa yang tertutup dari mereka yaitu auratnya dan setan berkata: 'Tuhan kamu tidak melarangmu dari mendekati pohon ini, kecuali supaya kamu berdua tidak menjadi malaikat atau tidak menjadi orang-orang yang kekal (dalam surga).'"
+                    <br>— QS. Al-A'raf: 20
+                </div>
+            </div>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">4</span>
+                <span class="mimpi-title">Setan yang Menyerang dari Segala Arah</span>
+                <div class="mimpi-arabic">الشَّيْطَانُ يَأْتِي الْإِنْسَانَ مِنْ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِ</div>
+                <p>
+                    Dalam mimpi tersebut, Syaikh Abdul Qadir Al-Jilani melihat bahwa setan menyerang manusia dari segala arah: dari depan, belakang, kanan, kiri, atas, dan bawah. Mereka tidak memberikan kesempatan sedikitpun bagi manusia untuk lolos dari godaan mereka.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG SERANGAN SETAN — QS. AL-A'RAF: 17</div>
+                <div class="arabic-text">
+                    ثُمَّ لَآتِيَنَّهُمْ مِنْ بَيْنِ أَيْدِيهِمْ وَمِنْ خَلْفِهِمْ وَعَنْ أَيْمَانِهِمْ وَعَنْ شَمَائِلِهِمْ ۖ وَلَا تَجِدُ أَكْثَرَهُمْ شَاكِرِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Kemudian saya akan mendatangi mereka dari muka dan dari belakang mereka, dari kanan dan dari kiri mereka. Dan Engkau tidak akan mendapati kebanyakan mereka bersyukur (taat)."
+                    <br>— QS. Al-A'raf: 17
+                </div>
+            </div>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">5</span>
+                <span class="mimpi-title">Orang-orang yang Terlindungi dari Setan</span>
+                <div class="mimpi-arabic">إِلَّا عِبَادَكَ مِنْهُمُ الْمُخْلَصِينَ</div>
+                <p>
+                    Namun, dalam mimpi tersebut, Syaikh Abdul Qadir Al-Jilani juga melihat bahwa ada sekelompok orang yang tidak dapat disentuh oleh setan. Mereka adalah hamba-hamba Allah yang mukhlis (ikhlas). Setan tidak memiliki kekuasaan atas mereka karena mereka dilindungi oleh Allah SWT.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL ORANG YANG TERLINDUNGI — QS. AL-HIJR: 42</div>
+                <div class="arabic-text">
+                    إِنَّ عِبَادِي لَيْسَ لَكَ عَلَيْهِمْ سُلْطَانٌ إِلَّا مَنِ اتَّبَعَكَ مِنَ الْغَاوِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya hamba-hamba-Ku tidak ada kekuasaan bagimu terhadap mereka, kecuali orang-orang yang mengikutimu, yaitu orang-orang yang sesat."
+                    <br>— QS. Al-Hijr: 42
+                </div>
+            </div>
+
+            <h2>Penjelasan Syaikh Abdul Qadir Al-Jilani tentang Mimpi Tersebut</h2>
+
+            <p>
+                Setelah menceritakan mimpinya, Syaikh Abdul Qadir Al-Jilani memberikan penjelasan yang sangat mendalam tentang makna mimpi tersebut. Beliau menjelaskan bahwa mimpi ini adalah peringatan bagi umat Islam tentang bahaya setan dan cara-cara mereka menyesatkan manusia.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PENJELASAN SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الشَّيْطَانُ عَدُوٌّ مُبِينٌ، لَا يَأْلُو جُهْدًا فِي إِضْلَالِ بَنِي آدَمَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Setan adalah musuh yang nyata, ia tidak berhenti berusaha dalam menyesatkan anak-anak Adam."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Beliau menjelaskan bahwa setan memiliki beberapa cara utama dalam menyesatkan manusia:
+            </p>
+
+            <h3>1. Waswasah (وَسْوَسَةٌ) — Bisikan Jahat</h3>
+
+            <p>
+                Cara pertama setan adalah melalui waswasah atau bisikan jahat ke dalam hati manusia. Bisikan ini sangat halus dan sulit dideteksi, sehingga banyak manusia yang tidak sadar bahwa mereka sedang dipengaruhi oleh setan.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL WASWASAH — QS. AN-NAS: 4-5</div>
+                <div class="arabic-text">
+                    مِنَ الْجِنَّةِ وَالنَّاسِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dari (golongan) jin dan manusia."
+                    <br>— QS. An-Nas: 4-5 (tentang setan yang berbisik)
+                </div>
+            </div>
+
+            <h3>2. Tazyin (تَزْيِينٌ) — Menghiasai Kemaksiatan</h3>
+
+            <p>
+                Cara kedua setan adalah dengan menghiasai kemaksiatan sehingga terlihat indah dan menarik. Setan membuat dosa-dosa terlihat menyenangkan dan menguntungkan, sehingga manusia tergiur untuk melakukannya.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TAZYIN — QS. AL-ANFAL: 48</div>
+                <div class="arabic-text">
+                    وَإِذْ زَيَّنَ لَهُمُ الشَّيْطَانُ أَعْمَالَهُمْ وَقَالَ لَا غَالِبَ لَكُمُ الْيَوْمَ مِنَ النَّاسِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan ketika setan menjadikan mereka memandang baik pekerjaan mereka dan mengatakan: 'Tidak ada seorang manusiapun yang dapat menang terhadap kamu pada hari ini.'"
+                    <br>— QS. Al-Anfal: 48
+                </div>
+            </div>
+
+            <h3>3. Takhwif (تَخْوِيفٌ) — Menakut-nakuti</h3>
+
+            <p>
+                Cara ketiga setan adalah dengan menakut-nakuti manusia. Setan membuat manusia takut miskin, takut gagal, takut tidak diterima, dan berbagai ketakutan lainnya. Dengan ketakutan ini, setan dapat mengendalikan tindakan manusia.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TAKHWIF — QS. AL-BAQARAH: 268</div>
+                <div class="arabic-text">
+                    الشَّيْطَانُ يَعِدُكُمُ الْفَقْرَ وَيَأْمُرُكُمْ بِالْفَحْشَاءِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Setan menjanjikan (menakut-nakuti) kamu dengan kemiskinan dan menyuruh kamu berbuat kejahatan (kikir)."
+                    <br>— QS. Al-Baqarah: 268
+                </div>
+            </div>
+
+            <h3>4. Taswif (تَسْوِيفٌ) — Menunda-nunda Taubat</h3>
+
+            <p>
+                Cara keempat setan adalah dengan menunda-nunda taubat. Setan membuat manusia berpikir bahwa mereka masih punya banyak waktu untuk bertaubat, sehingga mereka menunda-nunda taubat sampai akhirnya ajal datang secara tiba-tiba.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG TAUBAT — QS. AN-NISA': 18</div>
+                <div class="arabic-text">
+                    وَلَيْسَتِ التَّوْبَةُ لِلَّذِينَ يَعْمَلُونَ السَّيِّئَاتِ حَتَّىٰ إِذَا حَضَرَ أَحَدَهُمُ الْمَوْتُ قَالَ إِنِّي تُبْتُ الْآنَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan tidak pula taubat orang-orang yang mengerjakan kejahatan hingga apabila kematian datang kepada salah seorang di antara mereka, (barulah) ia mengatakan: 'Sesungguhnya saya bertaubat sekarang.'"
+                    <br>— QS. An-Nisa': 18
+                </div>
+            </div>
+
+            <h2>Cara Melindungi Diri dari Setan Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan beberapa cara untuk melindungi diri dari pengaruh setan:
+            </p>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">1</span>
+                <span class="mimpi-title">Istighfar dan Taubat (الِاسْتِغْفَارُ وَالتَّوْبَةُ)</span>
+                <div class="mimpi-arabic">اسْتَغْفِرِ اللَّهَ مِنْ كُلِّ ذَنْبٍ</div>
+                <p>
+                    Cara pertama adalah memperbanyak istighfar dan taubat. Dengan bertaubat, kita membersihkan diri dari dosa-dosa yang menjadi pintu masuk setan. Taubat yang sungguh-sungguh akan membuat setan menjauh dari kita.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL ISTIGHFAR — QS. NUH: 10</div>
+                <div class="arabic-text">
+                    فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Maka aku katakan (kepada mereka): 'Mohonlah ampun kepada Tuhanmu, sesungguhnya Dia adalah Maha Pengampun.'"
+                    <br>— QS. Nuh: 10
+                </div>
+            </div>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">2</span>
+                <span class="mimpi-title">Dzikir kepada Allah (الذِّكْرُ)</span>
+                <div class="mimpi-arabic">الذِّكْرُ حِصْنٌ مِنَ الشَّيْطَانِ</div>
+                <p>
+                    Cara kedua adalah memperbanyak dzikir kepada Allah. Dzikir adalah benteng yang melindungi kita dari setan. Ketika kita berdzikir, setan akan menjauh dari kita karena ia tidak tahan dengan dzikir kepada Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL DZIKIR — QS. AL-A'RAF: 201</div>
+                <div class="arabic-text">
+                    إِنَّ الَّذِينَ اتَّقَوْا إِذَا مَسَّهُمْ طَائِفٌ مِنَ الشَّيْطَانِ تَذَكَّرُوا فَإِذَا هُمْ مُبْصِرُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya orang-orang yang bertakwa bila mereka ditimpa waswas dari setan, mereka ingat (Allah), maka ketika itu pula mereka melihat kesalahan-kesalahannya."
+                    <br>— QS. Al-A'raf: 201
+                </div>
+            </div>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">3</span>
+                <span class="mimpi-title">Membaca Al-Qur'an (تِلَاوَةُ الْقُرْآنِ)</span>
+                <div class="mimpi-arabic">الْقُرْآنُ شِفَاءٌ مِنَ الْوَسْوَاسِ</div>
+                <p>
+                    Cara ketiga adalah membaca Al-Qur'an. Al-Qur'an adalah obat dan perlindungan dari bisikan setan. Ketika kita membaca Al-Qur'an, setan akan lari dan tidak berani mendekati kita.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL AL-QUR'AN — QS. AL-ISRA': 82</div>
+                <div class="arabic-text">
+                    وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِلْمُؤْمِنِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan Kami turunkan dari Al-Qur'an suatu yang menjadi penawar (obat) dan rahmat bagi orang-orang yang beriman."
+                    <br>— QS. Al-Isra': 82
+                </div>
+            </div>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">4</span>
+                <span class="mimpi-title">Berlindung kepada Allah (الِاسْتِعَاذَةُ)</span>
+                <div class="mimpi-arabic">أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ</div>
+                <p>
+                    Cara keempat adalah berlindung kepada Allah dari setan yang terkutuk. Ini adalah cara yang paling langsung dan efektif. Setiap kali kita merasakan godaan setan, segera berlindung kepada Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL ISTI'ADZAH — QS. AN-NAHL: 98</div>
+                <div class="arabic-text">
+                    فَإِذَا قَرَأْتَ الْقُرْآنَ فَاسْتَعِذْ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Apabila kamu membaca Al-Qur'an, hendaklah kamu meminta perlindungan kepada Allah dari setan yang terkutuk."
+                    <br>— QS. An-Nahl: 98
+                </div>
+            </div>
+
+            <div class="mimpi-card">
+                <span class="mimpi-number">5</span>
+                <span class="mimpi-title">Ikhlas dalam Beribadah (الْإِخْلَاصُ)</span>
+                <div class="mimpi-arabic">الْإِخْلَاصُ حِصْنٌ مِنَ الشَّيْطَانِ</div>
+                <p>
+                    Cara kelima adalah ikhlas dalam beribadah. Setan tidak memiliki kekuasaan atas hamba-hamba Allah yang mukhlis (ikhlas). Dengan keikhlasan, kita menjadi terlindungi dari godaan setan.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL IKHLAS — QS. AL-HIJR: 40</div>
+                <div class="arabic-text">
+                    إِلَّا عِبَادَكَ مِنْهُمُ الْمُخْلَصِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Kecuali hamba-hamba Engkau yang mukhlis (ikhlas) di antara mereka."
+                    <br>— QS. Al-Hijr: 40
+                </div>
+            </div>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani tentang Setan</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga tentang bagaimana menghadapi setan dan godaan-godaannya:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH</div>
+                <div class="arabic-text">
+                    الشَّيْطَانُ ضَعِيفٌ إِنْ ضَعُفْتَ عَنْهُ، وَقَوِيٌّ إِنْ قَوِيتَ لَهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Setan itu lemah jika kamu lemah terhadapnya, dan kuat jika kamu kuat kepadanya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Nasihat ini sangat mendalam. Syaikh Abdul Qadir Al-Jilani mengajarkan bahwa kekuatan setan tergantung pada bagaimana kita menghadapinya. Jika kita lemah dan mudah tergoda, setan akan menjadi kuat. Tetapi jika kita kuat dan teguh dalam iman, setan akan menjadi lemah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    لَا تُطِعِ الشَّيْطَانَ فِي خَطْوَةٍ وَاحِدَةٍ، فَإِنَّهُ إِنْ أَطَعْتَهُ فِي خَطْوَةٍ، طَلَبَ مِنْكَ خَطْوَةً أُخْرَىٰ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Janganlah kamu taati setan dalam satu langkahpun, karena jika kamu menaatinya dalam satu langkah, ia akan meminta langkah yang lain."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT TERAKHIR SYAIKH</div>
+                <div class="arabic-text">
+                    الشَّيْطَانُ يَجْرِي مِنَ الْإِنْسَانِ مَجْرَى الدَّمِ، فَلَا تَدَعْ لَهُ مَسْلَكًا فِي قَلْبِكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Setan mengalir dalam diri manusia seperti aliran darah, maka janganlah kamu berikan jalan baginya dalam hatimu."
+                    <br>— Syaikh Abdul Qadir Al-Jilani (berdasarkan hadits)
+                </div>
+            </div>
+
+            <h2>Doa-Doa Perlindungan dari Setan</h2>
+
+            <h3>1. Doa Berlindung dari Setan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA ISTI'ADZAH</div>
+                <div class="arabic-text">
+                    أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Aku berlindung kepada Allah dari setan yang terkutuk."
+                </div>
+            </div>
+
+            <h3>2. Doa Memohon Perlindungan dari Godaan Setan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON PERLINDUNGAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari kekhawatiran dan kesedihan, aku berlindung kepada-Mu dari kelemahan dan kemalasan, aku berlindung kepada-Mu dari sifat pengecut dan kikir, dan aku berlindung kepada-Mu dari lilitan hutang dan kekuasaan manusia."
+                    <br>— HR. Bukhari
+                </div>
+            </div>
+
+            <h3>3. Doa Memohon Perlindungan dari Kejahatan Setan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON PERLINDUNGAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari kejahatan diriku sendiri, dan dari kejahatan setan dan sekutunya."
+                </div>
+            </div>
+
+            <h3>4. Doa Memohon Keteguhan Iman</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KETEGUHAN IMAN</div>
+                <div class="arabic-text">
+                    يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَىٰ دِينِكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai Dzat yang membolak-balikkan hati, tetapkanlah hatiku di atas agama-Mu."
+                    <br>— HR. Tirmidzi
+                </div>
+            </div>
+
+            <h2>Hikmah dari Mimpi Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Mimpi Syaikh Abdul Qadir Al-Jilani tentang setan yang berpengaruh mengandung banyak hikmah:
+            </p>
+
+            <ul>
+                <li><strong>Setan adalah musuh yang nyata</strong> — Kita harus menyadari bahwa setan benar-benar ada dan berusaha menyesatkan kita</li>
+                <li><strong>Setan bekerja dengan sistematis</strong> — Setan tidak bekerja secara acak, tetapi dengan strategi yang terencana</li>
+                <li><strong>Setan memanfaatkan kelemahan</strong> — Kita harus waspada terhadap kelemahan diri yang bisa dimanfaatkan setan</li>
+                <li><strong>Ada yang terlindungi dari setan</strong> — Hamba-hamba Allah yang mukhlis tidak dapat disentuh setan</li>
+                <li><strong>Kita harus aktif melawan setan</strong> — Kita tidak boleh pasif, tetapi harus aktif melawan godaan setan</li>
+            </ul>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HIKMAH — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    مَنْ عَرَفَ عَدُوَّهُ، اسْتَطَاعَ أَنْ يَتَحَصَّنَ مِنْهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang mengenal musuhnya, ia akan mampu melindungi diri darinya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari mimpi dan penjelasan Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa setan adalah musuh yang nyata dan berbahaya. Mereka bekerja dengan sistematis untuk menyesatkan manusia. Namun, Allah SWT telah memberikan kita berbagai cara untuk melindungi diri dari godaan mereka, yaitu dengan istighfar, dzikir, membaca Al-Qur'an, berlindung kepada Allah, dan ikhlas dalam beribadah.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk melawan godaan setan dan senantiasa berada dalam lindungan-Nya. Dan semoga kita termasuk hamba-hamba-Nya yang mukhlis yang tidak dapat disentuh oleh setan. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    إِنَّ الشَّيْطَانَ لَكُمْ عَدُوٌّ فَاتَّخِذُوهُ عَدُوًّا ۚ إِنَّمَا يَدْعُو حِزْبَهُ لِيَكُونُوا مِنْ أَصْحَابِ السَّعِيرِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya setan itu adalah musuh bagimu, maka jadikanlah ia musuh(mu), karena sesungguhnya setan-setan itu hanya mengajak golongannya supaya mereka menjadi penghuni neraka yang menyala-nyala."
+                    <br>— QS. Fatir: 6
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
