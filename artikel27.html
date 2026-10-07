@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasehat Syaikh Abdul Qadir Al-Jilani untuk Memerangi Sedikit yang Kita Miliki - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .nasehat-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .nasehat-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .nasehat-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .nasehat-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .nasehat-arabic { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Memerangi Sedikit yang Kita Miliki
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Nasehat Syaikh Abdul Qadir Al-Jilani untuk Memerangi Sedikit yang Kita Miliki</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 20:22 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw"></a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitab-kitabnya, terutama <em>"Al-Fath Ar-Rabbani"</em> dan <em>"Al-Ghunya li-Thalibi Tariq al-Haqq"</em>, memberikan nasehat yang sangat berharga tentang bagaimana menghadapi dan "memerangi" sedikitnya apa yang kita miliki. Beliau menjelaskan bahwa sedikitnya harta, rezeki, atau nikmat yang kita miliki bukanlah masalah besar jika kita memiliki sikap yang benar terhadapnya.
+            </p>
+
+            <h2>Hakikat "Sedikit" dalam Pandangan Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa "sedikit" (القِلَّةُ - al-qillah) adalah sesuatu yang relatif. Apa yang dianggap sedikit oleh seseorang, bisa jadi dianggap banyak oleh orang lain. Yang terpenting bukanlah berapa banyak yang kita miliki, melainkan bagaimana sikap kita terhadap apa yang kita miliki.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    لَيْسَتِ الْقِلَّةُ فِي كَثْرَةِ الْمَالِ، بَلْ فِي قِلَّةِ الرِّضَا بِمَا قَسَمَ اللَّهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sedikit itu bukan terletak pada banyaknya harta, tetapi pada sedikitnya rasa ridha terhadap apa yang Allah bagikan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Beliau menjelaskan bahwa masalah sebenarnya bukan pada sedikitnya apa yang kita miliki, tetapi pada ketidakpuasan kita terhadap apa yang Allah berikan. Orang yang ridha dengan apa yang Allah berikan, meskipun sedikit, akan merasa kaya. Sebaliknya, orang yang tidak ridha, meskipun memiliki banyak, akan merasa miskin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL KEKAYAAN JIWA — HR. BUKHARI & MUSLIM</div>
+                <div class="arabic-text">
+                    لَيْسَ الْغِنَىٰ عَنْ كَثْرَةِ الْعَرَضِ، وَلَكِنَّ الْغِنَىٰ غِنَى النَّفْسِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Kekayaan itu bukan karena banyaknya harta, tetapi kekayaan itu adalah kekayaan jiwa (merasa cukup)."
+                    <br>— HR. Bukhari & Muslim
+                </div>
+            </div>
+
+            <h2>Mengapa Kita Harus "Memerangi" Sedikit yang Kita Miliki?</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menggunakan istilah "memerangi" (مُجَاهَدَة - mujahadah) untuk menggambarkan perjuangan melawan perasaan tidak puas dengan apa yang kita miliki. Beliau menjelaskan bahwa kita harus memerangi nafsu yang selalu ingin lebih banyak, yang tidak pernah merasa cukup dengan apa yang Allah berikan.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH TENTANG MUJAHADAH</div>
+                <div class="arabic-text">
+                    جَاهِدْ نَفْسَكَ عَلَى الرِّضَا بِمَا قَسَمَ اللَّهُ لَكَ، فَإِنَّ الرِّضَا غِنًى
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Berjihadlah (berjuanglah) melawan nafsumu untuk ridha dengan apa yang Allah bagikan untukmu, karena sesungguhnya ridha itu adalah kekayaan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                "Memerangi" sedikit yang kita miliki bukan berarti kita harus mencari lebih banyak harta dengan cara yang tidak halal. Melainkan, kita harus memerangi perasaan tidak puas, iri hati dengan orang lain, dan selalu merasa kurang. Ini adalah perjuangan spiritual (jihad an-nafs) yang sangat penting.
+            </p>
+
+            <h2>Tiga Cara Memerangi Sedikit yang Kita Miliki</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan tiga cara utama untuk "memerangi" sedikit yang kita miliki:
+            </p>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">1</span>
+                <span class="nasehat-title">Qana'ah (الْقَنَاعَةُ) — Merasa Cukup dengan Apa yang Dimiliki</span>
+                <div class="nasehat-arabic">الْقَنَاعَةُ كَنْزٌ لَا يَفْنَىٰ</div>
+                <p>
+                    Cara pertama adalah qana'ah, yaitu merasa cukup dengan apa yang Allah berikan. Qana'ah bukan berarti pasrah tanpa usaha, tetapi berusaha semaksimal mungkin lalu ridha dengan hasilnya. Orang yang qana'ah akan selalu merasa kaya, meskipun secara materi ia memiliki sedikit.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL QANA'AH — HR. TIRMIDZI</div>
+                <div class="arabic-text">
+                    قَدْ أَفْلَحَ مَنْ أَسْلَمَ، وَرُزِقَ كَفَافًا، وَقَنَّعَهُ اللَّهُ بِمَا آتَاهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sungguh beruntung orang yang masuk Islam, dan diberi rezeki yang cukup (kafaf), dan Allah menjadikannya merasa cukup (qana'ah) dengan apa yang diberikan-Nya."
+                    <br>— HR. Muslim
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">2</span>
+                <span class="nasehat-title">Syukur (الشُّكْرُ) — Bersyukur atas Nikmat yang Ada</span>
+                <div class="nasehat-arabic">الشُّكْرُ يُثْبِتُ النِّعَمَ وَيَزِيدُهَا</div>
+                <p>
+                    Cara kedua adalah bersyukur. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa syukur adalah kunci untuk mendapatkan lebih banyak nikmat. Ketika kita bersyukur atas apa yang kita miliki, meskipun sedikit, Allah akan menambah nikmat tersebut. Sebaliknya, ketika kita tidak bersyukur, nikmat yang ada akan hilang.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL BERSYUKUR — QS. IBRAHIM: 7</div>
+                <div class="arabic-text">
+                    لَئِنْ شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِنْ كَفَرْتُمْ إِنَّ عَذَابِي لَشَدِيدٌ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya jika kamu bersyukur, pasti Kami akan menambah (nikmat) kepadamu, dan jika kamu mengingkari (nikmat-Ku), maka sesungguhnya azab-Ku sangat pedih."
+                    <br>— QS. Ibrahim: 7
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">3</span>
+                <span class="nasehat-title">Melihat Orang yang Lebih Miskin (النَّظَرُ إِلَىٰ مَنْ هُوَ أَسْفَلُ)</span>
+                <div class="nasehat-arabic">انْظُرْ إِلَىٰ مَنْ هُوَ أَسْفَلُ مِنْكَ، وَلَا تَنْظُرْ إِلَىٰ مَنْ هُوَ أَعْلَىٰ مِنْكَ</div>
+                <p>
+                    Cara ketiga adalah melihat orang yang lebih miskin dari kita, bukan yang lebih kaya. Dengan melihat orang yang lebih miskin, kita akan menyadari bahwa apa yang kita miliki sebenarnya sudah cukup banyak. Ini akan membantu kita untuk bersyukur dan merasa cukup.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL MELIHAT YANG LEBIH RENDAH — HR. MUSLIM</div>
+                <div class="arabic-text">
+                    انْظُرُوا إِلَىٰ مَنْ أَسْفَلَ مِنْكُمْ، وَلَا تَنْظُرُوا إِلَىٰ مَنْ هُوَ فَوْقَكُمْ، فَهُوَ أَجْدَرُ أَنْ لَا تَزْدَرُوا نِعْمَةَ اللَّهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Lihatlah orang yang berada di bawah kalian (dalam masalah dunia), dan janganlah kalian melihat orang yang berada di atas kalian (dalam masalah dunia). Dengan demikian, hal itu lebih pantas agar kalian tidak meremehkan nikmat Allah."
+                    <br>— HR. Muslim
+                </div>
+            </div>
+
+            <h2>Perbandingan: Orang yang Memiliki Sedikit tapi Bersyukur vs Orang yang Memiliki Banyak tapi Tidak Bersyukur</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani sering membandingkan antara orang yang memiliki sedikit tapi bersyukur dengan orang yang memiliki banyak tapi tidak bersyukur. Beliau menjelaskan bahwa orang yang pertama jauh lebih baik di sisi Allah daripada orang yang kedua.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERBANDINGAN — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    مَنْ قَلَّ مَالُهُ وَكَثُرَ شُكْرُهُ، خَيْرٌ مِنْ مَنْ كَثُرَ مَالُهُ وَقَلَّ شُكْرُهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Orang yang sedikit hartanya dan banyak syukurnya, lebih baik daripada orang yang banyak hartanya dan sedikit syukurnya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Beliau menjelaskan bahwa orang yang memiliki sedikit tapi bersyukur akan mendapatkan kebahagiaan di dunia dan pahala yang besar di akhirat. Sedangkan orang yang memiliki banyak tapi tidak bersyukur akan mendapatkan kesengsaraan di dunia dan azab yang pedih di akhirat.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL ORANG BERSYUKUR — QS. LUQMAN: 12</div>
+                <div class="arabic-text">
+                    وَلَقَدْ آتَيْنَا لُقْمَانَ الْحِكْمَةَ أَنِ اشْكُرْ لِلَّهِ ۚ وَمَنْ يَشْكُرْ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِ ۖ وَمَنْ كَفَرَ فَإِنَّ اللَّهَ غَنِيٌّ حَمِيدٌ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan sungguh, Kami telah memberikan hikmah kepada Luqman, yaitu: 'Bersyukurlah kepada Allah! Dan barangsiapa bersyukur (kepada Allah), maka sesungguhnya dia bersyukur untuk dirinya sendiri; dan barangsiapa tidak bersyukur (kufur), maka sesungguhnya Allah Maha Kaya, Maha Terpuji.'"
+                    <br>— QS. Luqman: 12
+                </div>
+            </div>
+
+            <h2>Hikmah Memiliki Sedikit Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa memiliki sedikit memiliki banyak hikmah:
+            </p>
+
+            <ul>
+                <li><strong>Mendekatkan diri kepada Allah</strong> — Orang yang memiliki sedikit cenderung lebih dekat kepada Allah karena ia membutuhkan pertolongan-Nya</li>
+                <li><strong>Melatih kesabaran</strong> — Memiliki sedikit melatih kesabaran dan ketahanan mental</li>
+                <li><strong>Mengurangi kesombongan</strong> — Orang yang memiliki sedikit cenderung lebih rendah hati dan tidak sombong</li>
+                <li><strong>Lebih mudah beribadah</strong> — Orang yang memiliki sedikit tidak terlalu sibuk dengan urusan dunia, sehingga lebih mudah beribadah</li>
+                <li><strong>Lebih peduli dengan sesama</strong> — Orang yang pernah merasakan kesulitan cenderung lebih peduli dengan orang lain yang kesulitan</li>
+                <li><strong>Lebih menghargai nikmat</strong> — Orang yang memiliki sedikit lebih menghargai nikmat yang Allah berikan</li>
+            </ul>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HIKMAH MEMILIKI SEDIKIT — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الْقِلَّةُ تُقَرِّبُ الْعَبْدَ مِنْ رَبِّهِ، وَتُعَلِّمُهُ الصَّبْرَ، وَتُذْهِبُ عَنْهُ الْكِبْرَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sedikitnya (harta) mendekatkan hamba kepada Tuhannya, mengajarkannya sabar, dan menghilangkan kesombongannya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL KEUTAMAAN ORANG MISKIN — QS. AL-BAQARAH: 273</div>
+                <div class="arabic-text">
+                    لِلْفُقَرَاءِ الَّذِينَ أُحْصِرُوا فِي سَبِيلِ اللَّهِ لَا يَسْتَطِيعُونَ ضَرْبًا فِي الْأَرْضِ يَحْسَبُهُمُ الْجَاهِلُ أَغْنِيَاءَ مِنَ التَّعَفُّفِ تَعْرِفُهُمْ بِسِيمَاهُمْ لَا يَسْأَلُونَ النَّاسَ إِلْحَافًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "(Berinfaqlah) kepada orang-orang fakir yang terikat (oleh jihad) di jalan Allah; mereka tidak dapat (berusaha) di bumi; orang yang tidak tahu menyangka mereka orang kaya karena memelihara diri dari minta-minta. Kamu kenal mereka dengan melihat sifat-sifatnya, mereka tidak meminta kepada orang secara mendesak."
+                    <br>— QS. Al-Baqarah: 273
+                </div>
+            </div>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani tentang Memerangi Sedikit</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga tentang bagaimana "memerangi" sedikit yang kita miliki:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH</div>
+                <div class="arabic-text">
+                    لَا تُحَارِبِ الْقِلَّةَ بِطَلَبِ الْكَثْرَةِ، بَلْ حَارِبْهَا بِالرِّضَا وَالشُّكْرِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Janganlah kamu memerangi sedikitnya (harta) dengan mencari banyaknya, tetapi perangilah ia dengan ridha dan syukur."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Nasihat ini sangat mendalam. Syaikh Abdul Qadir Al-Jilani mengajarkan bahwa cara terbaik untuk "memerangi" sedikitnya apa yang kita miliki bukan dengan mencari lebih banyak harta, tetapi dengan ridha dan bersyukur atas apa yang sudah ada. Karena ketika kita ridha dan bersyukur, kita akan merasa kaya meskipun secara materi kita memiliki sedikit.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    مَنْ رَضِيَ بِمَا قَسَمَ اللَّهُ لَهُ، اسْتَغْنَىٰ وَلَوْ كَانَ فَقِيرًا، وَمَنْ لَمْ يَرْضَ بِهِ، افْتَقَرَ وَلَوْ كَانَ غَنِيًّا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang ridha dengan apa yang Allah bagikan untuknya, ia akan merasa kaya meskipun ia fakir. Dan barangsiapa yang tidak ridha dengannya, ia akan merasa miskin meskipun ia kaya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT TERAKHIR SYAIKH</div>
+                <div class="arabic-text">
+                    الْقَنَاعَةُ غِنًى لَا يَنْفَدُ، وَالطَّمَعُ فَقْرٌ لَا يُنْتَهَىٰ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Qana'ah (merasa cukup) adalah kekayaan yang tidak akan habis, dan tamak (serakah) adalah kemiskinan yang tidak akan berakhir."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Doa Memohon Qana'ah dan Syukur</h2>
+
+            <h3>1. Doa Memohon Qana'ah</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA QANA'AH</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اجْعَلْنِي قَنِعًا بِمَا رَزَقْتَنِي، وَرَاضِيًا بِمَا قَسَمْتَ لِي
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, jadikanlah aku qana'ah (merasa cukup) dengan rezeki yang Engkau berikan kepadaku, dan ridha dengan apa yang Engkau bagikan untukku."
+                </div>
+            </div>
+
+            <h3>2. Doa Memohon Syukur</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA SYUKUR</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ أَعِنِّي عَلَىٰ ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, bantulah aku untuk berdzikir kepada-Mu, bersyukur kepada-Mu, dan beribadah dengan baik kepada-Mu."
+                    <br>— HR. Abu Dawud
+                </div>
+            </div>
+
+            <h3>3. Doa Memohon Kekayaan Jiwa</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KEKAYAAN JIWA</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اجْعَلْ غِنَايَ فِي نَفْسِي، وَلَا تَجْعَلْهَا فِي مَالِي
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, jadikanlah kekayaanku pada jiwaku, dan janganlah Engkau jadikan ia pada hartaku."
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari nasehat Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa "memerangi" sedikit yang kita miliki bukan berarti kita harus mencari lebih banyak harta, tetapi kita harus memerangi perasaan tidak puas, iri hati, dan selalu merasa kurang. Caranya adalah dengan qana'ah (merasa cukup), syukur (bersyukur), dan melihat orang yang lebih miskin dari kita.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk senantiasa qana'ah dan bersyukur atas apa yang Allah berikan kepada kita. Dan semoga kita senantiasa diberikan hati yang ridha dengan takdir Allah. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    وَمَنْ يَتَّقِ اللَّهَ يَجْعَلْ لَهُ مَخْرَجًا ۝ وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa bertakwa kepada Allah niscaya Dia akan mengadakan baginya jalan keluar. Dan memberinya rezeki dari arah yang tiada disangka-sangkanya."
+                    <br>— QS. At-Talaq: 2-3
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
