@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasehat Syaikh Abdul Qadir Al-Jilani: Jika Kita Menghadapi Ragu-ragu - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .nasehat-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .nasehat-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .nasehat-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .nasehat-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .nasehat-arabic { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Menghadapi Ragu-ragu
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Nasehat Syaikh Abdul Qadir Al-Jilani: Jika Kita Menghadapi Ragu-ragu</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 21:01 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw"></a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitab-kitabnya, terutama <em>"Al-Fath Ar-Rabbani"</em> dan <em>"Al-Ghunya li-Thalibi Tariq al-Haqq"</em>, memberikan nasehat yang sangat berharga tentang bagaimana menghadapi keraguan (الشَّكُّ - asy-syakk) dalam kehidupan spiritual. Beliau menjelaskan bahwa keraguan adalah ujian yang harus dihadapi dengan keyakinan (الْيَقِينُ - al-yaqin) dan tawakkal kepada Allah SWT.
+            </p>
+
+            <h2>Hakikat Ragu-ragu dalam Islam</h2>
+
+            <p>
+                Dalam Islam, ragu-ragu atau keraguan (الشَّكُّ) adalah keadaan hati yang tidak mantap antara dua hal yang bertentangan. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa keraguan ada dua jenis: keraguan yang tercela (dalam masalah akidah/keimanan) dan keraguan yang terpuji (dalam masalah fiqih ketika mencari kebenaran).
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG KERAGUAN — QS. AL-HUJURAT: 12</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا اجْتَنِبُوا كَثِيرًا مِنَ الظَّنِّ إِنَّ بَعْضَ الظَّنِّ إِثْمٌ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Jauhilah banyak dari prasangka, sesungguhnya sebagian prasangka itu dosa."
+                    <br>— QS. Al-Hujurat: 12
+                </div>
+            </div>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani berkata: <em>"Keraguan dalam masalah akidah adalah penyakit hati yang berbahaya. Ia dapat menghancurkan iman jika tidak segera diobati dengan ilmu dan keyakinan."</em>
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الشَّكُّ فِي الْإِيمَانِ مَرَضٌ قَاتِلٌ، لَا يُشْفَىٰ إِلَّا بِالْعِلْمِ وَالْيَقِينِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Keraguan dalam iman adalah penyakit yang mematikan, tidak dapat disembuhkan kecuali dengan ilmu dan keyakinan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Jenis-jenis Keraguan Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani membagi keraguan menjadi beberapa jenis:
+            </p>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">1</span>
+                <span class="nasehat-title">Syakk fi al-Iman (شَكٌّ فِي الْإِيمَانِ) — Keraguan dalam Iman</span>
+                <div class="nasehat-arabic">الشَّكُّ فِي الْإِيمَانِ كُفْرٌ</div>
+                <p>
+                    Keraguan dalam masalah iman dan akidah adalah keraguan yang paling berbahaya. Ini termasuk ragu tentang keberadaan Allah, kenabian Muhammad SAW, hari akhirat, dan rukun iman lainnya. Keraguan seperti ini harus segera diobati dengan mempelajari ilmu agama dan memperkuat keyakinan.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG IMAN — QS. AL-HUJURAT: 15</div>
+                <div class="arabic-text">
+                    إِنَّمَا الْمُؤْمِنُونَ الَّذِينَ آمَنُوا بِاللَّهِ وَرَسُولِهِ ثُمَّ لَمْ يَرْتَابُوا وَجَاهَدُوا بِأَمْوَالِهِمْ وَأَنْفُسِهِمْ فِي سَبِيلِ اللَّهِ ۚ أُولَٰئِكَ هُمُ الصَّادِقُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya orang-orang yang beriman itu hanyalah orang-orang yang percaya (beriman) kepada Allah dan Rasul-Nya, kemudian mereka tidak ragu-ragu dan mereka berjuang (berjihad) dengan harta dan jiwa mereka pada jalan Allah. Mereka itulah orang-orang yang benar."
+                    <br>— QS. Al-Hujurat: 15
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">2</span>
+                <span class="nasehat-title">Syakk fi al-Ibadah (شَكٌّ فِي الْعِبَادَةِ) — Keraguan dalam Ibadah</span>
+                <div class="nasehat-arabic">الشَّكُّ فِي الْعِبَادَةِ يُبْطِلُهَا</div>
+                <p>
+                    Keraguan dalam ibadah, seperti ragu apakah sudah berwudhu dengan benar, ragu jumlah rakaat shalat, atau ragu apakah puasa sudah sah. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa keraguan dalam ibadah harus diselesaikan dengan mengikuti kaidah fiqih yang benar.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">KAIDAH FIQIH TENTANG KERAGUAN</div>
+                <div class="arabic-text">
+                    الْيَقِينُ لَا يَزُولُ بِالشَّكِّ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Keyakinan tidak bisa dihilangkan oleh keraguan."
+                    <br>— Kaidah Fiqih (Syaikh Abdul Qadir Al-Jilani)
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">3</span>
+                <span class="nasehat-title">Syakk fi al-Qadar (شَكٌّ فِي الْقَدَرِ) — Keraguan terhadap Takdir</span>
+                <div class="nasehat-arabic">الشَّكُّ فِي الْقَدَرِ ضَعْفُ الْإِيمَانِ</div>
+                <p>
+                    Keraguan terhadap takdir Allah adalah tanda lemahnya iman. Syaikh Abdul Qadir Al-Jilani menekankan bahwa seorang Muslim harus yakin bahwa segala sesuatu terjadi dengan kehendak dan takdir Allah SWT.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG TAKDIR — QS. AL-QAMAR: 49</div>
+                <div class="arabic-text">
+                    إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya Kami menciptakan segala sesuatu menurut ukuran (takdir)."
+                    <br>— QS. Al-Qamar: 49
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">4</span>
+                <span class="nasehat-title">Syakk fi al-Nafs (شَكٌّ فِي النَّفْسِ) — Keraguan terhadap Diri Sendiri</span>
+                <div class="nasehat-arabic">الشَّكُّ فِي النَّفْسِ يُضْعِفُ الْعَزِيمَةَ</div>
+                <p>
+                    Keraguan terhadap kemampuan diri sendiri juga merupakan masalah yang sering dihadapi. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa keraguan terhadap diri sendiri dapat melemahkan semangat dan menghambat kemajuan spiritual.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG TAWAKKAL — QS. AT-TALAQ: 3</div>
+                <div class="arabic-text">
+                    وَمَنْ يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan barangsiapa bertawakkal kepada Allah, niscaya Allah akan mencukupkan (keperluan)nya."
+                    <br>— QS. At-Talaq: 3
+                </div>
+            </div>
+
+            <h2>Cara Mengatasi Keraguan Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan beberapa cara untuk mengatasi keraguan:
+            </p>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">1</span>
+                <span class="nasehat-title">Memperkuat Ilmu (تَقْوِيَةُ الْعِلْمِ)</span>
+                <div class="nasehat-arabic">الْعِلْمُ نُورٌ يُذْهِبُ ظُلْمَةَ الشَّكِّ</div>
+                <p>
+                    Cara pertama adalah memperkuat ilmu. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa ilmu adalah cahaya yang dapat menghilangkan kegelapan keraguan. Dengan mempelajari ilmu agama dengan benar, keraguan dalam masalah akidah dan ibadah akan hilang.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG ILMU — QS. AL-MUJADILAH: 11</div>
+                <div class="arabic-text">
+                    يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنْكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Allah akan mengangkat (derajat) orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu beberapa derajat."
+                    <br>— QS. Al-Mujadilah: 11
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">2</span>
+                <span class="nasehat-title">Memperbanyak Dzikir (الْإِكْثَارُ مِنَ الذِّكْرِ)</span>
+                <div class="nasehat-arabic">الذِّكْرُ يُثَبِّتُ الْقَلْبَ وَيُذْهِبُ الشَّكَّ</div>
+                <p>
+                    Cara kedua adalah memperbanyak dzikir. Dzikir dapat menenangkan hati dan menghilangkan keraguan. Ketika hati tenang, keraguan akan hilang dengan sendirinya.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL DZIKIR — QS. AR-RA'D: 28</div>
+                <div class="arabic-text">
+                    أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ingatlah, hanya dengan mengingati Allah-lah hati menjadi tenteram."
+                    <br>— QS. Ar-Ra'd: 28
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">3</span>
+                <span class="nasehat-title">Bertawakkal kepada Allah (التَّوَكُّلُ عَلَى اللَّهِ)</span>
+                <div class="nasehat-arabic">التَّوَكُّلُ يُذْهِبُ الشَّكَّ وَيُحْضِرُ الْيَقِينَ</div>
+                <p>
+                    Cara ketiga adalah bertawakkal kepada Allah. Dengan menyerahkan segala urusan kepada Allah, keraguan akan hilang dan digantikan dengan keyakinan bahwa Allah akan mengurus segala sesuatu dengan baik.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TAWAKKAL — QS. AT-TALAQ: 3</div>
+                <div class="arabic-text">
+                    وَمَنْ يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan barangsiapa bertawakkal kepada Allah, niscaya Allah akan mencukupkan (keperluan)nya."
+                    <br>— QS. At-Talaq: 3
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">4</span>
+                <span class="nasehat-title">Bergaul dengan Orang-orang yang Yakin (صُحْبَةُ أَهْلِ الْيَقِينِ)</span>
+                <div class="nasehat-arabic">صَاحِبُ الْيَقِينِ يُعْدِي يَقِينَهُ</div>
+                <p>
+                    Cara keempat adalah bergaul dengan orang-orang yang memiliki keyakinan kuat. Keyakinan itu menular, dan bergaul dengan orang-orang yang yakin dapat membantu menghilangkan keraguan dalam diri kita.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL PERGAULAN BAIK — QS. AT-TAWBAH: 119</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَكُونُوا مَعَ الصَّادِقِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Bertakwalah kepada Allah dan bersamalah kamu dengan orang-orang yang benar (saleh)."
+                    <br>— QS. At-Taubah: 119
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">5</span>
+                <span class="nasehat-title">Banyak Berdoa (كَثْرَةُ الدُّعَاءِ)</span>
+                <div class="nasehat-arabic">الدُّعَاءُ سِلَاحُ الْمُؤْمِنِ فِي وَجْهِ الشَّكِّ</div>
+                <p>
+                    Cara kelima adalah banyak berdoa. Doa adalah senjata orang beriman dalam menghadapi keraguan. Dengan berdoa, kita meminta kepada Allah untuk menghilangkan keraguan dan memberikan keyakinan.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL DOA — QS. GHAFIR: 60</div>
+                <div class="arabic-text">
+                    وَقَالَ رَبُّكُمُ ادْعُونِي أَسْتَجِبْ لَكُمْ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan Tuhanmu berfirman: 'Berdoalah kepada-Ku, niscaya akan Kuperkenankan bagimu.'"
+                    <br>— QS. Ghafir: 60
+                </div>
+            </div>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani tentang Keraguan</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga tentang bagaimana menghadapi keraguan:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH</div>
+                <div class="arabic-text">
+                    إِذَا دَخَلَ الشَّكُّ قَلْبَكَ، فَالْجَأْ إِلَى اللَّهِ وَاسْأَلْهُ الْيَقِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Apabila keraguan masuk ke dalam hatimu, maka berlindunglah kepada Allah dan mintalah kepada-Nya keyakinan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Nasihat ini sangat mendalam. Syaikh Abdul Qadir Al-Jilani mengajarkan bahwa ketika keraguan datang, kita tidak boleh diam saja, tetapi harus segera berlindung kepada Allah dan meminta-Nya untuk memberikan keyakinan.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    لَا تُقِيمْ فِي مَكَانِ الشَّكِّ، بَلِ انْتَقِلْ إِلَى مَكَانِ الْيَقِينِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Janganlah kamu tinggal di tempat keraguan, tetapi berpindahlah ke tempat keyakinan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT TERAKHIR SYAIKH</div>
+                <div class="arabic-text">
+                    الشَّكُّ مِنَ الشَّيْطَانِ، وَالْيَقِينُ مِنَ الرَّحْمَٰنِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Keraguan itu dari setan, dan keyakinan itu dari Allah Yang Maha Pengasih."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Doa-Doa Menghilangkan Keraguan</h2>
+
+            <h3>1. Doa Memohon Keyakinan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON KEYAKINAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ ثَبِّتْ قَلْبِي عَلَىٰ دِينِكَ، وَامْلَأْهُ بِالْيَقِينِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, tetapkanlah hatiku di atas agama-Mu, dan penuhilah ia dengan keyakinan."
+                </div>
+            </div>
+
+            <h3>2. Doa Memohon Perlindungan dari Keraguan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON PERLINDUNGAN DARI KERAGUAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الشَّكِّ وَالنِّفَاقِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari keraguan dan kemunafikan."
+                </div>
+            </div>
+
+            <h3>3. Doa Memohon Hati yang Mantap</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA HATI MANTAP</div>
+                <div class="arabic-text">
+                    يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَىٰ دِينِكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai Dzat yang membolak-balikkan hati, tetapkanlah hatiku di atas agama-Mu."
+                    <br>— HR. Tirmidzi
+                </div>
+            </div>
+
+            <h3>4. Doa Memohon Ilmu yang Bermanfaat</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON ILMU</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ انْفَعْنِي بِمَا عَلَّمْتَنِي، وَعَلِّمْنِي مَا يَنْفَعُنِي، وَزِدْنِي عِلْمًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, manfaatkanlah aku dengan ilmu yang telah Engkau ajarkan kepadaku, ajarkanlah aku ilmu yang bermanfaat bagiku, dan tambahkanlah aku ilmu."
+                    <br>— HR. Ibnu Majah
+                </div>
+            </div>
+
+            <h2>Hikmah Keraguan Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa keraguan juga memiliki hikmah:
+            </p>
+
+            <ul>
+                <li><strong>Mendorong untuk mencari ilmu</strong> — Keraguan mendorong seseorang untuk mencari ilmu dan kebenaran</li>
+                <li><strong>Menguji keimanan</strong> — Keraguan menguji sejauh mana keimanan seseorang</li>
+                <li><strong>Membersihkan hati</strong> — Setelah melewati keraguan dengan benar, hati menjadi lebih bersih dan yakin</li>
+                <li><strong>Menambah kedalaman iman</strong> — Iman yang telah melewati ujian keraguan akan menjadi lebih dalam dan kuat</li>
+                <li><strong>Mengajarkan kerendahan hati</strong> — Keraguan mengajarkan bahwa kita tidak tahu segalanya dan membutuhkan Allah</li>
+            </ul>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HIKMAH KERAGUAN — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الشَّكُّ مِحْكَةُ الْإِيمَانِ، فَمَنِ اصْطَبَرَ عَلَيْهِ وَطَلَبَ الْعِلْمَ، قَوِيَ إِيمَانُهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Keraguan adalah ujian keimanan. Barangsiapa yang sabar atasnya dan mencari ilmu, maka imannya akan menjadi kuat."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari nasehat Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa keraguan adalah ujian yang harus dihadapi dengan ilmu, dzikir, tawakkal, pergaulan yang baik, dan doa. Keraguan dalam masalah akidah harus segera diobati, sedangkan keraguan dalam masalah fiqih harus diselesaikan dengan mengikuti kaidah yang benar.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk menghadapi segala keraguan dengan iman dan keyakinan yang kuat. Dan semoga kita senantiasa diberikan hati yang mantap di atas agama-Nya. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّهِ ۗ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "(Yaitu) orang-orang yang beriman dan hati mereka menjadi tenteram dengan mengingat Allah. Ingatlah, hanya dengan mengingati Allah-lah hati menjadi tenteram."
+                    <br>— QS. Ar-Ra'd: 28
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
