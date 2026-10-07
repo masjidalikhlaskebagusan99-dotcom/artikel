@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasehat Syaikh Abdul Qadir Al-Jilani Ketika Bahagia dan Duka (Lanjutan) - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-header .subtitle {
+            font-size: 1.1rem;
+            color: #e94560;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .article-content ul {
+            margin: 15px 0 20px 30px;
+        }
+
+        .article-content ul li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .article-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border-radius: 15px;
+        }
+
+        .article-nav-btn {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid #e94560;
+            background: rgba(233, 69, 96, 0.1);
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .article-nav-btn:hover {
+            background: #e94560;
+            transform: scale(1.15);
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+        }
+
+        .article-nav-btn.active {
+            background: #e94560;
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+        }
+
+        .nav-btn-label {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.8rem;
+            margin-top: 8px;
+        }
+
+        .nav-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.4rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Artikel Cabang
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Nasehat Syaikh Abdul Qadir Al-Jilani Ketika Bahagia dan Duka</h1>
+            <div class="subtitle">Artikel Cabang — Pendalaman tentang Sikap Muslim Sejati dalam Menghadapi Ujian</div>
+            <div class="article-meta">
+                <div class="author-avatar">MY</div>
+                <div>
+                    <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                    <div style="color:#999; font-size:0.85rem;">Rabu, 07 Oktober 2026</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id</div>
+        </div>
+
+        <div class="article-content">
+
+            <p class="lead">
+                Artikel ini merupakan lanjutan (cabang) dari artikel utama tentang nasehat Syaikh Abdul Qadir Al-Jilani ketika bahagia dan duka. Di sini kita akan membahas lebih dalam tentang sikap Muslim sejati dalam menghadapi ujian kebahagiaan dan kesusahan, serta doa-doa dan amalan yang dapat membantu kita menjaga keseimbangan hati.
+            </p>
+
+            <h2>Sikap Muslim Sejati dalam Menghadapi Bahagia</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa Muslim sejati adalah orang yang mampu menjaga hatinya ketika mendapat kebahagiaan. Beliau memberikan beberapa panduan praktis:
+            </p>
+
+            <h3>1. Mengingat Allah dalam Kebahagiaan</h3>
+
+            <p>
+                Ketika mendapat kebahagiaan, segera ingatlah Allah. Ucapkan <em>"Alhamdulillah"</em> dan bersyukur atas nikmat yang diberikan. Jangan sampai kebahagiaan membuat kita lupa kepada Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DZIKIR KETIKA BAHAGIA</div>
+                <div class="arabic-text">
+                    الْحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَاتُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Segala puji bagi Allah yang dengan nikmat-Nya segala amal shaleh menjadi sempurna."
+                </div>
+            </div>
+
+            <h3>2. Berbagi Kebahagiaan dengan Sesama</h3>
+
+            <p>
+                Kebahagiaan yang sejati adalah ketika kita mampu berbaginya dengan sesama. Syaikh Abdul Qadir Al-Jilani menekankan pentingnya berbagi nikmat dengan orang-orang yang membutuhkan.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL BERBAGI — QS. AL-MA'UN: 1-3</div>
+                <div class="arabic-text">
+                    أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ ۝ فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ ۝ وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Tahukah kamu (orang) yang mendustakan agama? Itulah orang yang menghardik anak yatim, dan tidak menganjurkan memberi makan orang miskin."
+                    <br>— QS. Al-Ma'un: 1-3
+                </div>
+            </div>
+
+            <h3>3. Tidak Lupa kepada Orang Lain</h3>
+
+            <p>
+                Ketika bahagia, jangan lupa kepada orang-orang yang sedang berduka. Ingatlah bahwa kebahagiaan dunia ini bersifat sementara, dan kita harus peduli dengan sesama.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL PEDULI SESAMA — QS. AL-HASYR: 9</div>
+                <div class="arabic-text">
+                    وَيُؤْثِرُونَ عَلَىٰ أَنْفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan mereka mengutamakan (orang-orang Muhajirin), atas diri mereka sendiri, sekalipun mereka memerlukan (apa yang mereka berikan itu)."
+                    <br>— QS. Al-Hasyr: 9
+                </div>
+            </div>
+
+            <h2>Sikap Muslim Sejati dalam Menghadapi Duka</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani juga menjelaskan sikap Muslim sejati ketika menghadapi kesusahan:
+            </p>
+
+            <h3>1. Meyakini bahwa Duka adalah Ujian</h3>
+
+            <p>
+                Ketika mendapat musibah, yakini bahwa itu adalah ujian dari Allah. Allah menguji hamba-Nya yang beriman untuk mengangkat derajat mereka dan menghapus dosa-dosa mereka.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL UJIAN — QS. AL-ANKABUT: 2-3</div>
+                <div class="arabic-text">
+                    أَحَسِبَ النَّاسُ أَنْ يُتْرَكُوا أَنْ يَقُولُوا آمَنَّا وَهُمْ لَا يُفْتَنُونَ ۝ وَلَقَدْ فَتَنَّا الَّذِينَ مِنْ قَبْلِهِمْ ۖ فَلَيَعْلَمَنَّ اللَّهُ الَّذِينَ صَدَقُوا وَلَيَعْلَمَنَّ الْكَاذِبِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Apakah manusia itu mengira bahwa mereka dibiarkan (saja) mengatakan: 'Kami telah beriman', sedang mereka tidak diuji lagi? Dan sesungguhnya Kami telah menguji orang-orang yang sebelum mereka, maka sesungguhnya Allah mengetahui orang-orang yang benar dan sesungguhnya Dia mengetahui orang-orang yang dusta."
+                    <br>— QS. Al-'Ankabut: 2-3
+                </div>
+            </div>
+
+            <h3>2. Bersabar dengan Ikhlas</h3>
+
+            <p>
+                Sabar bukan hanya menahan diri dari keluhan, tetapi juga menerima takdir Allah dengan ikhlas. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa sabar yang sejati adalah sabar yang disertai dengan ridha kepada takdir Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL SABAR IKHLAS — QS. AL-BAQARAH: 177</div>
+                <div class="arabic-text">
+                    وَالصَّابِرِينَ فِي الْبَأْسَاءِ وَالضَّرَّاءِ وَحِينَ الْبَأْسِ ۗ أُولَٰئِكَ الَّذِينَ صَدَقُوا ۖ وَأُولَٰئِكَ هُمُ الْمُتَّقُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan orang-orang yang sabar dalam kesempitan, penderitaan dan dalam peperangan. Mereka itulah orang-orang yang benar (imannya); dan mereka itulah orang-orang yang bertakwa."
+                    <br>— QS. Al-Baqarah: 177
+                </div>
+            </div>
+
+            <h3>3. Berdoa dan Memohon Pertolongan Allah</h3>
+
+            <p>
+                Ketika berduka, perbanyaklah doa dan mohon pertolongan Allah. Allah Maha Mendengar doa hamba-Nya dan Maha Kuasa untuk menghilangkan kesusahan.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON PERTOLONGAN — QS. AL-FATIHAH: 5</div>
+                <div class="arabic-text">
+                    إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hanya kepada Engkaulah kami menyembah dan hanya kepada Engkaulah kami mohon pertolongan."
+                    <br>— QS. Al-Fatihah: 5
+                </div>
+            </div>
+
+            <h2>Amalan untuk Menjaga Keseimbangan Hati</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan beberapa amalan praktis untuk menjaga keseimbangan hati dalam menghadapi bahagia dan duka:
+            </p>
+
+            <h3>1. Dzikir Pagi dan Petang</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DZIKIR PAGI</div>
+                <div class="arabic-text">
+                    أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Kami telah memasuki waktu pagi dan kerajaan hanya milik Allah, segala puji bagi Allah, tidak ada Tuhan selain Allah Yang Maha Esa, tidak ada sekutu bagi-Nya."
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DZIKIR PETANG</div>
+                <div class="arabic-text">
+                    أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Kami telah memasuki waktu petang dan kerajaan hanya milik Allah, segala puji bagi Allah, tidak ada Tuhan selain Allah Yang Maha Esa, tidak ada sekutu bagi-Nya."
+                </div>
+            </div>
+
+            <h3>2. Shalat Dhuha</h3>
+
+            <p>
+                Shalat Dhuha adalah shalat sunnah yang sangat dianjurkan untuk menjaga keseimbangan hati dan mendapatkan rezeki yang halal.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HADITS SHALAT DHUHA — HR. TIRMIDZI</div>
+                <div class="arabic-text">
+                    يُصْبِحُ عَلَىٰ كُلِّ سُلَامَىٰ مِنْ أَحَدِكُمْ صَدَقَةٌ، فَكُلُّ تَسْبِيحَةٍ صَدَقَةٌ، وَكُلُّ تَحْمِيدَةٍ صَدَقَةٌ، وَكُلُّ تَهْلِيلَةٍ صَدَقَةٌ، وَكُلُّ تَكْبِيرَةٍ صَدَقَةٌ، وَيَجْزِئُ مِنْ ذَٰلِكَ رَكْعَتَانِ يَرْكَعُهُمَا مِنَ الضُّحَىٰ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Setiap ruas tulang tubuh manusia wajib dikeluarkan sedekahnya, setiap hari ketika matahari terbit. Mendamaikan antara dua orang yang berselisih adalah sedekah, menolong orang dengan membantunya menaiki kendaraan atau mengangkatkan barangnya ke atas kendaraan adalah sedekah, dan dua rakaat shalat Dhuha sebanding dengan semua itu."
+                    <br>— HR. Tirmidzi
+                </div>
+            </div>
+
+            <h3>3. Membaca Al-Qur'an</h3>
+
+            <p>
+                Membaca Al-Qur'an dengan tadabbur (merenungkan maknanya) akan membantu menjaga keseimbangan hati dan memberikan ketenangan spiritual.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">KEUTAMAAN MEMBACA AL-QUR'AN — QS. AL-ISRA': 82</div>
+                <div class="arabic-text">
+                    وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِلْمُؤْمِنِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan Kami turunkan dari Al-Qur'an suatu yang menjadi penawar (obat) dan rahmat bagi orang-orang yang beriman."
+                    <br>— QS. Al-Isra': 82
+                </div>
+            </div>
+
+            <h2>Doa-Doa untuk Keseimbangan Hati</h2>
+
+            <h3>1. Doa Memohon Hati yang Tenang</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA HATI TENANG</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اجْعَلْ قَلْبِي مُطْمَئِنًّا بِذِكْرِكَ، لَا يَفْرَحُ كَثِيرًا وَلَا يَحْزَنُ كَثِيرًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, jadikanlah hatiku tenteram dengan dzikir kepada-Mu, tidak terlalu banyak bahagia dan tidak terlalu banyak berduka."
+                </div>
+            </div>
+
+            <h3>2. Doa Memohon Keseimbangan dalam Segala Hal</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KESEIMBANGAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اجْعَلْنِي مُعْتَدِلًا فِي فَرَحِي وَحُزْنِي، شَاكِرًا فِي نِعْمَتِي، صَابِرًا فِي بَلِيَّتِي
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, jadikanlah aku seimbang dalam bahagia dan dukaku, bersyukur dalam nikmatku, dan sabar dalam bala'ku."
+                </div>
+            </div>
+
+            <h3>3. Doa Memohon Perlindungan dari Berlebih-lebihan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA PERLINDUNGAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْفَرَحِ الَّذِي يُنْسِي ذِكْرَكَ، وَمِنَ الْحُزْنِ الَّذِي يُقْنِطُنِي مِنْ رَحْمَتِكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari kebahagiaan yang membuat aku lupa dzikir kepada-Mu, dan dari kesusahan yang membuat aku berputus asa dari rahmat-Mu."
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari penjelasan Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa Muslim sejati adalah orang yang mampu menjaga keseimbangan hatinya dalam menghadapi bahagia dan duka. Ketika bahagia, ia bersyukur dan tidak sombong. Ketika berduka, ia bersabar dan tidak berputus asa. Dan dalam kedua keadaan tersebut, ia senantiasa mengingat Allah.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk senantiasa menjaga keseimbangan hati dalam menghadapi ujian kebahagiaan dan kesusahan. Dan semoga kita selalu mengingat Allah dalam setiap keadaan. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّهِ ۗ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "(Yaitu) orang-orang yang beriman dan hati mereka menjadi tenteram dengan mengingat Allah. Ingatlah, hanya dengan mengingati Allah-lah hati menjadi tenteram."
+                    <br>— QS. Ar-Ra'd: 28
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <!-- NAVIGASI 2 TOMBOL -->
+        <div class="article-nav">
+            <div class="nav-group">
+                <a href="artikel17.html" class="article-nav-btn" title="Artikel Utama">1</a>
+                <div class="nav-btn-label">Artikel Utama</div>
+            </div>
+            <div class="nav-group">
+                <a href="artikel17-cabang.html" class="article-nav-btn active" title="Artikel Cabang">2</a>
+                <div class="nav-btn-label">Artikel Cabang</div>
+            </div>
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>
