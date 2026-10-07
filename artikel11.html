@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Mendekat Allah Taris dengan Dua Sayap, Menurut Syaikh Abdul Qadir Al-Jilani - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '﷽';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .sayap-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .sayap-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .sayap-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .sayap-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .article-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border-radius: 15px;
+        }
+
+        .article-nav-btn {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid #e94560;
+            background: rgba(233, 69, 96, 0.1);
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .article-nav-btn:hover {
+            background: #e94560;
+            transform: scale(1.15);
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+        }
+
+        .article-nav-btn.active {
+            background: #e94560;
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+        }
+
+        .nav-btn-label {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.8rem;
+            margin-top: 8px;
+        }
+
+        .nav-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .sayap-arabic { font-size: 1.3rem; }
+            .article-nav { gap: 15px; }
+            .article-nav-btn { width: 55px; height: 55px; font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Dua Sayap Mendekat Allah
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Cara Mendekat Allah Taris dengan Dua Sayap, Menurut Syaikh Abdul Qadir Al-Jilani</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 09:07 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw">𝕏</a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitabnya <em>"Al-Fath Ar-Rabbani"</em> menjelaskan tentang dua "sayap" yang harus dimiliki oleh setiap Muslim yang ingin mendekatkan diri kepada Allah Ta'ala. Dua sayap tersebut adalah <strong>khauf</strong> (خَوْفٌ — rasa takut) dan <strong>raja'</strong> (رَجَاءٌ — harapan). Tanpa kedua sayap ini, seorang hamba tidak akan bisa terbang menuju ridha Allah SWT.
+            </p>
+
+            <h2>Konsep Dua Sayap dalam Tasawuf</h2>
+
+            <p>
+                Dalam dunia tasawuf, konsep "dua sayap" untuk mendekatkan diri kepada Allah adalah metafora yang sangat indah. Sebagaimana burung tidak bisa terbang dengan hanya satu sayap, seorang hamba juga tidak bisa mendekatkan diri kepada Allah dengan hanya mengandalkan satu sifat spiritual saja. Diperlukan keseimbangan antara <em>khauf</em> (takut) dan <em>raja'</em> (harapan) agar perjalanan spiritual seorang hamba berjalan dengan sempurna.
+            </p>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa kedua sayap ini harus seimbang. Jika salah satu sayap lebih besar dari yang lain, maka "penerbangan" spiritual seorang hamba akan tidak seimbang dan bisa jatuh.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">KONSEP DUA SAYAP — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الطَّائِرُ لَا يَطِيرُ إِلَّا بِجَنَاحَيْنِ، فَكَذَلِكَ الْعَبْدُ لَا يَطِيرُ إِلَى اللَّهِ إِلَّا بِالْخَوْفِ وَالرَّجَاءِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Seekor burung tidak bisa terbang kecuali dengan dua sayap, demikian pula seorang hamba tidak bisa terbang menuju Allah kecuali dengan khauf (takut) dan raja' (harapan)."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Sayap Pertama: Khauf (خَوْفٌ) — Rasa Takut kepada Allah</h2>
+
+            <div class="sayap-card">
+                <span class="sayap-number">1</span>
+                <span class="sayap-title">Khauf (خَوْفٌ) — Rasa Takut kepada Allah</span>
+                <div class="sayap-arabic">الْخَوْفُ جَنَاحُ الطَّائِرِ الْأَوَّلُ</div>
+                <p>
+                    <strong>Khauf</strong> adalah rasa takut kepada Allah SWT yang membuat seorang hamba senantiasa waspada terhadap dosa dan maksiat. Rasa takut ini bukan takut yang membuat putus asa, melainkan takut yang mendorong seorang hamba untuk senantiasa taat dan menjauhi larangan Allah.
+                </p>
+            </div>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa khauf adalah sayap pertama yang harus dimiliki oleh seorang salik (penempuh jalan spiritual). Tanpa rasa takut kepada Allah, seorang hamba akan berani berbuat maksiat dan tidak merasa bersalah atas dosa-dosanya.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL KHAUF — QS. AL-BAQARAH: 40</div>
+                <div class="arabic-text">
+                    وَإِيَّايَ فَارْهَبُونِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan hanya kepada-Ku-lah kamu harus takut (tunduk)."
+                    <br>— QS. Al-Baqarah: 40
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL KHAUF — QS. AL-IMRAN: 175</div>
+                <div class="arabic-text">
+                    إِنَّمَا ذَٰلِكُمُ الشَّيْطَانُ يُخَوِّفُ أَوْلِيَاءَهُ فَلَا تَخَافُوهُمْ وَخَافُونِ إِنْ كُنْتُمْ مُؤْمِنِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya mereka tidak lain hanyalah syaitan yang menakut-nakuti (kamu) dengan kawan-kawannya. Karena itu janganlah kamu takut kepada mereka, tetapi takutlah kepada-Ku, jika kamu benar-benar orang yang beriman."
+                    <br>— QS. Ali 'Imran: 175
+                </div>
+            </div>
+
+            <h3>Tingkatan Khauf</h3>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani membagi khauf menjadi beberapa tingkatan:
+            </p>
+
+            <p>
+                <strong>1. Khauf al-'Aam (الْخَوْفُ الْعَامُّ) — Takut Umum.</strong> Ini adalah takut yang dimiliki oleh setiap Muslim, yaitu takut terhadap azab Allah dan neraka. Tingkatan ini adalah tingkatan dasar yang harus dimiliki oleh setiap hamba.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KHAUF</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ جَهَنَّمَ، وَمِنْ عَذَابِ الْقَبْرِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari azab Jahannam dan dari azab kubur."
+                    <br>— HR. Muslim
+                </div>
+            </div>
+
+            <p>
+                <strong>2. Khauf al-Khass (الْخَوْفُ الْخَاصُّ) — Takut Khusus.</strong> Ini adalah takut yang dimiliki oleh orang-orang yang khusus (al-khawash), yaitu takut terhadap murka Allah dan terjauhkan dari rahmat-Nya.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KHAUF KHASS</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ سَخَطِكَ، وَمِنْ بُعْدِكَ عَنْ رَحْمَتِكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari murka-Mu, dan dari terjauhkan dari rahmat-Mu."
+                </div>
+            </div>
+
+            <p>
+                <strong>3. Khauf al-Aqsh (الْخَوْفُ الْأَقْصَى) — Takut Paling Tinggi.</strong> Ini adalah takut yang dimiliki oleh para wali dan orang-orang yang sangat dekat dengan Allah, yaitu takut terhadap hijab (terhalang) dari melihat wajah Allah di akhirat.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KHAUF AQSH</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَسْأَلُكَ لَذَّةَ النَّظَرِ إِلَىٰ وَجْهِكَ الْكَرِيمِ، وَأَعُوذُ بِكَ مِنَ الْحِجَابِ عَنْكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku memohon kepada-Mu kenikmatan memandang wajah-Mu yang mulia, dan aku berlindung kepada-Mu dari terhalang (hijab) dari-Mu."
+                </div>
+            </div>
+
+            <h2>Sayap Kedua: Raja' (رَجَاءٌ) — Harapan kepada Allah</h2>
+
+            <div class="sayap-card">
+                <span class="sayap-number">2</span>
+                <span class="sayap-title">Raja' (رَجَاءٌ) — Harapan kepada Allah</span>
+                <div class="sayap-arabic">الرَّجَاءُ جَنَاحُ الطَّائِرِ الثَّانِي</div>
+                <p>
+                    <strong>Raja'</strong> adalah harapan atau optimisme seorang hamba terhadap rahmat, ampunan, dan ridha Allah SWT. Harapan ini membuat seorang hamba tidak pernah putus asa dari rahmat Allah, seberat apapun dosa yang telah diperbuatnya.
+                </p>
+            </div>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa raja' adalah sayap kedua yang harus dimiliki oleh seorang salik. Tanpa harapan kepada Allah, seorang hamba akan jatuh dalam keputusasaan dan tidak akan pernah berusaha untuk bertaubat dan memperbaiki diri.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL RAJA' — QS. AZ-ZUMAR: 53</div>
+                <div class="arabic-text">
+                    قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَىٰ أَنْفُسِهِمْ لَا تَقْنَطُوا مِنْ رَحْمَةِ اللَّهِ ۚ إِنَّ اللَّهَ يَغْفِرُ الذُّنُوبَ جَمِيعًا ۚ إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Katakanlah: 'Wahai hamba-hamba-Ku yang malampaui batas terhadap diri mereka sendiri! Janganlah kamu berputus asa dari rahmat Allah. Sesungguhnya Allah mengampuni dosa-dosa semuanya. Sesungguhnya Dialah Yang Maha Pengampun lagi Maha Penyayang.'"
+                    <br>— QS. Az-Zumar: 53
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL RAJA' — QS. AL-HIJR: 56</div>
+                <div class="arabic-text">
+                    وَمَنْ يَقْنَطُ مِنْ رَحْمَةِ رَبِّهِ إِلَّا الضَّالُّونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan tidak ada yang berputus asa dari rahmat Tuhannya melainkan orang-orang yang sesat."
+                    <br>— QS. Al-Hijr: 56
+                </div>
+            </div>
+
+            <h3>Tingkatan Raja'</h3>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani juga membagi raja' menjadi beberapa tingkatan:
+            </p>
+
+            <p>
+                <strong>1. Raja' al-'Aam (الرَّجَاءُ الْعَامُّ) — Harapan Umum.</strong> Ini adalah harapan yang dimiliki oleh setiap Muslim, yaitu harapan untuk mendapatkan surga dan rahmat Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA RAJA'</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku memohon kepada-Mu surga dan segala sesuatu yang mendekatkan kepadanya, baik berupa perkataan maupun perbuatan."
+                    <br>— HR. Ibnu Majah
+                </div>
+            </div>
+
+            <p>
+                <strong>2. Raja' al-Khass (الرَّجَاءُ الْخَاصُّ) — Harapan Khusus.</strong> Ini adalah harapan yang dimiliki oleh orang-orang yang khusus, yaitu harapan untuk mendapatkan ridha Allah dan melihat wajah-Nya di akhirat.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA RAJA' KHASS</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَسْأَلُكَ رِضَاكَ وَالْجَنَّةَ، وَأَعُوذُ بِكَ مِنْ سَخَطِكَ وَالنَّارِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku memohon kepada-Mu ridha-Mu dan surga, dan aku berlindung kepada-Mu dari murka-Mu dan neraka."
+                </div>
+            </div>
+
+            <h2>Keseimbangan antara Khauf dan Raja'</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani sangat menekankan pentingnya keseimbangan antara khauf dan raja'. Beliau menjelaskan bahwa jika salah satu dari kedua sayap ini lebih dominan dari yang lain, maka perjalanan spiritual seorang hamba akan tidak seimbang.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">KESEIMBANGAN KHAUF DAN RAJA'</div>
+                <div class="arabic-text">
+                    الْقَلْبُ كَالطَّائِرِ، الْخَوْفُ جَنَاحٌ وَالرَّجَاءُ جَنَاحٌ، فَإِذَا اسْتَوَى الْجَنَاحَانِ طَارَ الطَّائِرُ، وَإِذَا نَقَصَ أَحَدُهُمَا هَوَى
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hati itu seperti burung, khauf adalah satu sayap dan raja' adalah sayap yang lain. Apabila kedua sayap seimbang, maka burung itu akan terbang. Dan apabila salah satunya berkurang, maka ia akan jatuh."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h3>Bahaya Jika Hanya Memiliki Khauf Tanpa Raja'</h3>
+
+            <p>
+                Jika seorang hamba hanya memiliki khauf (takut) tanpa raja' (harapan), maka ia akan jatuh dalam keputusasaan. Ia akan merasa bahwa dosanya terlalu besar untuk diampuni oleh Allah, dan ia tidak akan pernah berusaha untuk bertaubat.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">BAHAYA KEPUTUSAAN — QS. AL-HIJR: 56</div>
+                <div class="arabic-text">
+                    وَمَنْ يَقْنَطُ مِنْ رَحْمَةِ رَبِّهِ إِلَّا الضَّالُّونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan tidak ada yang berputus asa dari rahmat Tuhannya melainkan orang-orang yang sesat."
+                    <br>— QS. Al-Hijr: 56
+                </div>
+            </div>
+
+            <h3>Bahaya Jika Hanya Memiliki Raja' Tanpa Khauf</h3>
+
+            <p>
+                Jika seorang hamba hanya memiliki raja' (harapan) tanpa khauf (takut), maka ia akan terjebak dalam rasa aman dari azab Allah (al-amn min makarillah). Ia akan berani berbuat maksiat karena merasa bahwa Allah Maha Pengampun, tanpa merasa takut terhadap azab-Nya.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">BAHAYA RASA AMAN — QS. AL-A'RAF: 99</div>
+                <div class="arabic-text">
+                    أَفَأَمِنُوا مَكْرَ اللَّهِ ۚ فَلَا يَأْمَنُ مَكْرَ اللَّهِ إِلَّا الْقَوْمُ الْخَاسِرُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Maka apakah mereka merasa aman dari azab Allah (yang tidak terduga-duga)? Tiada yang merasa aman dari azab Allah melainkan orang-orang yang merugi."
+                    <br>— QS. Al-A'raf: 99
+                </div>
+            </div>
+
+            <h2>Hadits tentang Khauf dan Raja'</h2>
+
+            <p>
+                Rasulullah SAW juga menjelaskan tentang pentingnya keseimbangan antara khauf dan raja' dalam beberapa hadits:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HADITS TENTANG KHAUF DAN RAJA'</div>
+                <div class="arabic-text">
+                    لَا يَدْخُلُ الْجَنَّةَ إِلَّا نَفْسٌ مُؤْمِنَةٌ، وَلَا يَخَافُ اللَّهَ إِلَّا كُلُّ مُؤْمِنٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Tidak akan masuk surga kecuali jiwa yang beriman, dan tidak akan takut kepada Allah kecuali setiap orang yang beriman."
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HADITS LAIN TENTANG KHAUF DAN RAJA'</div>
+                <div class="arabic-text">
+                    وَالَّذِي نَفْسِي بِيَدِهِ، لَوْ لَا أَنْ تُذْنِبُوا لَذَهَبَ اللَّهُ بِكُمْ وَلَجَاءَ بِقَوْمٍ يُذْنِبُونَ فَيَسْتَغْفِرُونَ اللَّهَ فَيَغْفِرُ لَهُمْ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Demi Dzat yang jiwaku berada di tangan-Nya, seandainya kalian tidak berbuat dosa, niscaya Allah akan menghilangkan kalian dan mendatangkan kaum yang berbuat dosa, lalu mereka memohon ampun kepada Allah, maka Allah mengampuni mereka."
+                    <br>— HR. Muslim
+                </div>
+            </div>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga tentang cara menjaga keseimbangan antara khauf dan raja':
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH TENTANG KHAUF DAN RAJA'</div>
+                <div class="arabic-text">
+                    خَفِ اللَّهَ كَأَنَّكَ تَرَاهُ، وَارْجُ اللَّهَ كَأَنَّكَ لَا تَمُوتُ أَبَدًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Takutlah kepada Allah seolah-olah engkau melihat-Nya, dan berharaplah kepada Allah seolah-olah engkau tidak akan mati selamanya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Nasihat ini sangat mendalam. Takut kepada Allah seolah-olah kita melihat-Nya menunjukkan tingkat khauf yang sangat tinggi, yaitu takut yang didasari oleh kesadaran penuh akan keagungan Allah. Dan berharap kepada Allah seolah-olah kita tidak akan mati selamanya menunjukkan tingkat raja' yang sangat tinggi, yaitu harapan yang tidak pernah putus terhadap rahmat Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    مَنْ خَافَ اللَّهَ لَمْ يَعْصِهِ، وَمَنْ رَجَا اللَّهَ لَمْ يَقْنَطْ مِنْ رَحْمَتِهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang takut kepada Allah, ia tidak akan bermaksiat kepada-Nya. Dan barangsiapa yang berharap kepada Allah, ia tidak akan berputus asa dari rahmat-Nya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Cara Mengamalkan Khauf dan Raja' dalam Kehidupan Sehari-hari</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan beberapa cara praktis untuk mengamalkan khauf dan raja' dalam kehidupan sehari-hari:
+            </p>
+
+            <h3>1. Selalu Mengingat Kematian (ذِكْرُ الْمَوْتِ)</h3>
+
+            <p>
+                Mengingat kematian adalah cara terbaik untuk menumbuhkan khauf dalam hati. Ketika kita senantiasa mengingat bahwa kematian bisa datang kapan saja, kita akan takut untuk berbuat maksiat dan senantiasa mempersiapkan diri untuk bertemu dengan Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HADITS TENTANG MENGINGAT KEMATIAN</div>
+                <div class="arabic-text">
+                    أَكْثِرُوا ذِكْرَ هَادِمِ اللَّذَّاتِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Perbanyaklah mengingat pemutus kelezatan (yaitu kematian)."
+                    <br>— HR. Tirmidzi
+                </div>
+            </div>
+
+            <h3>2. Memperbanyak Dzikir dan Doa (الْإِكْثَارُ مِنَ الذِّكْرِ وَالدُّعَاءِ)</h3>
+
+            <p>
+                Dzikir dan doa adalah cara terbaik untuk menumbuhkan raja' dalam hati. Dengan senantiasa berdzikir dan berdoa, kita akan senantiasa berharap kepada Allah dan yakin bahwa Dia akan mengabulkan doa kita.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KHAUF DAN RAJA'</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَىٰ وَالتُّقَىٰ وَالْعَفَافَ وَالْغِنَىٰ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku memohon kepada-Mu petunjuk, ketakwaan, kesucian diri, dan kecukupan."
+                    <br>— HR. Muslim
+                </div>
+            </div>
+
+            <h3>3. Membaca Al-Qur'an dengan Tadabbur (تِلَاوَةُ الْقُرْآنِ بِالتَّدَبُّرِ)</h3>
+
+            <p>
+                Membaca Al-Qur'an dengan merenungkan maknanya akan membantu kita menumbuhkan khauf dan raja' secara bersamaan. Ayat-ayat tentang azab Allah akan menumbuhkan khauf, sedangkan ayat-ayat tentang rahmat Allah akan menumbuhkan raja'.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">KEUTAMAAN MEMBACA AL-QUR'AN</div>
+                <div class="arabic-text">
+                    اقْرَءُوا الْقُرْآنَ فَإِنَّهُ يَأْتِي يَوْمَ الْقِيَامَةِ شَفِيعًا لِأَصْحَابِهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Bacalah Al-Qur'an, karena sesungguhnya ia akan datang pada hari kiamat sebagai pemberi syafaat bagi pembacanya."
+                    <br>— HR. Muslim
+                </div>
+            </div>
+
+            <h3>4. Bergaul dengan Orang-orang Shaleh (صُحْبَةُ الصَّالِحِينَ)</h3>
+
+            <p>
+                Bergaul dengan orang-orang shaleh akan membantu kita menjaga keseimbangan antara khauf dan raja'. Mereka akan mengingatkan kita untuk takut kepada Allah dan juga memberikan harapan akan rahmat-Nya.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL PERGAULAN BAIK</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَكُونُوا مَعَ الصَّادِقِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Bertakwalah kepada Allah dan bersamalah kamu dengan orang-orang yang benar (shaleh)."
+                    <br>— QS. At-Taubah: 119
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari penjelasan Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa untuk mendekatkan diri kepada Allah, seorang hamba harus memiliki dua sayap yang seimbang: khauf (takut) dan raja' (harapan). Tanpa kedua sayap ini, perjalanan spiritual seorang hamba tidak akan sempurna.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk senantiasa menjaga keseimbangan antara khauf dan raja', sehingga kita dapat terbang menuju ridha-Nya dengan sempurna. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    إِنَّ الَّذِينَ آمَنُوا وَالَّذِينَ هَاجَرُوا وَجَاهَدُوا فِي سَبِيلِ اللَّهِ أُولَٰئِكَ يَرْجُونَ رَحْمَتَ اللَّهِ ۚ وَاللَّهُ غَفُورٌ رَحِيمٌ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya orang-orang yang beriman, orang-orang yang berhijrah dan berjihad di jalan Allah, mereka itu mengharapkan rahmat Allah. Dan Allah Maha Pengampun lagi Maha Penyayang."
+                    <br>— QS. Al-Baqarah: 218
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <!-- NAVIGASI 2 TOMBOL -->
+        <div class="article-nav">
+            <div class="nav-group">
+                <a href="artikel11.html" class="article-nav-btn active" title="Artikel Utama">1</a>
+                <div class="nav-btn-label">Artikel Utama</div>
+            </div>
+            <div class="nav-group">
+                <a href="artikel11-cabang.html" class="article-nav-btn" title="Artikel Cabang">2</a>
+                <div class="nav-btn-label">Artikel Cabang</div>
+            </div>
+        </div>
+
+        <a href="index.html" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
