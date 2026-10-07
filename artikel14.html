@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keadaan Para Wali dan Badal Menurut Syaikh Abdul Qadir Al-Jilani - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .wali-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .wali-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .wali-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .wali-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .wali-arabic { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Keadaan Para Wali dan Badal
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Keadaan Para Wali dan Badal Menurut Syaikh Abdul Qadir Al-Jilani</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 12:34 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw">𝕏</a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitabnya <em>"Al-Ghunya li-Thalibi Tariq al-Haqq"</em> menjelaskan tentang keadaan para wali Allah dan konsep <em>badal</em> (pengganti) dalam hierarki spiritual Islam. Beliau menjelaskan bahwa para wali adalah orang-orang pilihan Allah yang memiliki kedudukan istimewa di sisi-Nya, dan mereka memiliki peran penting dalam menjaga keseimbangan spiritual dunia.
+            </p>
+
+            <h2>Siapa Itu Wali Allah?</h2>
+
+            <p>
+                Dalam Islam, <strong>wali</strong> (وَلِيّ) adalah orang yang sangat dekat dengan Allah SWT, yang senantiasa taat kepada-Nya dan dijaga oleh Allah dari kemaksiatan. Para wali adalah orang-orang yang telah mencapai maqam spiritual yang tinggi melalui ibadah, dzikir, dan mujahadah (perjuangan spiritual) yang panjang.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG WALI ALLAH — QS. YUNUS: 62</div>
+                <div class="arabic-text">
+                    أَلَا إِنَّ أَوْلِيَاءَ اللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ingatlah, sesungguhnya wali-wali Allah itu, tidak ada kekhawatiran terhadap mereka dan tidak (pula) mereka bersedih hati."
+                    <br>— QS. Yunus: 62
+                </div>
+            </div>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa para wali Allah memiliki ciri-ciri khusus yang membedakan mereka dari orang-orang biasa. Mereka adalah orang-orang yang hatinya senantiasa terhubung dengan Allah, lisannya basah dengan dzikir, dan perilakunya mencerminkan akhlak Rasulullah SAW.
+            </p>
+
+            <h2>Hierarki Para Wali dalam Tasawuf</h2>
+
+            <p>
+                Dalam tasawuf, para wali memiliki hierarki atau tingkatan yang berbeda-beda. Syaikh Abdul Qadir Al-Jilani menjelaskan beberapa tingkatan wali yang dikenal dalam tradisi tasawuf:
+            </p>
+
+            <div class="wali-card">
+                <span class="wali-number">1</span>
+                <span class="wali-title">Qutb (قُطْبٌ) — Poros Spiritual</span>
+                <div class="wali-arabic">الْقُطْبُ هُوَ مِحْوَرُ الْعَالَمِ الرُّوحَانِي</div>
+                <p>
+                    <strong>Qutb</strong> adalah poros spiritual dunia. Beliau adalah wali tertinggi yang menjadi pusat perputaran spiritual dunia. Qutb hanya ada satu orang di setiap zaman, dan beliau memiliki kekuasaan spiritual yang sangat besar. Qutb adalah pemimpin para wali dan bertanggung jawab atas keseimbangan spiritual dunia.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERAN QUTB</div>
+                <div class="arabic-text">
+                    الْقُطْبُ هُوَ الَّذِي يَدُورُ عَلَيْهِ قُطْبُ الْوِلَايَةِ، وَهُوَ سِرُّ اللَّهِ فِي أَرْضِهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Qutb adalah poros yang berputar di atasnya poros kewalian, dan dia adalah rahasia Allah di bumi-Nya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="wali-card">
+                <span class="wali-number">2</span>
+                <span class="wali-title">Imam (إِمَامٌ) — Pemimpin Spiritual</span>
+                <div class="wali-arabic">الْإِمَامُ هُوَ الْقَائِدُ الرُّوحَانِي لِلْأَوْلِيَاءِ</div>
+                <p>
+                    <strong>Imam</strong> adalah pemimpin spiritual para wali. Beliau membantu Qutb dalam mengelola urusan spiritual dunia. Imam memiliki kedudukan yang sangat tinggi dan bertanggung jawab atas bimbingan spiritual para wali di wilayah tertentu.
+                </p>
+            </div>
+
+            <div class="wali-card">
+                <span class="wali-number">3</span>
+                <span class="wali-title">Awtad (أَوْتَادٌ) — Pasak-Pasak Spiritual</span>
+                <div class="wali-arabic">الْأَوْتَادُ هُمْ أَرْكَانُ الْعَالَمِ الرُّوحَانِي</div>
+                <p>
+                    <strong>Awtad</strong> (pasak-pasak) adalah empat wali yang menjadi penyangga spiritual dunia. Mereka berada di empat penjuru mata angin dan bertanggung jawab menjaga keseimbangan spiritual di wilayah masing-masing. Awtad membantu Qutb dan Imam dalam mengelola urusan spiritual dunia.
+                </p>
+            </div>
+
+            <div class="wali-card">
+                <span class="wali-number">4</span>
+                <span class="wali-title">Abdal (أَبْدَالٌ) — Para Pengganti</span>
+                <div class="wali-arabic">الْأَبْدَالُ هُمُ الْبُدَلَاءُ فِي الْأَرْضِ</div>
+                <p>
+                    <strong>Abdal</strong> (para pengganti) adalah kelompok wali yang jumlahnya tujuh orang. Mereka disebut "badal" karena jika salah seorang dari mereka wafat, Allah akan segera menggantinya dengan wali lain yang memiliki kedudukan spiritual yang sama. Abdal bertanggung jawab atas keberkahan dan rahmat Allah yang turun ke bumi.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG ABDAL — HR. AHMAD</div>
+                <div class="arabic-text">
+                    الْأَبْدَالُ فِي أُمَّتِي أَرْبَعُونَ رَجُلًا، كُلَّمَا مَاتَ رَجُلٌ أَبْدَلَ اللَّهُ مَكَانَهُ رَجُلًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Para abdal dalam umatku adalah empat puluh orang. Setiap kali seorang meninggal, Allah menggantikan tempatnya dengan seorang laki-laki."
+                    <br>— HR. Ahmad
+                </div>
+            </div>
+
+            <div class="wali-card">
+                <span class="wali-number">5</span>
+                <span class="wali-title">Nuqaba' (نُقَبَاءٌ) — Para Pemimpin</span>
+                <div class="wali-arabic">النُّقَبَاءُ هُمْ قَادَةُ الْأَوْلِيَاءِ فِي الْمَنَاطِقِ</div>
+                <p>
+                    <strong>Nuqaba'</strong> (para pemimpin) adalah kelompok wali yang berjumlah dua belas orang. Mereka adalah pemimpin para wali di berbagai wilayah dan bertanggung jawab atas bimbingan spiritual umat Islam di daerah masing-masing.
+                </p>
+            </div>
+
+            <div class="wali-card">
+                <span class="wali-number">6</span>
+                <span class="wali-title">Nujaba' (نُجَبَاءٌ) — Para Terpilih</span>
+                <div class="wali-arabic">النُّجَبَاءُ هُمُ الْمُصْطَفَوْنَ مِنْ الْأَوْلِيَاءِ</div>
+                <p>
+                    <strong>Nujaba'</strong> (para terpilih) adalah kelompok wali yang berjumlah delapan orang. Mereka adalah wali-wali pilihan yang memiliki kedudukan spiritual yang sangat tinggi dan bertanggung jawab atas urusan-urusan spiritual penting.
+                </p>
+            </div>
+
+            <h2>Konsep Badal (Pengganti) dalam Tasawuf</h2>
+
+            <p>
+                Konsep <em>badal</em> (بَدَلٌ) atau pengganti adalah salah satu konsep penting dalam tasawuf yang dijelaskan oleh Syaikh Abdul Qadir Al-Jilani. Badal merujuk pada para wali yang senantiasa menggantikan posisi wali lain yang wafat, sehingga jumlah para wali di dunia selalu tetap.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">KONSEP BADAL — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الْبَدَلُ هُوَ مَنْ يَخْلُفُ الْوَلِيَّ بَعْدَ وَفَاتِهِ، فَيَحْفَظُ اللَّهُ بِهِ الْأَرْضَ مِنْ الْفَسَادِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Badal adalah orang yang menggantikan wali setelah wafatnya, maka Allah menjaga bumi dari kerusakan dengan perantaranya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa para badal ini adalah orang-orang yang sangat tersembunyi. Mereka tidak dikenal oleh masyarakat umum, bahkan seringkali mereka tampak seperti orang biasa. Namun, di sisi Allah, mereka memiliki kedudukan yang sangat mulia.
+            </p>
+
+            <h2>Ciri-ciri Para Wali dan Badal</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan beberapa ciri-ciri para wali dan badal:
+            </p>
+
+            <p>
+                <strong>1. Senantiasa dalam ketaatan kepada Allah.</strong> Para wali dan badal senantiasa taat kepada Allah dalam setiap keadaan. Mereka tidak pernah meninggalkan kewajiban dan senantiasa menjauhi larangan Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">CIRI KETAATAN</div>
+                <div class="arabic-text">
+                    دَاوِمُونَ عَلَى الطَّاعَةِ، مُجْتَنِبُونَ لِلْمَعْصِيَةِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Mereka senantiasa dalam ketaatan, dan menjauhi kemaksiatan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                <strong>2. Hati yang senantiasa ingat kepada Allah.</strong> Para wali dan badal memiliki hati yang senantiasa ingat kepada Allah dalam setiap keadaan. Mereka tidak pernah lalai dari dzikir kepada Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">CIRI DZIKIR</div>
+                <div class="arabic-text">
+                    قُلُوبُهُمْ مَعْمُورَةٌ بِذِكْرِ اللَّهِ، لَا تَغْفُلُ عَنْهُ طَرْفَةَ عَيْنٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hati-hati mereka makmur dengan dzikir kepada Allah, tidak lalai dari-Nya sekejap mata pun."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                <strong>3. Memiliki karamah (karomah).</strong> Para wali dan badal diberikan karamah oleh Allah sebagai tanda kebenaran mereka. Karamah adalah perkara luar biasa yang Allah berikan kepada para wali di luar kebiasaan manusia.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">TENTANG KARAMAH</div>
+                <div class="arabic-text">
+                    الْكَرَامَاتُ هِيَ أَمْرٌ خَارِقٌ لِلْعَادَةِ يُظْهِرُهُ اللَّهُ عَلَى يَدِ وَلِيِّهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Karamah adalah perkara yang luar biasa yang Allah tampakkan di tangan wali-Nya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                <strong>4. Tidak mencari popularitas.</strong> Para wali dan badal tidak mencari popularitas atau dikenal oleh masyarakat. Mereka justru menyembunyikan kedudukan mereka dan hidup seperti orang biasa.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">CIRI KERENDAHAN HATI</div>
+                <div class="arabic-text">
+                    يَخْفُونَ وِلَايَتَهُمْ، وَيَعِيشُونَ بَيْنَ النَّاسِ كَأَحَدِهِمْ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Mereka menyembunyikan kewalian mereka, dan hidup di tengah manusia seperti salah seorang dari mereka."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                <strong>5. Senantiasa membantu sesama.</strong> Para wali dan badal senantiasa membantu sesama manusia, baik dalam urusan dunia maupun akhirat. Mereka adalah sumber keberkahan dan rahmat Allah bagi umat manusia.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">CIRI SUKA MEMBANTU</div>
+                <div class="arabic-text">
+                    يُعِينُونَ النَّاسَ فِي أُمُورِ دُنْيَاهُمْ وَآخِرَتِهِمْ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Mereka membantu manusia dalam urusan dunia dan akhirat mereka."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Peran Para Wali dan Badal di Dunia</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa para wali dan badal memiliki peran yang sangat penting dalam menjaga keseimbangan spiritual dunia:
+            </p>
+
+            <p>
+                <strong>1. Menjaga keberkahan dunia.</strong> Para wali dan badal adalah sumber keberkahan yang turun ke bumi. Dengan keberadaan mereka, Allah menurunkan rahmat dan keberkahan kepada umat manusia.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERAN MENJAGA KEBERKAHAN</div>
+                <div class="arabic-text">
+                    بِهِمْ تُنْزَلُ الْبَرَكَاتُ، وَبِهِمْ تُدْفَعُ الْبَلِيَّاتُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dengan mereka turun keberkahan, dan dengan mereka ditolak bala bencana."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                <strong>2. Membimbing umat Islam.</strong> Para wali dan badal bertanggung jawab atas bimbingan spiritual umat Islam. Mereka membantu orang-orang yang mencari jalan menuju Allah dan membimbing mereka dalam perjalanan spiritual.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERAN MEMBIMBING</div>
+                <div class="arabic-text">
+                    يَهْدُونَ النَّاسَ إِلَى طَرِيقِ اللَّهِ، وَيُعِينُونَهُمْ عَلَى السُّلُوكِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Mereka membimbing manusia ke jalan Allah, dan membantu mereka dalam perjalanan spiritual."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                <strong>3. Mendoakan umat manusia.</strong> Para wali dan badal senantiasa mendoakan umat manusia, terutama umat Islam. Doa mereka sangat mustajab karena kedudukan mereka yang tinggi di sisi Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERAN MENDOAKAN</div>
+                <div class="arabic-text">
+                    يَدْعُونَ لِلنَّاسِ بِالْخَيْرِ، وَدَعَاؤُهُمْ مُسْتَجَابٌ عِنْدَ اللَّهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Mereka mendoakan kebaikan untuk manusia, dan doa mereka dikabulkan di sisi Allah."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                <strong>4. Menjaga agama Islam.</strong> Para wali dan badal bertanggung jawab atas menjaga agama Islam dari penyimpangan dan bid'ah. Mereka membantu ulama dalam menjaga kemurnian ajaran Islam.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERAN MENJAGA AGAMA</div>
+                <div class="arabic-text">
+                    يَحْفَظُونَ الدِّينَ مِنَ الْبِدَعِ وَالضَّلَالَةِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Mereka menjaga agama dari bid'ah dan kesesatan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Bagaimana Mengenali Para Wali dan Badal?</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa mengenali para wali dan badal bukanlah perkara yang mudah, karena mereka seringkali menyembunyikan kedudukan mereka. Namun, ada beberapa tanda yang dapat membantu kita mengenali mereka:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">TANDA-TANDA WALI</div>
+                <div class="arabic-text">
+                    مِنْ عَلَامَاتِ الْوَلِيِّ: حِفْظُ اللِّسَانِ، وَطَهَارَةُ الْقَلْبِ، وَحُسْنُ الْخُلُقِ، وَكَثْرَةُ الذِّكْرِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Di antara tanda-tanda wali adalah: menjaga lisan, sucinya hati, akhlak yang baik, dan banyaknya dzikir."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Tanda-tanda lain yang disebutkan oleh Syaikh Abdul Qadir Al-Jilani:
+            </p>
+
+            <ul>
+                <li><strong>Senantiasa dalam ketaatan</strong> — Tidak pernah meninggalkan kewajiban dan senantiasa menjauhi larangan</li>
+                <li><strong>Hati yang tenang</strong> — Tidak gelisah menghadapi masa depan dan tidak bersedih berlebihan atas masa lalu</li>
+                <li><strong>Tawadhu' (rendah hati)</strong> — Tidak sombong dengan kedudukan spiritualnya</li>
+                <li><strong>Suka menyendiri</strong> — Lebih suka menyendiri untuk beribadah daripada berkumpul dengan orang banyak</li>
+                <li><strong>Tidak cinta dunia</strong> — Tidak terlalu mencintai dunia dan kenikmatannya</li>
+                <li><strong>Selalu ingat kematian</strong> — Senantiasa mengingat kematian dan mempersiapkan diri untuk menghadap Allah</li>
+            </ul>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga tentang bagaimana seharusnya kita bersikap terhadap para wali dan badal:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH TENTANG PARA WALI</div>
+                <div class="arabic-text">
+                    احْتَرِمُوا أَوْلِيَاءَ اللَّهِ، فَإِنَّهُمْ سِرُّ اللَّهِ فِي أَرْضِهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hormatilah para wali Allah, karena mereka adalah rahasia Allah di bumi-Nya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Beliau juga menekankan bahwa kita tidak boleh mengklaim diri sebagai wali atau mencari-cari wali untuk kepentingan pribadi. Kewalian adalah anugerah Allah yang diberikan kepada hamba-Nya yang dipilih, bukan sesuatu yang bisa dicari atau diklaim.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    لَا تَدَّعِ الْوِلَايَةَ، فَإِنَّهَا عَطَاءُ اللَّهِ يُعْطِيهَا مَنْ يَشَاءُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Janganlah kamu mengklaim kewalian, karena ia adalah pemberian Allah yang diberikan kepada siapa yang Dia kehendaki."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari penjelasan Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa para wali dan badal adalah orang-orang pilihan Allah yang memiliki kedudukan istimewa di sisi-Nya. Mereka memiliki peran penting dalam menjaga keseimbangan spiritual dunia, membimbing umat Islam, dan menjadi sumber keberkahan bagi umat manusia.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk senantiasa mengikuti jejak para wali dalam ketaatan dan kecintaan kepada Allah. Dan semoga kita diberikan kemampuan untuk mengenali dan menghormati para wali Allah yang ada di sekitar kita. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    أَلَا إِنَّ أَوْلِيَاءَ اللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ ۝ الَّذِينَ آمَنُوا وَكَانُوا يَتَّقُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ingatlah, sesungguhnya wali-wali Allah itu, tidak ada kekhawatiran terhadap mereka dan tidak (pula) mereka bersedih hati. (Yaitu) orang-orang yang beriman dan mereka selalu bertakwa."
+                    <br>— QS. Yunus: 62-63
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
