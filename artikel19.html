@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Menjadi Saleh Menurut Syaikh Abdul Qadir Al-Jilani - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .resep-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .resep-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .resep-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .resep-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .resep-arabic { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Menjadi Saleh
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Resep Menjadi Saleh Menurut Syaikh Abdul Qadir Al-Jilani</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 12:34 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw"></a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Menjadi saleh (صَالِحٌ) adalah impian setiap Muslim. Namun, menjadi saleh bukan perkara mudah. Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitab-kitabnya, terutama <em>"Al-Ghunya li-Thalibi Tariq al-Haqq"</em> dan <em>"Al-Fath Ar-Rabbani"</em>, memberikan resep lengkap tentang bagaimana menjadi orang yang saleh di sisi Allah SWT.
+            </p>
+
+            <h2>Apa Itu Saleh?</h2>
+
+            <p>
+                Dalam Islam, <strong>saleh</strong> (صَالِحٌ) berarti orang yang baik, benar, dan lurus dalam keyakinan, perkataan, dan perbuatan. Orang saleh adalah orang yang melaksanakan perintah Allah dan menjauhi larangan-Nya dengan ikhlas dan konsisten.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DEFINISI SALEH — QS. AL-HUJURAT: 9</div>
+                <div class="arabic-text">
+                    وَأَصْلِحُوا ذَاتَ بَيْنِكُمْ وَأَطِيعُوا اللَّهَ وَرَسُولَهُ إِنْ كُنْتُمْ مُؤْمِنِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan perbaikilah hubungan di antaramu; dan taatlah kepada Allah dan Rasul-Nya jika kamu adalah orang-orang yang beriman."
+                    <br>— QS. Al-Hujurat: 9
+                </div>
+            </div>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa orang saleh bukan hanya orang yang rajin beribadah secara lahiriah, tetapi juga orang yang hatinya bersih, niatnya ikhlas, dan perilakunya mencerminkan akhlak Rasulullah SAW.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الصَّالِحُ هُوَ مَنْ صَلَحَ قَلْبُهُ فَصَلَحَ جَسَدُهُ، وَمَنْ صَلَحَتْ نِيَّتُهُ فَصَلَحَ عَمَلُهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Orang saleh adalah orang yang baik hatinya maka baik pula badannya, dan orang yang baik niatnya maka baik pula amalnya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Resep Menjadi Saleh Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan beberapa resep utama untuk menjadi orang saleh:
+            </p>
+
+            <div class="resep-card">
+                <span class="resep-number">1</span>
+                <span class="resep-title">Ikhlas dalam Beramal (الْإِخْلَاصُ فِي الْعَمَلِ)</span>
+                <div class="resep-arabic">الْإِخْلَاصُ سِرُّ الْعِبَادَةِ وَقَلْبُهَا</div>
+                <p>
+                    Resep pertama dan paling utama adalah ikhlas. Setiap amal harus dilakukan semata-mata karena Allah, bukan karena ingin dipuji atau dilihat oleh manusia. Syaikh Abdul Qadir Al-Jilani menekankan bahwa ikhlas adalah ruh ibadah dan tanpanya, amal tidak akan diterima.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL IKHLAS — QS. AL-BAYYINAH: 5</div>
+                <div class="arabic-text">
+                    وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Padahal mereka tidak disuruh kecuali supaya menyembah Allah dengan memurnikan ketaatan kepada-Nya dalam (menjalankan) agama dengan lurus."
+                    <br>— QS. Al-Bayyinah: 5
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">2</span>
+                <span class="resep-title">Taqwa kepada Allah (التَّقْوَىٰ)</span>
+                <div class="resep-arabic">التَّقْوَىٰ رَأْسُ كُلِّ حِكْمَةٍ</div>
+                <p>
+                    Taqwa adalah resep kedua. Taqwa berarti senantiasa merasa diawasi oleh Allah dalam setiap keadaan. Orang yang bertaqwa akan menjauhi segala larangan Allah dan melaksanakan segala perintah-Nya, baik dalam keadaan ramai maupun sepi.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TAQWA — QS. AL-HUJURAT: 13</div>
+                <div class="arabic-text">
+                    إِنَّ أَكْرَمَكُمْ عِنْدَ اللَّهِ أَتْقَاكُمْ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya orang yang paling mulia di antara kamu di sisi Allah ialah orang yang paling bertakwa."
+                    <br>— QS. Al-Hujurat: 13
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">3</span>
+                <span class="resep-title">Mengikuti Sunnah Rasulullah (اتِّبَاعُ السُّنَّةِ)</span>
+                <div class="resep-arabic">مَنْ أَحْيَا سُنَّتِي فَقَدْ أَحَبَّنِي</div>
+                <p>
+                    Resep ketiga adalah mengikuti sunnah Rasulullah SAW dalam setiap aspek kehidupan. Syaikh Abdul Qadir Al-Jilani sangat menekankan pentingnya mengikuti sunnah Nabi, karena sunnah adalah jalan yang paling aman menuju ridha Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL MENGIKUTI SUNNAH — QS. AL-HASYR: 7</div>
+                <div class="arabic-text">
+                    وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانْتَهُوا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Apa yang diberikan Rasul kepadamu, maka terimalah. Dan apa yang dilarangnya bagimu, maka tinggalkanlah."
+                    <br>— QS. Al-Hasyr: 7
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">4</span>
+                <span class="resep-title">Akhlak yang Mulia (حُسْنُ الْخُلُقِ)</span>
+                <div class="resep-arabic">حُسْنُ الْخُلُقِ شَطْرُ الْإِيمَانِ</div>
+                <p>
+                    Resep keempat adalah memiliki akhlak yang mulia. Orang saleh harus memiliki akhlak yang baik terhadap Allah, terhadap sesama manusia, dan terhadap diri sendiri. Akhlak yang mulia adalah cermin dari keimanan yang kuat.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL AKHLAK MULIA — QS. AL-QALAM: 4</div>
+                <div class="arabic-text">
+                    وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan sesungguhnya kamu benar-benar berbudi pekerti yang agung."
+                    <br>— QS. Al-Qalam: 4
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">5</span>
+                <span class="resep-title">Senantiasa Bertaubat (دَوَامُ التَّوْبَةِ)</span>
+                <div class="resep-arabic">التَّوْبَةُ مِحْوَرُ حَيَاةِ الصَّالِحِينَ</div>
+                <p>
+                    Resep kelima adalah senantiasa bertaubat. Orang saleh bukan orang yang tidak pernah berbuat dosa, tetapi orang yang senantiasa bertaubat ketika berbuat dosa. Taubat adalah jalan kembali kepada Allah dan pembersih hati dari noda dosa.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL BERTAUBAT — QS. AT-TAHRIM: 8</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا تُوبُوا إِلَى اللَّهِ تَوْبَةً نَصُوحًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Bertobatlah kepada Allah dengan tobat yang semurni-murninya (taubat nasuha)."
+                    <br>— QS. At-Tahrim: 8
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">6</span>
+                <span class="resep-title">Banyak Dzikir kepada Allah (كَثْرَةُ الذِّكْرِ)</span>
+                <div class="resep-arabic">الذِّكْرُ غذَاءُ الرُّوحِ وَقُوتُ الْقَلْبِ</div>
+                <p>
+                    Resep keenam adalah memperbanyak dzikir kepada Allah. Dzikir adalah makanan bagi ruh dan kekuatan bagi hati. Orang saleh senantiasa mengingat Allah dalam setiap keadaan, baik dalam keadaan senang maupun susah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL DZIKIR — QS. AL-AHZAB: 41</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Ingatlah Allah dengan dzikir yang sebanyak-banyaknya."
+                    <br>— QS. Al-Ahzab: 41
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">7</span>
+                <span class="resep-title">Makan dari Rezeki yang Halal (أَكْلُ الْحَلَالِ)</span>
+                <div class="resep-arabic">الْحَلَالُ بَيِّنٌ وَالْحَرَامُ بَيِّنٌ</div>
+                <p>
+                    Resep ketujuh adalah makan dari rezeki yang halal. Syaikh Abdul Qadir Al-Jilani sangat menekankan pentingnya makan dari sumber yang halal, karena makanan haram dapat menghalangi terkabulnya doa dan diterimanya amal.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL MAKAN HALAL — QS. AL-BAQARAH: 168</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا النَّاسُ كُلُوا مِمَّا فِي الْأَرْضِ حَلَالًا طَيِّبًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai manusia! Makanlah dari (makanan) yang halal dan baik yang terdapat di bumi."
+                    <br>— QS. Al-Baqarah: 168
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">8</span>
+                <span class="resep-title">Bergaul dengan Orang Shaleh (صُحْبَةُ الصَّالِحِينَ)</span>
+                <div class="resep-arabic">الْمَرْءُ عَلَىٰ دِينِ خَلِيلِهِ</div>
+                <p>
+                    Resep kedelapan adalah bergaul dengan orang-orang saleh. Pergaulan yang baik akan mempengaruhi akhlak dan spiritualitas seseorang. Syaikh Abdul Qadir Al-Jilani menganjurkan untuk bergaul dengan orang-orang yang mengingatkan kita kepada Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL PERGAULAN BAIK — QS. AT-TAWBAH: 119</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَكُونُوا مَعَ الصَّادِقِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Bertakwalah kepada Allah dan bersamalah kamu dengan orang-orang yang benar (saleh)."
+                    <br>— QS. At-Taubah: 119
+                </div>
+            </div>
+
+            <h2>Tanda-tanda Orang Saleh</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan beberapa tanda orang yang saleh:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">TANDA ORANG SALEH — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    عَلَامَةُ الصَّالِحِ: صِدْقٌ فِي الْقَوْلِ، وَاسْتِقَامَةٌ فِي الْعَمَلِ، وَحُسْنٌ فِي الْخُلُقِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Tanda orang saleh: jujur dalam perkataan, istiqomah dalam amal, dan baik dalam akhlak."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Tanda-tanda lainnya adalah:
+            </p>
+
+            <ul>
+                <li><strong>Jujur dalam perkataan</strong> — Tidak berbohong dan selalu berkata benar</li>
+                <li><strong>Amanah</strong> — Dapat dipercaya dalam setiap urusan</li>
+                <li><strong>Menepati janji</strong> — Selalu menepati janji yang telah dibuat</li>
+                <li><strong>Penyayang</strong> — Menyayangi sesama makhluk Allah</li>
+                <li><strong>Tawadhu' (rendah hati)</strong> — Tidak sombong dan tidak ujub</li>
+                <li><strong>Sabar</strong> — Sabar dalam menghadapi ujian dan cobaan</li>
+                <li><strong>Syukur</strong> - Bersyukur atas segala nikmat Allah</li>
+                <li><strong>Qana'ah</strong> — Merasa cukup dengan apa yang dimiliki</li>
+            </ul>
+
+            <h2>Keutamaan Orang Saleh</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan keutamaan-keutamaan orang saleh:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">KEUTAMAAN ORANG SALEH — QS. AN-NISA': 69</div>
+                <div class="arabic-text">
+                    وَمَنْ يُطِعِ اللَّهَ وَالرَّسُولَ فَأُولَٰئِكَ مَعَ الَّذِينَ أَنْعَمَ اللَّهُ عَلَيْهِمْ مِنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ ۚ وَحَسُنَ أُولَٰئِكَ رَفِيقًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan barangsiapa yang taat kepada Allah dan Rasul(Nya), mereka itu akan bersama-sama dengan orang-orang yang dianugerahi nikmat oleh Allah, yaitu: Nabi-nabi, para shiddiiqiin, orang-orang yang mati syahid, dan orang-orang saleh. Dan mereka itulah teman yang sebaik-baiknya."
+                    <br>— QS. An-Nisa': 69
+                </div>
+            </div>
+
+            <p>
+                Keutamaan lainnya:
+            </p>
+
+            <ul>
+                <li><strong>Dicintai Allah</strong> — Orang saleh dicintai oleh Allah SWT</li>
+                <li><strong>Doanya mustajab</strong> — Doa orang saleh mudah dikabulkan</li>
+                <li><strong>Mendapat syafaat</strong> — Orang saleh akan mendapat syafaat di hari kiamat</li>
+                <li><strong>Hidup tenang</strong> — Hati orang saleh senantiasa tenang dan tenteram</li>
+                <li><strong>Wafat husnul khotimah</strong> — Orang saleh wafat dalam keadaan baik</li>
+            </ul>
+
+            <div class="arabic-box">
+                <div class="arabic-label">KEUTAMAAN LAIN — QS. AL-MA'IDAH: 69</div>
+                <div class="arabic-text">
+                    إِنَّ الَّذِينَ آمَنُوا وَالَّذِينَ هَادُوا وَالصَّابِئُونَ وَالنَّصَارَىٰ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ وَعَمِلَ صَالِحًا فَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya orang-orang yang beriman, orang-orang Yahudi, Shabi'in, dan orang-orang Nasrani, barangsiapa beriman kepada Allah dan hari kemudian dan beramal saleh, tidak ada kekhawatiran terhadap mereka dan tidak (pula) mereka bersedih hati."
+                    <br>— QS. Al-Ma'idah: 69
+                </div>
+            </div>
+
+            <h2>Doa Memohon Menjadi Orang Saleh</h2>
+
+            <h3>1. Doa Memohon Keshalehan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON KESHALEHAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اجْعَلْنِي مِنَ الصَّالِحِينَ، وَارْزُقْنِي قَلْبًا سَلِيمًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, jadikanlah aku termasuk orang-orang yang saleh, dan berikanlah aku hati yang sehat (selim)."
+                </div>
+            </div>
+
+            <h3>2. Doa Memohon Hati yang Bersih</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA HATI BERSIH</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ طَهِّرْ قَلْبِي مِنَ النِّفَاقِ، وَعَمَلِي مِنَ الرِّيَاءِ، وَلِسَانِي مِنَ الْكَذِبِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, sucikanlah hatiku dari kemunafikan, amalku dari riya', dan lisanku dari dusta."
+                </div>
+            </div>
+
+            <h3>3. Doa Memohon Istiqomah</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA ISTIQOMAH</div>
+                <div class="arabic-text">
+                    رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً ۚ إِنَّكَ أَنْتَ الْوَهَّابُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Tuhan kami, janganlah Engkau jadikan hati kami condong kepada kesesatan sesudah Engkau beri petunjuk kepada kami, dan karuniakanlah kepada kami rahmat dari sisi Engkau; karena sesungguhnya Engkau-lah Maha Pemberi (karunia)."
+                    <br>— QS. Ali 'Imran: 8
+                </div>
+            </div>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga tentang bagaimana menjadi orang saleh:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH</div>
+                <div class="arabic-text">
+                    كُنْ فِي الدُّنْيَا كَأَنَّكَ غَرِيبٌ، أَوْ عَابِرُ سَبِيلٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Jadilah kamu di dunia ini seperti orang asing, atau seperti orang yang sedang dalam perjalanan."
+                    <br>— HR. Bukhari (Nasihat Syaikh Abdul Qadir Al-Jilani)
+                </div>
+            </div>
+
+            <p>
+                Nasihat ini mengajarkan bahwa orang saleh tidak terlalu terikat dengan dunia. Ia hidup di dunia hanya sebagai tempat sementara, dan fokus utamanya adalah mempersiapkan diri untuk kehidupan akhirat.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    مَنْ أَرَادَ أَنْ يَكُونَ صَالِحًا، فَلْيُصْلِحْ مَا بَيْنَهُ وَبَيْنَ اللَّهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang ingin menjadi saleh, maka perbaikilah hubungan antara dirinya dengan Allah."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari penjelasan Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa menjadi saleh memerlukan kombinasi dari beberapa unsur: ikhlas, taqwa, mengikuti sunnah, akhlak mulia, taubat, dzikir, makan halal, dan bergaul dengan orang saleh. Semua ini harus dilakukan dengan konsisten dan istiqomah.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk menjadi orang-orang yang saleh, baik dalam keyakinan, perkataan, maupun perbuatan. Dan semoga kita wafat dalam keadaan husnul khotimah. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ كَانَتْ لَهُمْ جَنَّاتُ الْفِرْدَوْسِ نُزُلًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya orang-orang yang beriman dan mengerjakan amal saleh, mereka itu mendapat surga Firdaus menjadi tempat tinggal."
+                    <br>— QS. Al-Kahfi: 107
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
