@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konsep Manunggaling dengan Tuhan Menurut Syaikh Abdul Qadir Al-Jilani (Lanjutan) - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-header .subtitle {
+            font-size: 1.1rem;
+            color: #e94560;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .article-content ul {
+            margin: 15px 0 20px 30px;
+        }
+
+        .article-content ul li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .article-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border-radius: 15px;
+        }
+
+        .article-nav-btn {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid #e94560;
+            background: rgba(233, 69, 96, 0.1);
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .article-nav-btn:hover {
+            background: #e94560;
+            transform: scale(1.15);
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+        }
+
+        .article-nav-btn.active {
+            background: #e94560;
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+        }
+
+        .nav-btn-label {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.8rem;
+            margin-top: 8px;
+        }
+
+        .nav-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.4rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Artikel Cabang
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Konsep Manunggaling dengan Tuhan Menurut Syaikh Abdul Qadir Al-Jilani</h1>
+            <div class="subtitle">Artikel Cabang — La Ilaha Illallah sebagai Kunci Manunggaling</div>
+            <div class="article-meta">
+                <div class="author-avatar">MY</div>
+                <div>
+                    <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                    <div style="color:#999; font-size:0.85rem;">Rabu, 07 Oktober 2026</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id</div>
+        </div>
+
+        <div class="article-content">
+
+            <p class="lead">
+                Artikel ini merupakan lanjutan (cabang) dari artikel utama tentang konsep manunggaling dengan Tuhan menurut Syaikh Abdul Qadir Al-Jilani. Di sini kita akan membahas lebih dalam tentang makna La ilaha illallah sebagai kunci manunggaling, serta hubungan antara hamba dan Tuhan dalam perspektif tasawuf Syaikh Abdul Qadir Al-Jilani.
+            </p>
+
+            <h2>La Ilaha Illallah: Kunci Manunggaling</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa kalimat <em>La ilaha illallah</em> (لَا إِلَٰهَ إِلَّا اللَّهُ) adalah kunci untuk memahami konsep manunggaling yang benar. Kalimat ini terdiri dari dua bagian: <em>La ilaha</em> (لَا إِلَٰهَ - penafian) dan <em>illallah</em> (إِلَّا اللَّهُ - penetapan).
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">MAKNA LA ILAHA ILLALLAH — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    لَا إِلَٰهَ إِلَّا اللَّهُ: نَفْيٌ وَإِثْبَاتٌ، نَفْيُ كُلِّ مَعْبُودٍ إِلَّا اللَّهَ، وَإِثْبَاتُ الْعِبَادَةِ لِلَّهِ وَحْدَهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "La ilaha illallah: Penafian dan penetapan. Menafikan semua sesembahan kecuali Allah, dan menetapkan ibadah hanya untuk Allah semata."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Beliau menjelaskan bahwa <em>La ilaha</em> (لَا إِلَٰهَ) berarti menafikan semua sesembahan selain Allah. Ini termasuk menafikan hawa nafsu, dunia, dan segala sesuatu yang disembah selain Allah. Sedangkan <em>illallah</em> (إِلَّا اللَّهُ) berarti menetapkan bahwa hanya Allah yang berhak disembah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL LA ILAHA ILLALLAH — QS. AL-BAQARAH: 163</div>
+                <div class="arabic-text">
+                    وَإِلَٰهُكُمْ إِلَٰهٌ وَاحِدٌ ۖ لَا إِلَٰهَ إِلَّا هُوَ الرَّحْمَٰنُ الرَّحِيمُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan Tuhan kamu adalah Tuhan Yang Maha Esa; tidak ada Tuhan melainkan Dia Yang Maha Pemurah lagi Maha Penyayang."
+                    <br>— QS. Al-Baqarah: 163
+                </div>
+            </div>
+
+            <h2>Tiga Tingkatan La Ilaha Illallah</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa La ilaha illallah memiliki tiga tingkatan pemahaman:
+            </p>
+
+            <h3>1. Tingkatan Awam (عَامَّةٌ) — Penafian Sesembahan Selain Allah</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">TINGKATAN AWAM</div>
+                <div class="arabic-text">
+                    لَا إِلَٰهَ إِلَّا اللَّهُ: لَا مَعْبُودَ بِحَقٍّ إِلَّا اللَّهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "La ilaha illallah: Tidak ada yang disembah dengan benar kecuali Allah."
+                </div>
+            </div>
+
+            <p>
+                Pada tingkatan ini, seseorang memahami bahwa hanya Allah yang berhak disembah, dan tidak boleh menyembah selain-Nya. Ini adalah tingkatan dasar yang harus dimiliki oleh setiap Muslim.
+            </p>
+
+            <h3>2. Tingkatan Khawash (خَاصَّةٌ) — Penafian Selain Allah dalam Segala Hal</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">TINGKATAN KHAWASH</div>
+                <div class="arabic-text">
+                    لَا إِلَٰهَ إِلَّا اللَّهُ: لَا مَوْجُودَ حَقًّا إِلَّا اللَّهُ، وَلَا مُؤَثِّرَ حَقًّا إِلَّا اللَّهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "La ilaha illallah: Tidak ada yang wujud (ada) secara hakiki kecuali Allah, dan tidak ada yang berpengaruh secara hakiki kecuali Allah."
+                </div>
+            </div>
+
+            <p>
+                Pada tingkatan ini, seseorang memahami bahwa hanya Allah yang benar-benar ada dan hanya Allah yang benar-benar berpengaruh. Segala sesuatu selain Allah adalah fana (akan binasa) dan tidak memiliki kekuasaan sendiri.
+            </p>
+
+            <h3>3. Tingkatan Khawash al-Khawash (خَاصَّةُ الْخَاصَّةِ) — Penyaksian Keesaan Allah</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">TINGKATAN KHAWASH AL-KHAWASH</div>
+                <div class="arabic-text">
+                    لَا إِلَٰهَ إِلَّا اللَّهُ: لَا مَشْهُودَ إِلَّا اللَّهُ، وَلَا مَوْجُودَ إِلَّا اللَّهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "La ilaha illallah: Tidak ada yang disaksikan kecuali Allah, dan tidak ada yang wujud kecuali Allah."
+                </div>
+            </div>
+
+            <p>
+                Pada tingkatan tertinggi ini, seseorang hanya menyaksikan Allah dalam segala sesuatu. Ini adalah tingkatan manunggaling yang paling tinggi, di mana seorang hamba benar-benar fana dalam Allah dan baqa bersama Allah.
+            </p>
+
+            <h2>Hubungan Hamba dan Tuhan dalam Manunggaling</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan hubungan antara hamba dan Tuhan dalam konsep manunggaling:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HUBUNGAN HAMBA DAN TUHAN — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الْعَبْدُ عَبْدٌ فِي جَمِيعِ أَحْوَالِهِ، وَالرَّبُّ رَبٌّ فِي جَمِيعِ أَحْوَالِهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hamba tetap hamba dalam semua keadaannya, dan Tuhan tetap Tuhan dalam semua keadaan-Nya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Beliau menekankan bahwa meskipun seorang hamba mencapai tingkatan manunggaling yang tinggi, ia tetap hamba dan Allah tetap Tuhan. Tidak ada perubahan dalam hakikat keduanya. Yang berubah hanyalah kesadaran sang hamba tentang hubungannya dengan Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG HUBUNGAN HAMBA DAN TUHAN — QS. AL-ISRA': 1</div>
+                <div class="arabic-text">
+                    سُبْحَانَ الَّذِي أَسْرَىٰ بِعَبْدِهِ لَيْلًا مِنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الْأَقْصَى
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Maha Suci Allah, yang telah memperjalankan hamba-Nya pada suatu malam dari Al-Masjidil Haram ke Al-Masjidil Aqsha."
+                    <br>— QS. Al-Isra': 1
+                </div>
+            </div>
+
+            <h2>Peringatan tentang Bahaya Salah Memahami Manunggaling</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan peringatan keras tentang bahaya salah memahami konsep manunggaling:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERINGATAN SYAIKH</div>
+                <div class="arabic-text">
+                    مَنْ فَهِمَ الْوَصْلَ فَهْمًا خَاطِئًا، وَقَعَ فِي الْكُفْرِ وَالضَّلَالِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang memahami manunggaling dengan pemahaman yang salah, ia akan terjatuh ke dalam kekafiran dan kesesatan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Beliau menjelaskan beberapa kesalahan umum dalam memahami manunggaling:
+            </p>
+
+            <ul>
+                <li><strong>Mengklaim diri sebagai Tuhan</strong> — Ini adalah kesalahan terbesar yang dapat dilakukan seseorang</li>
+                <li><strong>Meninggalkan syariat</strong> — Mengklaim telah mencapai hakikat sehingga tidak perlu lagi menjalankan syariat</li>
+                <li><strong>Merasa sudah tidak butuh ibadah</strong> — Mengklaim sudah bersatu dengan Tuhan sehingga tidak perlu lagi beribadah</li>
+                <li><strong>Merasa sama dengan Allah</strong> — Mengklaim memiliki sifat-sifat ketuhanan</li>
+                <li><strong>Terjatuh dalam kesesatan</strong> — Akibat dari semua kesalahan di atas</li>
+            </ul>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERINGATAN LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    الْحَقِيقَةُ بِدُونِ الشَّرِيعَةِ زَنْدَقَةٌ، وَالشَّرِيعَةُ بِدُونُ الْحَقِيقَةِ نِفَاقٌ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hakikat tanpa syariat adalah zindiq (sesat), dan syariat tanpa hakikat adalah munafik."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Doa-Doa untuk Manunggaling yang Benar</h2>
+
+            <h3>1. Doa Memohon Pemahaman yang Benar</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA PEMAHAMAN BENAR</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ فَهِّمْنِي دِينَكَ حَقَّ فَهْمِهِ، وَأَرِنِي الْحَقَّ حَقًّا وَارْزُقْنِي اتِّبَاعَهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, pahamkanlah aku agama-Mu dengan pemahaman yang benar, dan perlihatkanlah kepadaku kebenaran sebagai kebenaran dan berilah aku kemampuan untuk mengikutinya."
+                </div>
+            </div>
+
+            <h3>2. Doa Memohon Perlindungan dari Kesesatan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON PERLINDUNGAN DARI KESESATAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الضَّلَالِ بَعْدَ الْهُدَىٰ، وَمِنَ الْكُفْرِ بَعْدَ الْإِيمَانِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari kesesatan setelah mendapat petunjuk, dan dari kekafiran setelah beriman."
+                </div>
+            </div>
+
+            <h3>3. Doa Memohon Fana yang Benar</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA FANA YANG BENAR</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ أَمِتْنِي عَنْ نَفْسِي وَأَحْيِنِي بِكَ، وَاجْعَلْنِي مِنَ الْفَانِينَ فِيكَ وَالْبَاقِينَ بِكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, matikanlah aku dari diriku sendiri dan hidupkanlah aku dengan-Mu, dan jadikanlah aku termasuk orang-orang yang fana dalam-Mu dan baqa bersama-Mu."
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari penjelasan Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa konsep manunggaling dengan Tuhan adalah konsep yang sangat mendalam dan harus dipahami dengan benar. La ilaha illallah adalah kunci untuk memahami konsep ini, dan syariat Islam adalah bingkai yang tidak boleh ditinggalkan.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan pemahaman yang benar tentang konsep manunggaling dengan Tuhan, dan senantiasa berada dalam bingkai syariat Islam. Dan semoga kita senantiasa diberikan hati yang bersih dan jiwa yang suci. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    شَهِدَ اللَّهُ أَنَّهُ لَا إِلَٰهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ ۚ لَا إِلَٰهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Allah menyatakan bahwasanya tidak ada Tuhan melainkan Dia (Yang Hak), sedang Malaikat dan orang-orang yang berilmu (juga menyatakan yang demikian itu). Tegaklah keadilan karena tidak ada Tuhan melainkan Dia (Yang Hak), Yang Maha Perkasa lagi Maha Bijaksana."
+                    <br>— QS. Ali 'Imran: 18
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <!-- NAVIGASI 2 TOMBOL -->
+        <div class="article-nav">
+            <div class="nav-group">
+                <a href="artikel33.html" class="article-nav-btn" title="Artikel Utama">1</a>
+                <div class="nav-btn-label">Artikel Utama</div>
+            </div>
+            <div class="nav-group">
+                <a href="artikel33-cabang.html" class="article-nav-btn active" title="Artikel Cabang">2</a>
+                <div class="nav-btn-label">Artikel Cabang</div>
+            </div>
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>
