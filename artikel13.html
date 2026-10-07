@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibadah yang Tertolak Menurut Syaikh Abdul Qadir Al-Jilani - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '﷽';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .ibadah-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .ibadah-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .ibadah-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .ibadah-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .ibadah-arabic { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Ibadah yang Tertolak
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Ibadah yang Tertolak Menurut Syaikh Abdul Qadir Al-Jilani</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 11:17 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw">𝕏</a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitabnya <em>"Al-Fath Ar-Rabbani"</em> menjelaskan tentang ibadah-ibadah yang tertolak di sisi Allah SWT. Beliau mengingatkan bahwa tidak semua ibadah yang dilakukan manusia diterima oleh Allah, ada beberapa kondisi dan sifat yang dapat membuat ibadah seseorang tertolak.
+            </p>
+
+            <h2>Mengapa Ibadah Bisa Tertolak?</h2>
+
+            <p>
+                Dalam Islam, ibadah adalah bentuk ketaatan dan penghambaan kepada Allah SWT. Namun, tidak semua ibadah yang dilakukan manusia diterima oleh Allah. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa ada beberapa faktor yang dapat membuat ibadah seseorang tertolak, meskipun secara lahiriah ibadah tersebut tampak sempurna.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG IBADAH YANG DITERIMA — QS. AL-BAYYINAH: 5</div>
+                <div class="arabic-text">
+                    وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ وَيُقِيمُوا الصَّلَاةَ وَيُؤْتُوا الزَّكَاةَ ۚ وَذَٰلِكَ دِينُ الْقَيِّمَةِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Padahal mereka tidak disuruh kecuali supaya menyembah Allah dengan memurnikan ketaatan kepada-Nya dalam (menjalankan) agama dengan lurus, dan supaya mereka mendirikan shalat dan menunaikan zakat; dan yang demikian itulah agama yang lurus."
+                    <br>— QS. Al-Bayyinah: 5
+                </div>
+            </div>
+
+            <p>
+                Ayat ini menunjukkan bahwa ibadah yang diterima oleh Allah harus memenuhi dua syarat utama: <strong>ikhlas</strong> (murni karena Allah) dan <strong>mutaba'ah</strong> (sesuai dengan tuntunan Rasulullah SAW). Jika salah satu dari kedua syarat ini tidak terpenuhi, maka ibadah tersebut tertolak.
+            </p>
+
+            <h2>Enam Ibadah yang Tertolak Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan enam jenis ibadah yang tertolak di sisi Allah SWT:
+            </p>
+
+            <div class="ibadah-card">
+                <span class="ibadah-number">1</span>
+                <span class="ibadah-title">Ibadah yang Tidak Ikhlas (رِيَاءٌ) — Karena Riya'</span>
+                <div class="ibadah-arabic">مَنْ عَمِلَ عَمَلًا أَشْرَكَ فِيهِ غَيْرَ اللَّهِ، فَهُوَ لِشَرِيكِهِ</div>
+                <p>
+                    Ibadah yang dilakukan dengan niat untuk dipuji atau dilihat oleh manusia, bukan karena Allah SWT. Riya' adalah syirik kecil yang dapat menghapus pahala ibadah. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa riya' adalah penyakit hati yang sangat berbahaya dan dapat membuat ibadah seseorang tertolak.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HADITS TENTANG RIYA' — HR. MUSLIM</div>
+                <div class="arabic-text">
+                    إِنَّ اللَّهَ تَعَالَىٰ يَقُولُ: أَنَا أَغْنَى الشُّرَكَاءِ عَنِ الشِّرْكِ، مَنْ عَمِلَ عَمَلًا أَشْرَكَ فِيهِ مَعِي غَيْرِي، تَرَكْتُهُ وَشِرْكَهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya Allah Ta'ala berfirman: 'Aku adalah Dzat yang paling tidak membutuhkan sekutu. Barangsiapa yang beramal dengan menyertakan selain-Ku, maka Aku tinggalkan dia dan sekutunya.'"
+                    <br>— HR. Muslim
+                </div>
+            </div>
+
+            <div class="ibadah-card">
+                <span class="ibadah-number">2</span>
+                <span class="ibadah-title">Ibadah yang Tidak Sesuai Sunnah (بِدْعَةٌ) — Bid'ah</span>
+                <div class="ibadah-arabic">مَنْ أَحْدَثَ فِي أَمْرِنَا هٰذَا مَا لَيْسَ مِنْهُ فَهُوَ رَدٌّ</div>
+                <p>
+                    Ibadah yang dilakukan dengan cara yang tidak diajarkan oleh Rasulullah SAW. Bid'ah dalam ibadah adalah menambahkan atau mengurangi tata cara ibadah yang telah ditentukan oleh syariat. Syaikh Abdul Qadir Al-Jilani sangat menekankan pentingnya mengikuti sunnah Rasulullah dalam beribadah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HADITS TENTANG BID'AH — HR. BUKHARI & MUSLIM</div>
+                <div class="arabic-text">
+                    مَنْ عَمِلَ عَمَلًا لَيْسَ عَلَيْهِ أَمْرُنَا فَهُوَ رَدٌّ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang beramal dengan amalan yang tidak ada perintahnya dari kami, maka amalan tersebut tertolak."
+                    <br>— HR. Bukhari & Muslim
+                </div>
+            </div>
+
+            <div class="ibadah-card">
+                <span class="ibadah-number">3</span>
+                <span class="ibadah-title">Ibadah dari Rezeki Haram (حَرَامٌ) — Makan dari yang Haram</span>
+                <div class="ibadah-arabic">يَا سَعْدُ، أَطِبْ مَطْعَمَكَ تَكُنْ مُسْتَجَابَ الدَّعْوَةِ</div>
+                <p>
+                    Ibadah yang dilakukan oleh orang yang makan dari rezeki haram. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa makanan haram dapat menghalangi terkabulnya doa dan diterimanya ibadah. Seorang yang makan dari rezeki haram, ibadahnya sulit diterima oleh Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HADITS TENTANG REZEKI HALAL — HR. THABRANI</div>
+                <div class="arabic-text">
+                    يَا سَعْدُ، أَطِبْ مَطْعَمَكَ تَكُنْ مُسْتَجَابَ الدَّعْوَةِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai Sa'ad, perbaguslah makananmu (makan yang halal), niscaya engkau akan menjadi orang yang dikabulkan doanya."
+                    <br>— HR. Thabrani
+                </div>
+            </div>
+
+            <div class="ibadah-card">
+                <span class="ibadah-number">4</span>
+                <span class="ibadah-title">Ibadah yang Dilakukan dengan Sombong (كِبْرٌ) — Karena Sombong</span>
+                <div class="ibadah-arabic">لَا يَدْخُلُ الْجَنَّةَ مَنْ كَانَ فِي قَلْبِهِ مِثْقَالُ ذَرَّةٍ مِنْ كِبْرٍ</div>
+                <p>
+                    Ibadah yang dilakukan dengan rasa sombong dan bangga diri. Sombong adalah sifat yang sangat dibenci oleh Allah SWT. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa sombong dapat menghapus pahala ibadah dan membuat ibadah seseorang tertolak.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HADITS TENTANG SOMBONG — HR. MUSLIM</div>
+                <div class="arabic-text">
+                    الْكِبْرُ بَطَرُ الْحَقِّ وَغَمْطُ النَّاسِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sombong adalah menolak kebenaran dan meremehkan manusia."
+                    <br>— HR. Muslim
+                </div>
+            </div>
+
+            <div class="ibadah-card">
+                <span class="ibadah-number">5</span>
+                <span class="ibadah-title">Ibadah yang Dilakukan dengan Ujub (عُجْبٌ) — Bangga Diri</span>
+                <div class="ibadah-arabic">الْعُجْبُ يُحْبِطُ الْعَمَلَ كَمَا يُحْبِطُ الْخَلُّ الْعَسَلَ</div>
+                <p>
+                    Ibadah yang dilakukan dengan rasa bangga diri dan merasa hebat. Ujub adalah merasa kagum dengan diri sendiri dan amal yang telah dilakukan. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa ujub dapat menghapus pahala ibadah seperti cuka menghapus madu.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    مَنْ عَجِبَ بِعَمَلِهِ، حَبِطَ عَمَلُهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang kagum dengan amalnya, maka hapuslah amalnya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="ibadah-card">
+                <span class="ibadah-number">6</span>
+                <span class="ibadah-title">Ibadah yang Dilakukan dengan Meninggalkan yang Wajib (تَرْكُ الْوَاجِبِ) — Meninggalkan Kewajiban</span>
+                <div class="ibadah-arabic">مَنْ تَرَكَ فَرِيضَةً ثُمَّ تَطَوَّعَ، فَلَمْ يَقْبَلِ اللَّهُ تَطَوُّعَهُ حَتَّىٰ يَقْضِيَ الْفَرِيضَةَ</div>
+                <p>
+                    Ibadah sunnah yang dilakukan sementara ibadah wajib ditinggalkan. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa seseorang yang meninggalkan kewajiban (seperti shalat fardhu) kemudian melakukan ibadah sunnah, maka ibadah sunnahnya tidak akan diterima hingga ia menunaikan kewajiban yang ditinggalkan.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG KEWAJIBAN — QS. AL-BAQARAH: 43</div>
+                <div class="arabic-text">
+                    وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan dirikanlah shalat, tunaikanlah zakat dan ruku'lah beserta orang-orang yang ruku'."
+                    <br>— QS. Al-Baqarah: 43
+                </div>
+            </div>
+
+            <h2>Tanda-tanda Ibadah yang Diterima</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani juga menjelaskan tanda-tanda ibadah yang diterima oleh Allah SWT:
+            </p>
+
+            <p>
+                <strong>1. Ikhlas karena Allah.</strong> Ibadah dilakukan semata-mata karena Allah, bukan karena ingin dipuji atau dilihat oleh manusia.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL IKHLAS — QS. AL-BAYYINAH: 5</div>
+                <div class="arabic-text">
+                    وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Padahal mereka tidak disuruh kecuali supaya menyembah Allah dengan memurnikan ketaatan kepada-Nya."
+                    <br>— QS. Al-Bayyinah: 5
+                </div>
+            </div>
+
+            <p>
+                <strong>2. Sesuai dengan Sunnah Rasulullah.</strong> Ibadah dilakukan sesuai dengan cara yang diajarkan oleh Rasulullah SAW, tidak ada penambahan atau pengurangan.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL MUTABA'AH — QS. AL-HASYR: 7</div>
+                <div class="arabic-text">
+                    وَمَا آتَاكُمُ الرَّسُولُ فَخُذُوهُ وَمَا نَهَاكُمْ عَنْهُ فَانْتَهُوا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Apa yang diberikan Rasul kepadamu, maka terimalah. Dan apa yang dilarangnya bagimu, maka tinggalkanlah."
+                    <br>— QS. Al-Hasyr: 7
+                </div>
+            </div>
+
+            <p>
+                <strong>3. Dari Rezeki yang Halal.</strong> Ibadah dilakukan oleh orang yang makan dari rezeki yang halal dan baik.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL REZEKI HALAL — QS. AL-BAQARAH: 172</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا كُلُوا مِنْ طَيِّبَاتِ مَا رَزَقْنَاكُمْ وَاشْكُرُوا لِلَّهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Makanlah dari rezeki yang baik yang Kami berikan kepada kamu dan bersyukurlah kepada Allah."
+                    <br>— QS. Al-Baqarah: 172
+                </div>
+            </div>
+
+            <p>
+                <strong>4. Dengan Tawadhu' (Rendah Hati).</strong> Ibadah dilakukan dengan kerendahan hati, tidak sombong dan tidak bangga diri.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TAWADHU' — QS. AL-ISRA': 37</div>
+                <div class="arabic-text">
+                    وَلَا تَمْشِ فِي الْأَرْضِ مَرَحًا ۖ إِنَّكَ لَنْ تَخْرِقَ الْأَرْضَ وَلَنْ تَبْلُغَ الْجِبَالَ طُولًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan janganlah kamu berjalan di muka bumi ini dengan sombong, karena sesungguhnya kamu sekali-kali tidak dapat menembus bumi dan sekali-kali kamu tidak akan sampai setinggi gunung."
+                    <br>— QS. Al-Isra': 37
+                </div>
+            </div>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga agar ibadah kita diterima oleh Allah SWT:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH TENTANG IBADAH</div>
+                <div class="arabic-text">
+                    اعْمَلْ لِلَّهِ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Beribadahlah kepada Allah seolah-olah engkau melihat-Nya. Jika engkau tidak melihat-Nya, maka sesungguhnya Dia melihatmu."
+                    <br>— Syaikh Abdul Qadir Al-Jilani (berdasarkan hadits)
+                </div>
+            </div>
+
+            <p>
+                Nasihat ini sangat mendalam. Syaikh Abdul Qadir Al-Jilani mengajarkan bahwa kita harus beribadah dengan penuh kesadaran bahwa Allah senantiasa melihat kita. Dengan kesadaran ini, kita akan beribadah dengan ikhlas dan sesuai dengan tuntunan syariat.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    طَهِّرْ قَلْبَكَ مِنَ الرِّيَاءِ، وَنَقِّ نِيَّتَكَ مِنَ الْعُجْبِ، ثُمَّ اعْمَلْ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sucikanlah hatimu dari riya', bersihkan niatmu dari ujub, kemudian beramallah."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Cara Menghindari Ibadah yang Tertolak</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan beberapa cara untuk menghindari ibadah yang tertolak:
+            </p>
+
+            <h3>1. Muhasabah Niat (مُحَاسَبَةُ النِّيَّةِ)</h3>
+
+            <p>
+                Sebelum beribadah, periksa niat kita. Pastikan bahwa ibadah yang akan kita lakukan semata-mata karena Allah, bukan karena ingin dipuji atau dilihat oleh manusia.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MEMBERSIHKAN NIAT</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اجْعَلْ عَمَلِي كُلَّهُ صَالِحًا، وَاجْعَلْهُ لِوَجْهِكَ خَالِصًا، وَلَا تَجْعَلْ لِأَحَدٍ فِيهِ شَيْئًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, jadikanlah semua amalku shaleh, dan jadikanlah ikhlas karena-Mu semata, dan janganlah ada bagi seorangpun bagian di dalamnya."
+                </div>
+            </div>
+
+            <h3>2. Mengikuti Sunnah Rasulullah (اتِّبَاعُ السُّنَّةِ)</h3>
+
+            <p>
+                Pelajari cara beribadah yang benar sesuai dengan tuntunan Rasulullah SAW. Jangan menambahkan atau mengurangi tata cara ibadah yang telah ditentukan oleh syariat.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON PETUNJUK</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ ارْشُدْنِي إِلَىٰ الصَّوَابِ فِي عِبَادَتِي، وَثَبِّتْنِي عَلَىٰ سُنَّةِ نَبِيِّكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, tunjukkanlah aku kepada kebenaran dalam ibadahkan, dan tetapkanlah aku di atas sunnah Nabi-Mu."
+                </div>
+            </div>
+
+            <h3>3. Memastikan Rezeki Halal (ضَمَانُ الْحَلَالِ)</h3>
+
+            <p>
+                Pastikan bahwa makanan dan minuman yang kita konsumsi berasal dari sumber yang halal. Rezeki haram dapat menghalangi terkabulnya doa dan diterimanya ibadah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON REZEKI HALAL</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ ارْزُقْنِي رِزْقًا حَلَالًا طَيِّبًا، وَبَاعِدْ بَيْنِي وَبَيْنَ الْحَرَامِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, berilah aku rezeki yang halal dan baik, dan jauhkanlah aku dari yang haram."
+                </div>
+            </div>
+
+            <h3>4. Menjaga Kerendahan Hati (التَّوَاضُعُ)</h3>
+
+            <p>
+                Beribadahlah dengan kerendahan hati. Jangan sombong dengan ibadah yang telah dilakukan, dan jangan bangga diri dengan amal shaleh yang telah diperbuat.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA TAWADHU'</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اجْعَلْنِي مُتَوَاضِعًا فِي عِبَادَتِي، وَلَا تُعْجِبْنِي بِعَمَلِي
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, jadikanlah aku rendah hati dalam ibadahkan, dan janganlah Engkau membuat aku kagum dengan amalku."
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari penjelasan Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa ibadah yang tertolak adalah ibadah yang tidak memenuhi syarat ikhlas dan mutaba'ah (mengikuti sunnah). Enam jenis ibadah yang tertolak adalah: ibadah karena riya', ibadah bid'ah, ibadah dari rezeki haram, ibadah karena sombong, ibadah karena ujub, dan ibadah sunnah sementara kewajiban ditinggalkan.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk beribadah dengan ikhlas dan sesuai dengan sunnah Rasulullah SAW, sehingga ibadah kita diterima di sisi Allah. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    قُلْ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Katakanlah: 'Sesungguhnya shalatku, ibadatku, hidupku dan matiku hanyalah untuk Allah, Tuhan semesta alam.'"
+                    <br>— QS. Al-An'am: 162
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <a href="index.html" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
