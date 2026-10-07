@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menjaga Agar Iman Tidak Sima Menurut Syaikh Abdul Qadir Al-Jilani - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .tips-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .tips-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .tips-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .tips-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .tips-arabic { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Menjaga Agar Iman Tidak Sima
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Menjaga Agar Iman Tidak Sima Menurut Syaikh Abdul Qadir Al-Jilani</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 21:11 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw"></a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitab-kitabnya, terutama <em>"Al-Fath Ar-Rabbani"</em> dan <em>"Al-Ghunya li-Thalibi Tariq al-Haqq"</em>, memberikan nasehat yang sangat berharga tentang bagaimana menjaga agar iman tidak sima (berkurang/menyusut). Beliau menjelaskan bahwa iman itu bisa naik dan turun, dan kita harus berusaha untuk senantiasa menjaga dan meningkatkannya.
+            </p>
+
+            <h2>Hakikat Iman yang Bisa Naik dan Turun</h2>
+
+            <p>
+                Dalam pandangan Ahlus Sunnah wal Jama'ah, iman (الْإِيمَانُ) adalah pembenaran dengan hati, pengucapan dengan lisan, dan amal dengan anggota badan. Iman bisa bertambah dengan ketaatan dan bisa berkurang dengan kemaksiatan. Syaikh Abdul Qadir Al-Jilani sangat menekankan pentingnya menjaga agar iman tidak sima (berkurang).
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL IMAN BISA BERTAMBAH DAN BERKURANG — QS. AL-FATH: 4</div>
+                <div class="arabic-text">
+                    هُوَ الَّذِي أَنْزَلَ السَّكِينَةَ فِي قُلُوبِ الْمُؤْمِنِينَ لِيَزْدَادُوا إِيمَانًا مَعَ إِيمَانِهِمْ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dialah yang telah menurunkan ketenangan ke dalam hati orang-orang mukmin supaya keimanan mereka bertambah di samping keimanan mereka (yang telah ada)."
+                    <br>— QS. Al-Fath: 4
+                </div>
+            </div>
+
+            <p>
+                Ayat ini dengan jelas menunjukkan bahwa iman bisa bertambah. Dan jika bisa bertambah, berarti juga bisa berkurang. Syaikh Abdul Qadir Al-Jilani berkata: <em>"Iman itu seperti pakaian, bisa usang dan bisa robek jika tidak dijaga. Maka jagalah imanmu sebagaimana kamu menjaga hartamu."</em>
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الْإِيمَانُ يَزِيدُ وَيَنْقُصُ، يَزِيدُ بِالطَّاعَةِ وَيَنْقُصُ بِالْمَعْصِيَةِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Iman itu bertambah dan berkurang. Ia bertambah dengan ketaatan dan berkurang dengan kemaksiatan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Tanda-tanda Iman yang Sima (Berkurang)</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan beberapa tanda bahwa iman seseorang sedang berkurang:
+            </p>
+
+            <div class="tips-card">
+                <span class="tips-number">1</span>
+                <span class="tips-title">Malas Beribadah (الْكَسَلُ عَنِ الْعِبَادَةِ)</span>
+                <div class="tips-arabic">الْكَسَلُ عَنِ الْعِبَادَةِ مِنْ عُلَامَاتِ ضَعْفِ الْإِيمَانِ</div>
+                <p>
+                    Tanda pertama adalah malas beribadah. Ketika seseorang merasa berat untuk shalat, puasa, atau ibadah lainnya, itu adalah tanda bahwa imannya sedang berkurang. Iman yang kuat akan membuat seseorang rindu untuk beribadah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — QS. AN-NISA': 142</div>
+                <div class="arabic-text">
+                    إِنَّ الْمُنَافِقِينَ يُخَادِعُونَ اللَّهَ وَهُوَ خَادِعُهُمْ وَإِذَا قَامُوا إِلَى الصَّلَاةِ قَامُوا كُسَالَىٰ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya orang-orang munafik itu menipu Allah, dan Allah akan membalas tipuan mereka. Dan apabila mereka berdiri untuk shalat mereka berdiri dengan malas."
+                    <br>— QS. An-Nisa': 142
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">2</span>
+                <span class="tips-title">Tidak Merasa Bersalah Saat Berdosa (عَدَمُ الْوَجْدَانِ عِنْدَ الْمَعْصِيَةِ)</span>
+                <div class="tips-arabic">مَنْ لَمْ يَجِدْ أَلَمًا لِلْمَعْصِيَةِ فَإِيمَانُهُ ضَعِيفٌ</div>
+                <p>
+                    Tanda kedua adalah tidak merasa bersalah saat berbuat dosa. Orang yang imannya kuat akan merasa sakit dan menyesal ketika berbuat dosa. Jika seseorang tidak merasa bersalah, itu tanda imannya sedang sima.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — HR. MUSLIM</div>
+                <div class="arabic-text">
+                    الْإِيمَانُ بِضْعٌ وَسَبْعُونَ شُعْبَةً، فَأَفْضَلُهَا قَوْلُ لَا إِلَٰهَ إِلَّا اللَّهُ، وَأَدْنَاهَا إِمَاطَةُ الْأَذَىٰ عَنِ الطَّرِيقِ، وَالْحَيَاءُ شُعْبَةٌ مِنَ الْإِيمَانِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Iman itu memiliki tujuh puluh lebih cabang. Yang paling utama adalah ucapan La ilaha illallah, dan yang paling rendah adalah menyingkirkan gangguan dari jalan. Dan rasa malu adalah salah satu cabang dari iman."
+                    <br>— HR. Muslim
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">3</span>
+                <span class="tips-title">Cinta Dunia Berlebih (حُبُّ الدُّنْيَا)</span>
+                <div class="tips-arabic">حُبُّ الدُّنْيَا رَأْسُ كُلِّ خَطِيئَةٍ</div>
+                <p>
+                    Tanda ketiga adalah cinta dunia yang berlebihan. Ketika seseorang lebih mementingkan urusan dunia daripada urusan akhirat, itu adalah tanda bahwa imannya sedang berkurang. Syaikh Abdul Qadir Al-Jilani sangat memperingatkan tentang bahaya cinta dunia.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — HR. BAIHAQI</div>
+                <div class="arabic-text">
+                    حُبُّ الدُّنْيَا رَأْسُ كُلِّ خَطِيئَةٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Cinta dunia adalah pokok dari setiap kesalahan."
+                    <br>— HR. Baihaqi
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">4</span>
+                <span class="tips-title">Keras Hati (قَسْوَةُ الْقَلْبِ)</span>
+                <div class="tips-arabic">قَسْوَةُ الْقَلْبِ مِنْ عُلَامَاتِ نُقْصَانِ الْإِيمَانِ</div>
+                <p>
+                    Tanda keempat adalah kerasnya hati. Hati yang keras tidak terpengaruh oleh nasihat, tidak menangis ketika mendengar ayat-ayat Al-Qur'an, dan tidak merasa takut kepada Allah. Ini adalah tanda iman yang sangat lemah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — QS. AL-HADID: 16</div>
+                <div class="arabic-text">
+                    أَلَمْ يَأْنِ لِلَّذِينَ آمَنُوا أَنْ تَخْشَعَ قُلُوبُهُمْ لِذِكْرِ اللَّهِ وَمَا نَزَلَ مِنَ الْحَقِّ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Belumkah datang waktunya bagi orang-orang yang beriman, untuk tunduk hati mereka mengingat Allah dan kepada kebenaran yang telah turun (kepada mereka)?"
+                    <br>— QS. Al-Hadid: 16
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">5</span>
+                <span class="tips-title">Tidak Peduli dengan Amal Shaleh (عَدَمُ الِاهْتِمَامِ بِالْعَمَلِ الصَّالِحِ)</span>
+                <div class="tips-arabic">تَرْكُ الْعَمَلِ الصَّالِحِ يُنْقِصُ الْإِيمَانَ</div>
+                <p>
+                    Tanda kelima adalah tidak peduli dengan amal shaleh. Ketika seseorang tidak bersemangat untuk berbuat kebaikan, tidak peduli dengan sedekah, tidak peduli dengan membantu sesama, itu tanda imannya sedang sima.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — QS. AL-MA'UN: 4-5</div>
+                <div class="arabic-text">
+                    فَوَيْلٌ لِلْمُصَلِّينَ ۝ الَّذِينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Maka celakalah bagi orang-orang yang shalat, (yaitu) orang-orang yang lalai dari shalatnya."
+                    <br>— QS. Al-Ma'un: 4-5
+                </div>
+            </div>
+
+            <h2>Cara Menjaga Agar Iman Tidak Sima Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan beberapa cara untuk menjaga agar iman tidak sima:
+            </p>
+
+            <div class="tips-card">
+                <span class="tips-number">1</span>
+                <span class="tips-title">Memperbanyak Dzikir (الْإِكْثَارُ مِنَ الذِّكْرِ)</span>
+                <div class="tips-arabic">الذِّكْرُ غذَاءُ الْإِيمَانِ</div>
+                <p>
+                    Cara pertama adalah memperbanyak dzikir. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa dzikir adalah makanan bagi iman. Sebagaimana badan membutuhkan makanan, demikian pula iman membutuhkan dzikir. Tanpa dzikir, iman akan lemah dan sima.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL DZIKIR — QS. AL-AHZAB: 41</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا اذْكُرُوا اللَّهَ ذِكْرًا كَثِيرًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Ingatlah Allah dengan dzikir yang sebanyak-banyaknya."
+                    <br>— QS. Al-Ahzab: 41
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">2</span>
+                <span class="tips-title">Membaca Al-Qur'an (تِلَاوَةُ الْقُرْآنِ)</span>
+                <div class="tips-arabic">الْقُرْآنُ ربيعُ الْقَلْبِ وَغِذَاءُ الْإِيمَانِ</div>
+                <p>
+                    Cara kedua adalah membaca Al-Qur'an. Al-Qur'an adalah spring (musim semi) bagi hati dan makanan bagi iman. Syaikh Abdul Qadir Al-Jilani sangat menganjurkan untuk membaca Al-Qur'an setiap hari, meskipun hanya sedikit.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL AL-QUR'AN — QS. AL-ISRA': 82</div>
+                <div class="arabic-text">
+                    وَنُنَزِّلُ مِنَ الْقُرْآنِ مَا هُوَ شِفَاءٌ وَرَحْمَةٌ لِلْمُؤْمِنِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan Kami turunkan dari Al-Qur'an suatu yang menjadi penawar (obat) dan rahmat bagi orang-orang yang beriman."
+                    <br>— QS. Al-Isra': 82
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">3</span>
+                <span class="tips-title">Bergaul dengan Orang Shaleh (صُحْبَةُ الصَّالِحِينَ)</span>
+                <div class="tips-arabic">صَاحِبُ الصَّالِحِينَ يَزْدَادُ إِيمَانًا</div>
+                <p>
+                    Cara ketiga adalah bergaul dengan orang-orang shaleh. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa pergaulan sangat mempengaruhi iman. Bergaul dengan orang shaleh akan menambah iman, sedangkan bergaul dengan orang fasik akan mengurangi iman.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — QS. AT-TAWBAH: 119</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَكُونُوا مَعَ الصَّادِقِينَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Bertakwalah kepada Allah dan bersamalah kamu dengan orang-orang yang benar (saleh)."
+                    <br>— QS. At-Taubah: 119
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">4</span>
+                <span class="tips-title">Banyak Beristighfar (الْإِكْثَارُ مِنَ الِاسْتِغْفَارِ)</span>
+                <div class="tips-arabic">الِاسْتِغْفَارُ يَجْلُو صَدَأَ الْقَلْبِ وَيُزِيدُ الْإِيمَانَ</div>
+                <p>
+                    Cara keempat adalah banyak beristighfar. Istighfar dapat membersihkan karat (صدأ) di hati yang disebabkan oleh dosa. Hati yang bersih akan membuat iman kuat dan tidak sima.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL ISTIGHFAR — QS. NUH: 10</div>
+                <div class="arabic-text">
+                    فَقُلْتُ اسْتَغْفِرُوا رَبَّكُمْ إِنَّهُ كَانَ غَفَّارًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Maka aku katakan (kepada mereka): 'Mohonlah ampun kepada Tuhanmu, sesungguhnya Dia adalah Maha Pengampun.'"
+                    <br>— QS. Nuh: 10
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">5</span>
+                <span class="tips-title">Muhasabah Diri (مُحَاسَبَةُ النَّفْسِ)</span>
+                <div class="tips-arabic">حَاسِبْ نَفْسَكَ كُلَّ يَوْمٍ</div>
+                <p>
+                    Cara kelima adalah muhasabah atau introspeksi diri. Syaikh Abdul Qadir Al-Jilani menekankan pentingnya mengevaluasi diri setiap hari. Dengan muhasabah, kita bisa mengetahui apakah iman kita bertambah atau berkurang, dan segera mengambil tindakan jika berkurang.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH TENTANG MUHASABAH</div>
+                <div class="arabic-text">
+                    حَاسِبْ نَفْسَكَ قَبْلَ أَنْ تُحَاسَبَ، وَزِنْ عَمَلَكَ قَبْلَ أَنْ يُوزَنَ عَلَيْكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hisablah (evaluasi) dirimu sebelum kamu dihisab, dan timbanglah amalmu sebelum ditimbang atasmu."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">6</span>
+                <span class="tips-title">Mengingat Kematian (ذِكْرُ الْمَوْتِ)</span>
+                <div class="tips-arabic">ذِكْرُ الْمَوْتِ يُحْيِي الْقَلْبَ وَيُقَوِّي الْإِيمَانَ</div>
+                <p>
+                    Cara keenam adalah mengingat kematian. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa mengingat kematian dapat menghidupkan hati dan menguatkan iman. Ketika seseorang sering mengingat kematian, ia akan lebih giat beribadah dan menjaga imannya.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL MENGINGAT KEMATIAN — HR. TIRMIDZI</div>
+                <div class="arabic-text">
+                    أَكْثِرُوا مِنْ ذِكْرِ هَادِمِ اللَّذَّاتِ، يَعْنِي الْمَوْتَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Perbanyaklah mengingat pemutus kelezatan, yaitu kematian."
+                    <br>— HR. Tirmidzi
+                </div>
+            </div>
+
+            <div class="tips-card">
+                <span class="tips-number">7</span>
+                <span class="tips-title">Bersedekah (الصَّدَقَةُ)</span>
+                <div class="tips-arabic">الصَّدَقَةُ تُطْفِئُ غَضَبَ الرَّبِّ وَتَزِيدُ الْإِيمَانَ</div>
+                <p>
+                    Cara ketujuh adalah bersedekah. Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa sedekah dapat memadamkan murka Allah dan menambah iman. Sedekah juga membersihkan harta dan jiwa dari sifat kikir dan cinta dunia.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL SEDEKAH — QS. AL-BAQARAH: 261</div>
+                <div class="arabic-text">
+                    مَثَلُ الَّذِينَ يُنْفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنْبَتَتْ سَبْعَ سَنَابِلَ فِي كُلِّ سُنْبُلَةٍ مِائَةُ حَبَّةٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Perumpamaan (nafkah yang dikeluarkan oleh) orang-orang yang menafkahkan hartanya di jalan Allah adalah serupa dengan sebutir benih yang menumbuhkan tujuh bulir, pada setiap bulir seratus biji."
+                    <br>— QS. Al-Baqarah: 261
+                </div>
+            </div>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani tentang Menjaga Iman</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga tentang bagaimana menjaga agar iman tidak sima:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH</div>
+                <div class="arabic-text">
+                    احْفَظْ إِيمَانَكَ كَمَا تَحْفَظُ مَالَكَ، فَإِنَّ الْإِيمَانَ أَثْمَنُ مِنَ الْمَالِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Jagalah imanmu sebagaimana kamu menjaga hartamu, karena sesungguhnya iman itu lebih berharga daripada harta."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Nasihat ini sangat mendalam. Syaikh Abdul Qadir Al-Jilani mengajarkan bahwa iman adalah harta yang paling berharga. Jika kita menjaga harta dunia dengan sungguh-sungguh, maka seharusnya kita lebih sungguh-sungguh lagi dalam menjaga iman.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    لَا تَدَعْ يَوْمًا يَمُرُّ عَلَيْكَ إِلَّا وَزَدْتَ فِيهِ إِيمَانًا، فَإِنَّ نُقْصَانَ الْإِيمَانِ مَهْلَكَةٌ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Janganlah biarkan satu haripun berlalu atasmu kecuali kamu menambah iman di dalamnya, karena sesungguhnya berkurangnya iman adalah kebinasaan."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT TERAKHIR SYAIKH</div>
+                <div class="arabic-text">
+                    إِذَا أَحْسَسْتَ بِنُقْصَانِ إِيمَانِكَ، فَسَارِعْ إِلَى الطَّاعَةِ، فَإِنَّ الطَّاعَةَ تُزِيدُ الْإِيمَانَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Apabila kamu merasakan berkurangnya imanmu, maka bersegeralah kepada ketaatan, karena sesungguhnya ketaatan itu menambah iman."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Doa-Doa Memohon Iman yang Kuat</h2>
+
+            <h3>1. Doa Memohon Iman yang Kuat</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA IMAN KUAT</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَسْأَلُكَ إِيمَانًا لَا يَرْتَدُّ، وَنَعِيمًا لَا يَنْفَدُ، وَمُرَافَقَةَ النَّبِيِّ فِي أَعْلَىٰ غُرَفِ الْجَنَّةِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku memohon kepada-Mu iman yang tidak murtad, nikmat yang tidak habis, dan kebersamaan dengan Nabi di tempat tertinggi surga."
+                    <br>— HR. Hakim
+                </div>
+            </div>
+
+            <h3>2. Doa Memohon Keteguhan Iman</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KETEGUHAN IMAN</div>
+                <div class="arabic-text">
+                    يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَىٰ دِينِكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai Dzat yang membolak-balikkan hati, tetapkanlah hatiku di atas agama-Mu."
+                    <br>— HR. Tirmidzi
+                </div>
+            </div>
+
+            <h3>3. Doa Memohon Iman yang Sempurna</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA IMAN SEMPURNA</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, cukupkanlah aku dengan yang halal-Mu dari yang haram-Mu, dan kayakanlah aku dengan karunia-Mu dari selain-Mu."
+                    <br>— HR. Tirmidzi
+                </div>
+            </div>
+
+            <h3>4. Doa Memohon Perlindungan dari Kemunafikan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON PERLINDUNGAN DARI NIFAK</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ النِّفَاقِ، فَإِنَّ النِّفَاقَ يُذْهِبُ الْإِيمَانَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari kemunafikan, karena sesungguhnya kemunafikan itu menghilangkan iman."
+                </div>
+            </div>
+
+            <h2>Hikmah Menjaga Iman Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan beberapa hikmah dari menjaga agar iman tidak sima:
+            </p>
+
+            <ul>
+                <li><strong>Mendapatkan ketenangan hati</strong> — Iman yang kuat akan memberikan ketenangan dan kedamaian dalam hati</li>
+                <li><strong>Mendapatkan cinta Allah</strong> — Allah mencintai hamba-hamba-Nya yang imannya kuat</li>
+                <li><strong>Mendapatkan kemudahan dalam urusan</strong> — Iman yang kuat akan memudahkan segala urusan</li>
+                <li><strong>Mendapatkan pahala yang besar</strong> — Menjaga iman akan mendapatkan pahala yang besar di sisi Allah</li>
+                <li><strong>Mendapatkan surga</strong> — Iman yang kuat adalah kunci untuk masuk surga</li>
+                <li><strong>Terlindungi dari godaan setan</strong> — Iman yang kuat akan melindungi dari godaan setan</li>
+            </ul>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HIKMAH — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    مَنْ حَفِظَ إِيمَانَهُ، حَفِظَ اللَّهُ عَلَيْهِ دِينَهُ وَدُنْيَاهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang menjaga imannya, Allah akan menjaga agama dan dunianya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — QS. AL-BAYYINAH: 7-8</div>
+                <div class="arabic-text">
+                    إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أُولَٰئِكَ هُمْ خَيْرُ الْبَرِيَّةِ ۝ جَزَاؤُهُمْ عِنْدَ رَبِّهِمْ جَنَّاتُ عَدْنٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya orang-orang yang beriman dan mengerjakan amal saleh, mereka itu adalah sebaik-baik makhluk. Balasan mereka di sisi Tuhan mereka ialah surga 'Adn yang mengalir di bawahnya sungai-sungai."
+                    <br>— QS. Al-Bayyinah: 7-8
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari nasehat Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa iman itu bisa bertambah dan berkurang. Untuk menjaga agar iman tidak sima (berkurang), kita harus memperbanyak dzikir, membaca Al-Qur'an, bergaul dengan orang shaleh, banyak beristighfar, muhasabah diri, mengingat kematian, dan bersedekah.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk senantiasa menjaga iman kita agar tidak sima. Dan semoga kita senantiasa diberikan iman yang kuat dan istiqamah di atas jalan-Nya. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا تَتَنَزَّلُ عَلَيْهِمُ الْمَلَائِكَةُ أَلَّا تَخَافُوا وَلَا تَحْزَنُوا وَأَبْشِرُوا بِالْجَنَّةِ الَّتِي كُنْتُمْ تُوعَدُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya orang-orang yang mengatakan: 'Tuhan kami ialah Allah' kemudian mereka meneguhkan pendirian mereka, maka malaikat akan turun kepada mereka (dengan mengatakan): 'Janganlah kamu takut dan janganlah merasa sedih; dan bergembiralah kamu dengan (memperoleh) surga yang telah dijanjikan Allah kepadamu.'"
+                    <br>— QS. Fussilat: 30
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
