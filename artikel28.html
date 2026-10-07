@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syaikh Abdul Qadir Al-Jilani: Cobalah Melemahkan Hawati dan Hawa Nafsu - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .nasehat-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .nasehat-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .nasehat-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .nasehat-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .nasehat-arabic { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Melemahkan Hawa Nafsu
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Syaikh Abdul Qadir Al-Jilani: Cobalah Melemahkan Hawati dan Hawa Nafsu</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 20:35 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw"></a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitab-kitabnya, terutama <em>"Al-Fath Ar-Rabbani"</em> dan <em>"Al-Ghunya li-Thalibi Tariq al-Haqq"</em>, memberikan nasehat yang sangat berharga tentang pentingnya melemahkan hawa nafsu. Beliau menjelaskan bahwa hawa nafsu adalah ujian terbesar bagi setiap manusia, dan hanya dengan melemahkannya seseorang dapat mencapai kebahagiaan sejati di dunia dan akhirat.
+            </p>
+
+            <h2>Hakikat Hawa Nafsu dalam Islam</h2>
+
+            <p>
+                Allah SWT telah menciptakan hawa nafsu (الهَوَىٰ - al-hawa) pada setiap manusia sebagai ujian. Hawa nafsu adalah keinginan dan dorongan dalam diri manusia yang mendorongnya untuk memenuhi kebutuhan biologis dan psikologis. Namun, jika hawa nafsu tidak dikendalikan, ia akan membawa manusia kepada kebinasaan.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG HAWA NAFSU — QS. AL-JATSIAH: 23</div>
+                <div class="arabic-text">
+                    أَفَرَأَيْتَ مَنِ اتَّخَذَ إِلَٰهَهُ هَوَاهُ وَأَضَلَّهُ اللَّهُ عَلَىٰ عِلْمٍ وَخَتَمَ عَلَىٰ سَمْعِهِ وَقَلْبِهِ وَجَعَلَ عَلَىٰ بَصَرِهِ غِشَاوَةً فَمَنْ يَهْدِيهِ مِنْ بَعْدِ اللَّهِ ۚ أَفَلَا تَذَكَّرُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Maka pernahkah kamu melihat orang yang menjadikan hawa nafsunya sebagai tuhannya, dan Allah membiarkannya sesat berdasarkan ilmu-Nya dan Allah telah mengunci mati pendengaran dan hatinya dan meletakkan tutupan atas penglihatannya? Maka siapakah yang akan memberinya petunjuk sesudah Allah (membiarkannya sesat). Maka mengapa kamu tidak mengambil pelajaran?"
+                    <br>— QS. Al-Jatsiah: 23
+                </div>
+            </div>
+
+            <p>
+                Ayat ini menjelaskan dengan sangat jelas bahaya mengikuti hawa nafsu. Orang yang menjadikan hawa nafsunya sebagai "tuhan" akan sesat dan tidak mendapat petunjuk. Syaikh Abdul Qadir Al-Jilani sangat menekankan pentingnya mengendalikan hawa nafsu agar tidak menjadi "tuhan" dalam diri seseorang.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL NAFSU AMMARAH — QS. YUSUF: 53</div>
+                <div class="arabic-text">
+                    وَمَا أُبَرِّئُ نَفْسِي ۚ إِنَّ النَّفْسَ لَأَمَّارَةٌ بِالسُّوءِ إِلَّا مَا رَحِمَ رَبِّي ۚ إِنَّ رَبِّي غَفُورٌ رَحِيمٌ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan aku tidak membebaskan diriku (dari kesalahan), karena sesungguhnya nafsu itu selalu menyuruh kepada kejahatan, kecuali nafsu yang diberi rahmat oleh Tuhanku. Sesungguhnya Tuhanku Maha Pengampun lagi Maha Penyayang."
+                    <br>— QS. Yusuf: 53
+                </div>
+            </div>
+
+            <h2>Peringatan Syaikh Abdul Qadir Al-Jilani tentang Hawa Nafsu</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan peringatan keras tentang bahaya hawa nafsu yang tidak dikendalikan. Beliau berkata:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الْهَوَىٰ عَدُوٌّ خَفِيٌّ، لَا يُرَىٰ وَلَكِنَّهُ يُهْلِكُ صَاحِبَهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hawa nafsu adalah musuh yang tersembunyi, tidak terlihat tetapi ia membinasakan pemiliknya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Beliau menjelaskan bahwa hawa nafsu adalah musuh yang paling berbahaya karena ia berada di dalam diri kita sendiri. Berbeda dengan musuh dari luar yang bisa kita lihat dan hindari, hawa nafsu selalu bersama kita dan sulit untuk dikenali. Oleh karena itu, kita harus selalu waspada dan berusaha melemahkannya.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    مَنْ غَلَبَ هَوَاهُ فَقَدْ غَلَبَ أَعْدَى أَعْدَائِهِ، وَمَنْ غَلَبَهُ هَوَاهُ فَقَدْ غَلَبَهُ أَعْدَى أَعْدَائِهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang mengalahkan hawa nafsunya, maka ia telah mengalahkan musuh yang paling memusuhinya. Dan barangsiapa yang dikalahkan oleh hawa nafsunya, maka musuh yang paling memusuhinya telah mengalahkannya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Mengapa Kita Harus Melemahkan Hawa Nafsu?</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan beberapa alasan mengapa kita harus melemahkan hawa nafsu:
+            </p>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">1</span>
+                <span class="nasehat-title">Hawa Nafsu Menyeru kepada Kejahatan (الْهَوَىٰ يَأْمُرُ بِالسُّوءِ)</span>
+                <div class="nasehat-arabic">الْهَوَىٰ يَأْمُرُ بِالسُّوءِ وَيَنْهَىٰ عَنِ الْخَيْرِ</div>
+                <p>
+                    Alasan pertama adalah karena hawa nafsu selalu menyeru kepada kejahatan dan melarang dari kebaikan. Jika kita mengikuti hawa nafsu, kita akan terjebak dalam kemaksiatan dan dosa.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — QS. YUSUF: 53</div>
+                <div class="arabic-text">
+                    إِنَّ النَّفْسَ لَأَمَّارَةٌ بِالسُّوءِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya nafsu itu selalu menyuruh kepada kejahatan."
+                    <br>— QS. Yusuf: 53
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">2</span>
+                <span class="nasehat-title">Hawa Nafsu Menghalangi dari Jalan Allah (الْهَوَىٰ يَصُدُّ عَنْ سَبِيلِ اللَّهِ)</span>
+                <div class="nasehat-arabic">الْهَوَىٰ يَصُدُّ عَنْ سَبِيلِ اللَّهِ وَيُبْعِدُ عَنْ رِضَاهُ</div>
+                <p>
+                    Alasan kedua adalah karena hawa nafsu menghalangi seseorang dari jalan Allah. Orang yang mengikuti hawa nafsunya akan semakin jauh dari Allah dan tidak mendapatkan ridha-Nya.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — QS. SAD: 26</div>
+                <div class="arabic-text">
+                    وَلَا تَتَّبِعِ الْهَوَىٰ فَيُضِلَّكَ عَنْ سَبِيلِ اللَّهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan janganlah kamu mengikuti hawa nafsu, karena ia akan menyesatkan kamu dari jalan Allah."
+                    <br>— QS. Sad: 26
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">3</span>
+                <span class="nasehat-title">Hawa Nafsu Membawa kepada Kebinasaan (الْهَوَىٰ يُهْلِكُ صَاحِبَهُ)</span>
+                <div class="nasehat-arabic">مَنِ اتَّبَعَ هَوَاهُ هَلَكَ، وَمَنْ خَالَفَهُ نَجَا</div>
+                <p>
+                    Alasan ketiga adalah karena hawa nafsu membawa kepada kebinasaan. Orang yang mengikuti hawa nafsunya akan binasa di dunia dan akhirat. Sebaliknya, orang yang menentang hawa nafsunya akan selamat.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — QS. AN-NAZI'AT: 40-41</div>
+                <div class="arabic-text">
+                    وَأَمَّا مَنْ خَافَ مَقَامَ رَبِّهِ وَنَهَى النَّفْسَ عَنِ الْهَوَىٰ ۝ فَإِنَّ الْجَنَّةَ هِيَ الْمَأْوَىٰ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan adapun orang-orang yang takut kepada kebesaran Tuhannya dan menahan diri dari keinginan hawa nafsunya, maka sesungguhnya surgalah tempat tinggalnya."
+                    <br>— QS. An-Nazi'at: 40-41
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">4</span>
+                <span class="nasehat-title">Hawa Nafsu Menutupi Hati dari Cahaya Iman (الْهَوَىٰ يُغَشِّي الْقَلْبَ)</span>
+                <div class="nasehat-arabic">الْهَوَىٰ يُغَشِّي الْقَلْبَ وَيُظْلِمُهُ</div>
+                <p>
+                    Alasan keempat adalah karena hawa nafsu menutupi hati dari cahaya iman. Hati yang dipenuhi hawa nafsu akan menjadi gelap dan tidak dapat menerima hidayah Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL — QS. AL-QASAS: 50</div>
+                <div class="arabic-text">
+                    فَإِنْ لَمْ يَسْتَجِيبُوا لَكَ فَاعْلَمْ أَنَّمَا يَتَّبِعُونَ أَهْوَاءَهُمْ ۚ وَمَنْ أَضَلُّ مِمَّنِ اتَّبَعَ هَوَاهُ بِغَيْرِ هُدًى مِنَ اللَّهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Jika mereka tidak menjawab (tantanganmu), maka ketahuilah bahwa sesungguhnya mereka hanyalah mengikuti hawa nafsu mereka (belaka). Dan siapakah yang lebih sesat daripada orang yang mengikuti hawa nafsunya dengan tidak mendapat petunjuk dari Allah sedikitpun?"
+                    <br>— QS. Al-Qasas: 50
+                </div>
+            </div>
+
+            <h2>Cara-Cara Melemahkan Hawa Nafsu Menurut Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan beberapa cara praktis untuk melemahkan hawa nafsu:
+            </p>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">1</span>
+                <span class="nasehat-title">Mujahadah (مُجَاهَدَةُ النَّفْسِ) — Berjuang Melawan Hawa Nafsu</span>
+                <div class="nasehat-arabic">جَاهِدْ نَفْسَكَ بِمُخَالَفَةِ هَوَاهَا</div>
+                <p>
+                    Cara pertama adalah mujahadah, yaitu berjuang dengan sungguh-sungguh melawan hawa nafsu. Ini berarti menyalahi keinginan hawa nafsu dan memaksanya untuk taat kepada Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH TENTANG MUJAHADAH</div>
+                <div class="arabic-text">
+                    جَاهِدْ نَفْسَكَ بِمُخَالَفَةِ هَوَاهَا، فَإِنَّ مَنْ غَلَبَ هَوَاهُ فَقَدْ غَلَبَ أَعْدَى أَعْدَائِهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Berjihadlah melawan nafsumu dengan menyalahi hawa nafsunya, karena barangsiapa yang mengalahkan hawa nafsunya, maka ia telah mengalahkan musuh yang paling memusuhinya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">2</span>
+                <span class="nasehat-title">Riyadhah (الرِّيَاضَةُ) — Latihan Spiritual</span>
+                <div class="nasehat-arabic">رَاضِ نَفْسَكَ عَلَى الطَّاعَةِ</div>
+                <p>
+                    Cara kedua adalah riyadhah, yaitu melatih diri untuk taat kepada Allah. Ini termasuk memperbanyak ibadah sunnah, puasa, dzikir, dan amal shaleh lainnya yang dapat melemahkan hawa nafsu.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH TENTANG RIYADHAH</div>
+                <div class="arabic-text">
+                    رَاضِ نَفْسَكَ عَلَى الطَّاعَةِ، فَإِنَّ النَّفْسَ كَالدَّابَّةِ إِنْ لَمْ تُرَضْ جَمَحَتْ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Latihlah dirimu untuk taat, karena nafsu itu seperti hewan tunggangan, jika tidak dilatih ia akan liar."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">3</span>
+                <span class="nasehat-title">Muraqabah (مُرَاقَبَةُ النَّفْسِ) — Merasa Diawasi Allah</span>
+                <div class="nasehat-arabic">رَاقِبْ نَفْسَكَ كَأَنَّ اللَّهَ يَرَاكَ</div>
+                <p>
+                    Cara ketiga adalah muraqabah, yaitu senantiasa merasa diawasi oleh Allah SWT. Ketika seseorang merasa bahwa Allah selalu mengawasinya, ia akan malu untuk mengikuti hawa nafsu.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH TENTANG MURAQABAH</div>
+                <div class="arabic-text">
+                    رَاقِبْ نَفْسَكَ كَأَنَّ اللَّهَ يَرَاكَ، فَإِنَّكَ إِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Awasi dirimu seolah-olah Allah melihatmu, karena jika kamu tidak melihat-Nya, sesungguhnya Dia melihatmu."
+                    <br>— Syaikh Abdul Qadir Al-Jilani (berdasarkan hadits)
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">4</span>
+                <span class="nasehat-title">Muhasabah (مُحَاسَبَةُ النَّفْسِ) — Introspeksi Diri</span>
+                <div class="nasehat-arabic">حَاسِبْ نَفْسَكَ قَبْلَ أَنْ تُحَاسَبَ</div>
+                <p>
+                    Cara keempat adalah muhasabah, yaitu introspeksi diri secara rutin. Dengan mengevaluasi diri setiap hari, seseorang dapat mengenali kelemahan-kelemahan hawa nafsunya dan berusaha memperbaikinya.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH TENTANG MUHASABAH</div>
+                <div class="arabic-text">
+                    حَاسِبْ نَفْسَكَ قَبْلَ أَنْ تُحَاسَبَ، وَزِنْ عَمَلَكَ قَبْلَ أَنْ يُوزَنَ عَلَيْكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hisablah (evaluasi) dirimu sebelum kamu dihisab, dan timbanglah amalmu sebelum ditimbang atasmu."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="nasehat-card">
+                <span class="nasehat-number">5</span>
+                <span class="nasehat-title">Tazkiyatun Nafs (تَزْكِيَةُ النَّفْسِ) — Penyucian Jiwa</span>
+                <div class="nasehat-arabic">طَهِّرْ نَفْسَكَ مِنَ الْأَخْلَاقِ الذَّمِيمَةِ</div>
+                <p>
+                    Cara kelima adalah tazkiyatun nafs, yaitu penyucian jiwa dari sifat-sifat tercela. Dengan mensucikan jiwa, hawa nafsu akan melemah dan jiwa akan menjadi bersih dan suci.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TAZKIYATUN NAFS — QS. AS-SYAMS: 9-10</div>
+                <div class="arabic-text">
+                    قَدْ أَفْلَحَ مَنْ زَكَّاهَا ۝ وَقَدْ خَابَ مَنْ دَسَّاهَا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya beruntunglah orang yang mensucikan jiwa itu, dan sesungguhnya merugilah orang yang mengotorinya."
+                    <br>— QS. As-Syams: 9-10
+                </div>
+            </div>
+
+            <h2>Tingkatan Hawa Nafsu</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa hawa nafsu memiliki beberapa tingkatan, dan setiap tingkatan memerlukan cara penanganan yang berbeda:
+            </p>
+
+            <h3>1. Nafs Ammarah (نَفْسٌ أَمَّارَةٌ) — Nafsu yang Menyuruh kepada Kejahatan</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NAFS AMMARAH — QS. YUSUF: 53</div>
+                <div class="arabic-text">
+                    إِنَّ النَّفْسَ لَأَمَّارَةٌ بِالسُّوءِ إِلَّا مَا رَحِمَ رَبِّي
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya nafsu itu selalu menyuruh kepada kejahatan, kecuali nafsu yang diberi rahmat oleh Tuhanku."
+                    <br>— QS. Yusuf: 53
+                </div>
+            </div>
+
+            <p>
+                Ini adalah tingkatan hawa nafsu yang paling rendah dan paling berbahaya. Pada tingkatan ini, nafsu selalu menyuruh kepada kejahatan dan maksiat. Orang yang berada pada tingkatan ini sangat sulit untuk taat kepada Allah dan mudah tergoda oleh godaan setan.
+            </p>
+
+            <h3>2. Nafs Lawwamah (نَفْسٌ لَوَّامَةٌ) — Nafsu yang Menyesali Diri</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NAFS LAWWAMAH — QS. AL-QIYAMAH: 2</div>
+                <div class="arabic-text">
+                    وَأُقْسِمُ بِالنَّفْسِ اللَّوَّامَةِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan Aku bersumpah dengan jiwa yang selalu menyesali (dirinya sendiri)."
+                    <br>— QS. Al-Qiyamah: 2
+                </div>
+            </div>
+
+            <p>
+                Ini adalah tingkatan hawa nafsu yang lebih tinggi. Pada tingkatan ini, seseorang mulai sadar akan dosanya dan menyesali perbuatan maksiat yang telah dilakukan. Ia sering bertaubat tetapi masih sering jatuh ke dalam dosa yang sama. Ini adalah tanda bahwa hawa nafsu mulai melemah.
+            </p>
+
+            <h3>3. Nafs Mutmainnah (نَفْسٌ مُطْمَئِنَّةٌ) — Nafsu yang Tenang</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NAFS MUTMAINNAH — QS. AL-FAJR: 27-28</div>
+                <div class="arabic-text">
+                    يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ۝ ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَرْضِيَّةً
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai jiwa yang tenang. Kembalilah kepada Tuhanmu dengan hati yang puas lagi diridhai-Nya."
+                    <br>— QS. Al-Fajr: 27-28
+                </div>
+            </div>
+
+            <p>
+                Ini adalah tingkatan hawa nafsu yang paling tinggi. Pada tingkatan ini, hawa nafsu telah melemah dan jiwa menjadi tenang. Orang yang mencapai tingkatan ini tidak lagi diperbudak oleh hawa nafsu, melainkan ia telah menjadi tuan atas nafsunya sendiri.
+            </p>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani tentang Melemahkan Hawa Nafsu</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga tentang bagaimana melemahkan hawa nafsu:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH</div>
+                <div class="arabic-text">
+                    أَضْعِفْ هَوَاكَ بِمُخَالَفَتِهِ، وَاقْهِرْ نَفْسَكَ بِمُجَاهَدَتِهَا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Lemahkan hawa nafsumu dengan menyalahinya, dan kalahkan nafsumu dengan berjihad melawannya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Nasihat ini sangat mendalam. Syaikh Abdul Qadir Al-Jilani mengajarkan bahwa cara terbaik untuk melemahkan hawa nafsu adalah dengan selalu menyalahinya. Ketika hawa nafsu menyuruh kepada kejahatan, kita harus melakukan sebaliknya. Ketika hawa nafsu menyuruh kepada kemalasan, kita harus rajin beribadah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    كُلَّمَا دَعَتْكَ نَفْسُكَ إِلَىٰ شَيْءٍ فَخَالَفْهَا، فَإِنَّ فِي مُخَالَفَتِهَا سَعَادَتَكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Setiap kali nafsumu mengajakmu kepada sesuatu, maka salahi ia, karena dalam menyalahinya terdapat kebahagiaanmu."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT TERAKHIR SYAIKH</div>
+                <div class="arabic-text">
+                    مَنْ أَطَاعَ هَوَاهُ عَصَى رَبَّهُ، وَمَنْ عَصَى هَوَاهُ أَطَاعَ رَبَّهُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Barangsiapa yang menaati hawa nafsunya, maka ia telah durhaka kepada Tuhannya. Dan barangsiapa yang mendurhakai hawa nafsunya, maka ia telah taat kepada Tuhannya."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Doa Memohon Pertolongan Melemahkan Hawa Nafsu</h2>
+
+            <h3>1. Doa Memohon Perlindungan dari Hawa Nafsu</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON PERLINDUNGAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَوَىٰ الْمُضِلِّ، وَمِنَ النَّفْسِ الْأَمَّارَةِ بِالسُّوءِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari hawa nafsu yang menyesatkan, dan dari nafsu ammarah yang menyuruh kepada kejahatan."
+                </div>
+            </div>
+
+            <h3>2. Doa Memohon Kekuatan Melawan Hawa Nafsu</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON KEKUATAN</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ قَوِّنِي عَلَىٰ جِهَادِ نَفْسِي، وَأَعِنِّي عَلَىٰ مُخَالَفَةِ هَوَاهَا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, kuatkanlah aku dalam berjihad melawan nafsu, dan bantulah aku dalam menyalahi hawa nafsunya."
+                </div>
+            </div>
+
+            <h3>3. Doa Memohon Nafs Mutmainnah</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA NAFS MUTMAINNAH</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اجْعَلْ نَفْسِي مُطْمَئِنَّةً، تُؤْمِنُ بِلِقَائِكَ، وَتَرْضَىٰ بِقَضَائِكَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, jadikanlah nafsu-ku tenang, yang beriman dengan pertemuan dengan-Mu, dan ridha dengan takdir-Mu."
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari penjelasan Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa hawa nafsu adalah musuh terbesar dalam diri manusia. Untuk mencapai kebahagiaan sejati, kita harus melemahkan hawa nafsu dengan mujahadah, riyadhah, muraqabah, muhasabah, dan tazkiyatun nafs.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk senantiasa melemahkan hawa nafsu dan mencapai tingkatan nafs mutmainnah. Dan semoga kita senantiasa diberikan hati yang bersih dan jiwa yang suci. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    وَأَمَّا مَنْ خَافَ مَقَامَ رَبِّهِ وَنَهَى النَّفْسَ عَنِ الْهَوَىٰ ۝ فَإِنَّ الْجَنَّةَ هِيَ الْمَأْوَىٰ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan adapun orang-orang yang takut kepada kebesaran Tuhannya dan menahan diri dari keinginan hawa nafsunya, maka sesungguhnya surgalah tempat tinggalnya."
+                    <br>— QS. An-Nazi'at: 40-41
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
