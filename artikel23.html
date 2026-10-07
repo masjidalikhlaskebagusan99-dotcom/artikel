@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Syaikh Abdul Qadir Al-Jilani dalam Menempatkan Kebaikan dan Keburukan - KALAM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f0;
+            color: #333;
+            min-height: 100vh;
+            line-height: 1.8;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-kalam {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e94560;
+            letter-spacing: 5px;
+            text-decoration: none;
+            text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .logo-kalam:hover {
+            background: rgba(233, 69, 96, 0.15);
+            transform: scale(1.05);
+        }
+
+        .logo-kalam span { color: #fff; }
+
+        nav { display: flex; gap: 15px; }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover { background: #e94560; color: #fff; }
+
+        .breadcrumb {
+            padding: 15px 40px;
+            background: #eee;
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .breadcrumb a { color: #e94560; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .article-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .article-header { margin-bottom: 30px; }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            color: #888;
+            font-size: 0.9rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .author { display: flex; align-items: center; gap: 8px; }
+
+        .author-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        .author-name { font-weight: bold; color: #333; }
+        .meta-date { color: #999; }
+
+        .article-image-wrapper {
+            margin: 25px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        .article-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .article-image-wrapper:hover img { transform: scale(1.02); }
+
+        .image-caption {
+            background: rgba(0,0,0,0.7);
+            color: #ccc;
+            padding: 10px 15px;
+            font-size: 0.8rem;
+        }
+
+        .share-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .share-bar span { font-size: 0.85rem; color: #888; margin-right: 5px; }
+
+        .share-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .share-btn.fb { background: #3b5998; }
+        .share-btn.tw { background: #1da1f2; }
+        .share-btn.wa { background: #25d366; }
+        .share-btn.tg { background: #0088cc; }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .font-size-controls { margin-left: auto; display: flex; gap: 5px; }
+
+        .font-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .font-btn:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #444;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .article-content .lead {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #1a1a2e;
+            border-left: 4px solid #e94560;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        .article-content blockquote {
+            background: #f0f0eb;
+            border-left: 4px solid #e94560;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin: 35px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 25px 0 10px;
+        }
+
+        .arabic-box {
+            background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .arabic-box::before {
+            content: '';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f8f6f0;
+            padding: 0 15px;
+            font-size: 1.5rem;
+            color: #d4af37;
+        }
+
+        .arabic-text {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.8rem;
+            line-height: 2.8;
+            color: #1a1a2e;
+            direction: rtl;
+            margin: 15px 0;
+        }
+
+        .arabic-translation {
+            font-size: 0.95rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #d4af37;
+        }
+
+        .arabic-label {
+            display: inline-block;
+            background: #d4af37;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .resep-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f6f0 100%);
+            border: 1px solid #e0ddd5;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid #e94560;
+        }
+
+        .resep-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .resep-title {
+            font-size: 1.3rem;
+            color: #1a1a2e;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .resep-arabic {
+            font-family: 'Traditional Arabic', 'Scheherazade', 'Amiri', serif;
+            font-size: 1.6rem;
+            color: #d4af37;
+            direction: rtl;
+            margin: 10px 0;
+            text-align: right;
+        }
+
+        .article-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border-radius: 15px;
+        }
+
+        .article-nav-btn {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 2px solid #e94560;
+            background: rgba(233, 69, 96, 0.1);
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .article-nav-btn:hover {
+            background: #e94560;
+            transform: scale(1.15);
+            box-shadow: 0 5px 20px rgba(233, 69, 96, 0.5);
+        }
+
+        .article-nav-btn.active {
+            background: #e94560;
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.6);
+        }
+
+        .nav-btn-label {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.8rem;
+            margin-top: 8px;
+        }
+
+        .nav-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .kalam-back-btn {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #e94560, #c23152);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+            max-width: 350px;
+        }
+
+        .kalam-back-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(233, 69, 96, 0.6);
+            background: linear-gradient(135deg, #ff6b81, #e94560);
+            letter-spacing: 6px;
+        }
+
+        .kalam-back-btn .btn-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            margin-top: 5px;
+            opacity: 0.8;
+            font-weight: normal;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        footer span { color: #e94560; }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; padding: 15px 20px; }
+            .article-container { padding: 0 15px; }
+            .article-header h1 { font-size: 1.5rem; }
+            .article-content { font-size: 0.95rem; }
+            .arabic-text { font-size: 1.4rem; line-height: 2.4; }
+            .resep-arabic { font-size: 1.3rem; }
+            .article-nav { gap: 15px; }
+            .article-nav-btn { width: 55px; height: 55px; font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="logo-kalam" title="Kembali ke Beranda">
+            <span>K</span>ALAM
+        </a>
+        <nav>
+            <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a>
+            <a href="artikel.html">Artikel</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/">Beranda</a> &raquo; <a href="artikel.html">Artikel</a> &raquo; Kebaikan dan Keburukan
+    </div>
+
+    <div class="article-container">
+
+        <div class="article-header">
+            <h1>Resep Syaikh Abdul Qadir Al-Jilani dalam Menempatkan Kebaikan dan Keburukan</h1>
+            <div class="article-meta">
+                <div class="author">
+                    <div class="author-avatar">MY</div>
+                    <div>
+                        <div class="author-name">DKM Masjid Jami' Al-Ikhlas Kebagusan</div>
+                        <div class="meta-date">Rabu, 07 Oktober 2026, 16:05 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-image-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Abdul_Qadir_Jilani.jpg/440px-Abdul_Qadir_Jilani.jpg"
+                 alt="Potret Syaikh Abdul Qadir Al-Jilani">
+            <div class="image-caption">Sumber: kalam.web.id — Potret Syaikh Abdul Qadir Al-Jilani</div>
+        </div>
+
+        <div class="share-bar">
+            <span>Bagikan:</span>
+            <a href="#" class="share-btn fb">f</a>
+            <a href="#" class="share-btn tw"></a>
+            <a href="#" class="share-btn wa">W</a>
+            <a href="#" class="share-btn tg">T</a>
+            <div class="font-size-controls">
+                <button class="font-btn" onclick="changeFontSize(-1)">A-</button>
+                <button class="font-btn" onclick="changeFontSize(1)">A+</button>
+            </div>
+        </div>
+
+        <div class="article-content" id="articleContent">
+
+            <p class="lead">
+                Syaikh Abdul Qadir Al-Jilani (470-561 H / 1077-1166 M) dalam kitabnya <em>"Al-Fath Ar-Rabbani"</em> dan <em>"Al-Ghunya li-Thalibi Tariq al-Haqq"</em> memberikan resep yang sangat berharga tentang bagaimana seorang Muslim seharusnya menempatkan kebaikan dan keburukan dalam hidupnya. Beliau menjelaskan bahwa segala sesuatu di dunia ini adalah ujian dari Allah SWT.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL UTAMA — QS. AL-ANBIYA': 35</div>
+                <div class="arabic-text">
+                    كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ ۗ وَنَبْلُوكُمْ بِالشَّرِّ وَالْخَيْرِ فِتْنَةً ۖ وَإِلَيْنَا تُرْجَعُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Tiap-tiap yang berjiwa akan merasakan mati. Kami akan menguji kamu dengan keburukan dan kebaikan sebagai cobaan (yang sebenar-benarnya). Dan hanya kepada Kamilah kamu dikembalikan."
+                    <br>— QS. Al-Anbiya': 35
+                </div>
+            </div>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa ayat ini adalah kunci untuk memahami kehidupan di dunia. Setiap manusia akan diuji dengan kebaikan dan keburukan. Yang membedakan antara orang yang berhasil dan gagal adalah bagaimana mereka menempatkan kedua hal tersebut dalam hidupnya.
+            </p>
+
+            <h2>Hakikat Kebaikan dan Keburukan</h2>
+
+            <p>
+                Dalam pandangan Syaikh Abdul Qadir Al-Jilani, kebaikan (الْخَيْرُ) dan keburukan (الشَّرُّ) bukanlah sesuatu yang mutlak, melainkan relatif terhadap bagaimana seseorang meresponsnya. Kebaikan bisa menjadi ujian yang menyesatkan jika membuat seseorang sombong dan lalai. Keburukan bisa menjadi ujian yang menyelamatkan jika membuat seseorang bertaubat dan kembali kepada Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">PERKATAAN SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الْخَيْرُ وَالشَّرُّ كِلَاهُمَا فِتْنَةٌ، فَمَنِ اصْطَبَرَ عَلَى الشَّرِّ وَشَكَرَ الْخَيْرَ، فَقَدْ نَجَا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Kebaikan dan keburukan keduanya adalah ujian. Barangsiapa yang sabar atas keburukan dan bersyukur atas kebaikan, maka ia telah selamat."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Resep Menempatkan Kebaikan</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan beberapa resep tentang bagaimana menempatkan kebaikan dalam hidup:
+            </p>
+
+            <div class="resep-card">
+                <span class="resep-number">1</span>
+                <span class="resep-title">Menempatkan Kebaikan sebagai Ujian Syukur (الْخَيْرُ فِتْنَةُ الشُّكْرِ)</span>
+                <div class="resep-arabic">الْخَيْرُ فِتْنَةٌ، فَاشْكُرْ عَلَيْهِ</div>
+                <p>
+                    Resep pertama adalah memandang kebaikan sebagai ujian syukur. Ketika mendapat nikmat, janganlah sombong, tetapi bersyukurlah. Syukur akan menambah nikmat, sedangkan kufur nikmat akan menghilangkannya.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL SYUKUR — QS. IBRAHIM: 7</div>
+                <div class="arabic-text">
+                    لَئِنْ شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِنْ كَفَرْتُمْ إِنَّ عَذَابِي لَشَدِيدٌ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Sesungguhnya jika kamu bersyukur, pasti Kami akan menambah (nikmat) kepadamu, dan jika kamu mengingkari (nikmat-Ku), maka sesungguhnya azab-Ku sangat pedih."
+                    <br>— QS. Ibrahim: 7
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">2</span>
+                <span class="resep-title">Tidak Sombong dengan Kebaikan (عَدَمُ الْكِبْرِ)</span>
+                <div class="resep-arabic">لَا تَكْبَرْ بِالْخَيْرِ، فَإِنَّهُ مِنَ اللَّهِ</div>
+                <p>
+                    Resep kedua adalah tidak sombong dengan kebaikan yang didapat. Semua kebaikan datang dari Allah, bukan dari diri sendiri. Kesombongan dapat menghapus pahala amal shaleh.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL LARANGAN SOMBONG — QS. AL-ISRA': 37</div>
+                <div class="arabic-text">
+                    وَلَا تَمْشِ فِي الْأَرْضِ مَرَحًا ۖ إِنَّكَ لَنْ تَخْرِقَ الْأَرْضَ وَلَنْ تَبْلُغَ الْجِبَالَ طُولًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan janganlah kamu berjalan di muka bumi ini dengan sombong, karena sesungguhnya kamu sekali-kali tidak dapat menembus bumi dan sekali-kali kamu tidak akan sampai setinggi gunung."
+                    <br>— QS. Al-Isra': 37
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">3</span>
+                <span class="resep-title">Berbagi Kebaikan dengan Sesama (الْإِيثَارُ بِالْخَيْرِ)</span>
+                <div class="resep-arabic">خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ</div>
+                <p>
+                    Resep ketiga adalah berbagi kebaikan dengan sesama. Kebaikan yang tidak dibagikan akan menjadi beban. Berbagi kebaikan akan melipatgandakan pahala dan mendatangkan keberkahan.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL BERBAGI — QS. AL-BAQARAH: 261</div>
+                <div class="arabic-text">
+                    مَثَلُ الَّذِينَ يُنْفِقُونَ أَمْوَالَهُمْ فِي سَبِيلِ اللَّهِ كَمَثَلِ حَبَّةٍ أَنْبَتَتْ سَبْعَ سَنَابِلَ فِي كُلِّ سُنْبُلَةٍ مِائَةُ حَبَّةٍ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Perumpamaan (nafkah yang dikeluarkan oleh) orang-orang yang menafkahkan hartanya di jalan Allah adalah serupa dengan sebutir benih yang menumbuhkan tujuh bulir, pada setiap bulir seratus biji."
+                    <br>— QS. Al-Baqarah: 261
+                </div>
+            </div>
+
+            <h2>Resep Menempatkan Keburukan</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani juga memberikan resep tentang bagaimana menempatkan keburukan dalam hidup:
+            </p>
+
+            <div class="resep-card">
+                <span class="resep-number">4</span>
+                <span class="resep-title">Menempatkan Keburukan sebagai Ujian Sabar (الشَّرُّ فِتْنَةُ الصَّبْرِ)</span>
+                <div class="resep-arabic">الشَّرُّ فِتْنَةٌ، فَاصْبِرْ عَلَيْهِ</div>
+                <p>
+                    Resep keempat adalah memandang keburukan sebagai ujian sabar. Ketika mendapat musibah, bersabarlah. Sabar adalah kunci kelapangan dan jalan menuju ridha Allah.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL SABAR — QS. AL-BAQARAH: 155-157</div>
+                <div class="arabic-text">
+                    وَلَنَبْلُوَنَّكُمْ بِشَيْءٍ مِنَ الْخَوْفِ وَالْجُوعِ وَنَقْصٍ مِنَ الْأَمْوَالِ وَالْأَنْفُسِ وَالثَّمَرَاتِ ۗ وَبَشِّرِ الصَّابِرِينَ ۝ الَّذِينَ إِذَا أَصَابَتْهُمْ مُصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Dan Kami pasti akan menguji kamu dengan sedikit ketakutan, kelaparan, kekurangan harta, jiwa, dan buah-buahan. Dan sampaikanlah kabar gembira kepada orang-orang yang sabar. (Yaitu) orang-orang yang apabila ditimpa musibah, mereka mengucapkan: 'Inna lillahi wa inna ilaihi raji'un'."
+                    <br>— QS. Al-Baqarah: 155-156
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">5</span>
+                <span class="resep-title">Bertaubat dari Keburukan (التَّوْبَةُ مِنَ الشَّرِّ)</span>
+                <div class="resep-arabic">التَّوْبَةُ تَمْحُو الذُّنُوبَ</div>
+                <p>
+                    Resep kelima adalah bertaubat dari keburukan yang telah diperbuat. Taubat adalah jalan kembali kepada Allah dan pembersih hati dari noda dosa.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TAUBAT — QS. AT-TAHRIM: 8</div>
+                <div class="arabic-text">
+                    يَا أَيُّهَا الَّذِينَ آمَنُوا تُوبُوا إِلَى اللَّهِ تَوْبَةً نَصُوحًا
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Wahai orang-orang yang beriman! Bertobatlah kepada Allah dengan tobat yang semurni-murninya (taubat nasuha)."
+                    <br>— QS. At-Tahrim: 8
+                </div>
+            </div>
+
+            <div class="resep-card">
+                <span class="resep-number">6</span>
+                <span class="resep-title">Mengambil Pelajaran dari Keburukan (الِاعْتِبَارُ مِنَ الشَّرِّ)</span>
+                <div class="resep-arabic">الْعَاقِلُ مَنْ يَعْتَبِرُ بِغَيْرِهِ</div>
+                <p>
+                    Resep keenam adalah mengambil pelajaran dari keburukan. Orang yang berakal adalah orang yang belajar dari kesalahan orang lain, bukan hanya dari kesalahan dirinya sendiri.
+                </p>
+            </div>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL MENGAMBIL PELAJARAN — QS. AL-HASYR: 2</div>
+                <div class="arabic-text">
+                    فَاعْتَبِرُوا يَا أُولِي الْأَبْصَارِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Maka ambillah (kejadian itu) untuk menjadi pelajaran, wahai orang-orang yang mempunyai pandangan."
+                    <br>— QS. Al-Hasyr: 2
+                </div>
+            </div>
+
+            <h2>Keseimbangan antara Kebaikan dan Keburukan</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menekankan pentingnya keseimbangan dalam menghadapi kebaikan dan keburukan:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">KESEIMBANGAN HATI — SYAIKH ABDUL QADIR AL-JILANI</div>
+                <div class="arabic-text">
+                    الْقَلْبُ السَّلِيمُ لَا يَفْرَحُ كَثِيرًا بِالْخَيْرِ وَلَا يَحْزَنُ كَثِيرًا بِالشَّرِّ، بَلْ هُوَ مُطْمَئِنٌّ بِذِكْرِ اللَّهِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Hati yang sehat tidak terlalu banyak bahagia dengan kebaikan dan tidak terlalu banyak berduka dengan keburukan, melainkan ia tenteram dengan dzikir kepada Allah."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Beliau menjelaskan bahwa hati yang sehat adalah hati yang senantiasa dzikir kepada Allah dalam setiap keadaan. Ketika mendapat kebaikan, ia bersyukur. Ketika mendapat keburukan, ia bersabar. Dan dalam kedua keadaan tersebut, ia senantiasa mengingat Allah.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL DZIKIR — QS. AR-RA'D: 28</div>
+                <div class="arabic-text">
+                    أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ingatlah, hanya dengan mengingati Allah-lah hati menjadi tenteram."
+                    <br>— QS. Ar-Ra'd: 28
+                </div>
+            </div>
+
+            <h2>Hikmah Kebaikan dan Keburukan</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani menjelaskan bahwa ada hikmah besar di balik kebaikan dan keburukan yang Allah berikan kepada hamba-Nya:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">HIKMAH KEBAIKAN DAN KEBURUKAN</div>
+                <div class="arabic-text">
+                    الْخَيْرُ امْتِحَانُ الشُّكْرِ، وَالشَّرُّ امْتِحَانُ الصَّبْرِ، وَالْمُؤْمِنُ مَأْمُورٌ بِالشُّكْرِ وَالصَّبْرِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Kebaikan adalah ujian syukur, keburukan adalah ujian sabar, dan seorang mukmin diperintahkan untuk bersyukur dan bersabar."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Kebaikan adalah ujian syukur, apakah kita akan bersyukur atau justru lupa kepada Allah. Keburukan adalah ujian sabar, apakah kita akan bersabar atau justru berputus asa. Seorang mukmin yang sejati akan lulus dalam kedua ujian ini.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DALIL TENTANG KEDUA UJIAN — QS. AL-ANBIYA': 35</div>
+                <div class="arabic-text">
+                    وَنَبْلُوكُمْ بِالشَّرِّ وَالْخَيْرِ فِتْنَةً ۖ وَإِلَيْنَا تُرْجَعُونَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Kami akan menguji kamu dengan keburukan dan kebaikan sebagai cobaan (yang sebenar-benarnya). Dan hanya kepada Kamilah kamu dikembalikan."
+                    <br>— QS. Al-Anbiya': 35
+                </div>
+            </div>
+
+            <h2>Nasihat Syaikh Abdul Qadir Al-Jilani</h2>
+
+            <p>
+                Syaikh Abdul Qadir Al-Jilani memberikan nasihat berharga tentang bagaimana seharusnya kita bersikap terhadap kebaikan dan keburukan:
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT SYAIKH</div>
+                <div class="arabic-text">
+                    إِذَا أَصَابَكَ خَيْرٌ فَاحْمَدْ اللَّهَ، وَإِذَا أَصَابَكَ شَرٌّ فَاصْبِرْ وَاحْمَدْ اللَّهَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Jika kamu mendapat kebaikan, maka pujilah Allah. Dan jika kamu mendapat keburukan, maka bersabarlah dan pujilah Allah."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <p>
+                Nasihat ini sangat mendalam. Syaikh Abdul Qadir Al-Jilani mengajarkan bahwa dalam setiap keadaan, baik maupun buruk, kita harus senantiasa memuji Allah. Dalam kebaikan, kita memuji-Nya dengan syukur. Dalam keburukan, kita memuji-Nya dengan sabar.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-label">NASIHAT LANJUTAN SYAIKH</div>
+                <div class="arabic-text">
+                    لَا تَنْظُرْ إِلَىٰ صِغَرِ الْمَعْصِيَةِ، وَلَكِنِ انْظُرْ إِلَىٰ عَظَمَةِ مَنْ عَصَيْتَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Janganlah kamu melihat kecilnya maksiat, tetapi lihatlah kepada keagungan Dzat yang kamu durhakai."
+                    <br>— Syaikh Abdul Qadir Al-Jilani
+                </div>
+            </div>
+
+            <h2>Doa Memohon Pertolongan dalam Menghadapi Kebaikan dan Keburukan</h2>
+
+            <h3>1. Doa Memohon Keseimbangan Hati</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KESEIMBANGAN HATI</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ اجْعَلْ قَلْبِي مُعْتَدِلًا فِي الْخَيْرِ وَالشَّرِّ، شَاكِرًا فِي النَّعْمَاءِ، صَابِرًا فِي الْبَلَاءِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, jadikanlah hatiku seimbang dalam kebaikan dan keburukan, bersyukur dalam nikmat, dan sabar dalam bala'."
+                </div>
+            </div>
+
+            <h3>2. Doa Memohon Perlindungan dari Fitnah</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA MOHON PERLINDUNGAN DARI FITNAH</div>
+                <div class="arabic-text">
+                    اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْفِتَنِ مَا ظَهَرَ مِنْهَا وَمَا بَطَنَ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Allah, aku berlindung kepada-Mu dari fitnah, baik yang tampak maupun yang tersembunyi."
+                    <br>— HR. Bukhari & Muslim
+                </div>
+            </div>
+
+            <h3>3. Doa Memohon Kebaikan Dunia dan Akhirat</h3>
+
+            <div class="arabic-box">
+                <div class="arabic-label">DOA KEBAIKAN DUNIA AKHIRAT</div>
+                <div class="arabic-text">
+                    رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "Ya Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat dan lindungilah kami dari azab neraka."
+                    <br>— QS. Al-Baqarah: 201
+                </div>
+            </div>
+
+            <h2>Penutup</h2>
+
+            <p>
+                Dari penjelasan Syaikh Abdul Qadir Al-Jilani di atas, dapat disimpulkan bahwa segala sesuatu di dunia ini adalah ujian. Kebaikan adalah ujian syukur, keburukan adalah ujian sabar. Seorang Muslim sejati harus mampu menempatkan keduanya dengan benar: bersyukur dalam kebaikan dan bersabar dalam keburukan.
+            </p>
+
+            <p>
+                Semoga kita semua diberikan kekuatan oleh Allah SWT untuk senantiasa menempatkan kebaikan dan keburukan dengan benar, dan senantiasa mengingat Allah dalam setiap keadaan. Aamiin ya Rabbal 'Alamiin.
+            </p>
+
+            <div class="arabic-box">
+                <div class="arabic-text">
+                    الَّذِينَ آمَنُوا وَتَطْمَئِنُّ قُلُوبُهُمْ بِذِكْرِ اللَّهِ ۗ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ
+                </div>
+                <div class="arabic-translation">
+                    <strong>Artinya:</strong> "(Yaitu) orang-orang yang beriman dan hati mereka menjadi tenteram dengan mengingat Allah. Ingatlah, hanya dengan mengingati Allah-lah hati menjadi tenteram."
+                    <br>— QS. Ar-Ra'd: 28
+                </div>
+            </div>
+
+            <p>
+                Wallahu a'lam bish-shawab. Dan segala puji bagi Allah, Tuhan semesta alam.
+            </p>
+
+        </div>
+
+        <!-- NAVIGASI 3 TOMBOL -->
+        <div class="article-nav">
+            <div class="nav-group">
+                <a href="artikel23.html" class="article-nav-btn active" title="Artikel Utama">1</a>
+                <div class="nav-btn-label">Artikel Utama</div>
+            </div>
+            <div class="nav-group">
+                <a href="artikel23-cabang.html" class="article-nav-btn" title="Artikel Cabang">2</a>
+                <div class="nav-btn-label">Artikel Cabang</div>
+            </div>
+            <div class="nav-group">
+                <a href="artikel23-lanjutan.html" class="article-nav-btn" title="Artikel Lanjutan">3</a>
+                <div class="nav-btn-label">Artikel Lanjutan</div>
+            </div>
+        </div>
+
+        <a href="https://masjidalikhlaskebagusan99-dotcom.github.io/Masjid-Al-Ikhlas/" class="kalam-back-btn">
+            KALAM
+            <span class="btn-sub">← Kembali ke Beranda</span>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>KALAM</span>. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        let currentFontSize = 1.05;
+        function changeFontSize(delta) {
+            currentFontSize += delta * 0.1;
+            if (currentFontSize < 0.8) currentFontSize = 0.8;
+            if (currentFontSize > 1.5) currentFontSize = 1.5;
+            document.getElementById('articleContent').style.fontSize = currentFontSize + 'rem';
+        }
+    </script>
+
+</body>
+</html>
